@@ -1,11 +1,15 @@
 from __future__ import annotations
+
 import json
 from pathlib import Path
+
 import pandas as pd
+
 
 def write_json(path: Path, obj: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2), encoding="utf-8")
+
 
 def write_markdown(path: Path, target_date: str, as_of: str, agent_out: dict, scored_top: pd.DataFrame) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -29,7 +33,8 @@ def write_markdown(path: Path, target_date: str, as_of: str, agent_out: dict, sc
 
     lines.append("## Final bullish momentum list (next day)")
     if not final:
-        lines.append("_No picks passed reviewer filters._")
+        lines.append("_NO-TRADE: No high-conviction options trades for the next session (per rules)._")
+        lines.append("")
     else:
         for i, item in enumerate(final, start=1):
             lines.append(f"### {i}) {item['ticker']}")
@@ -40,8 +45,12 @@ def write_markdown(path: Path, target_date: str, as_of: str, agent_out: dict, sc
                 lines.append(f"  - {b}")
             lines.append("")
 
-    lines.append("## Top 15 by model score (for reference)")
-    show = scored_top.head(15)[["ticker","p_up","score","rel_strength_5d","rsi_14","adx_14","atr_pct"]].copy()
+    lines.append("## Top 15 by options suitability (for reference)")
+    scored_top = scored_top.copy()
+    if "options_score" not in scored_top.columns:
+        scored_top["options_score"] = 0.0
+    cols = ["ticker", "p_up", "score", "options_score", "rel_strength_5d", "rsi_14", "adx_14", "atr_pct"]
+    show = scored_top.head(15)[cols].copy()
     lines.append("")
     lines.append(show.to_markdown(index=False))
     lines.append("")

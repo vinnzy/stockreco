@@ -1,10 +1,14 @@
 from __future__ import annotations
+from typing import List, Optional
+
 import pandas as pd
 import yfinance as yf
 from pathlib import Path
 from stockreco.config.settings import settings
 
-def fetch_ohlcv(tickers: list[str], start: str, end: str | None = None) -> pd.DataFrame:
+def fetch_ohlcv(tickers: List[str], start: str, end: Optional[str] = None) -> pd.DataFrame:
+
+
     '''
     Returns a long dataframe:
       date, ticker, open, high, low, close, adj_close, volume

@@ -1,0 +1,23 @@
+{
+  "target_date": "2025-12-15",
+  "as_of": "2025-12-12",
+  "mode": "strict",
+  "max_trades": 10,
+  "use_llm": false,
+  "proposer": {
+    "as_of": "2025-12-12",
+    "top10": []
+  },
+  "reviewer": {
+    "approved": [],
+    "rejected": []
+  },
+  "analyst": {
+    "final": [],
+    "regime_notes": [
+      "Low conviction: mean p_up of top 3 is 0.50 (< 0.55).",
+      "Low separation: p_up spread (P90-P10) is 0.02 (< 0.06).",
+      "NO-TRADE for options recommended (edge too small / too clustered)."
+    ]
+  }
+}

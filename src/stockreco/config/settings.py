@@ -3,6 +3,8 @@ from dataclasses import dataclass
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from typing import Optional
+
 
 load_dotenv()
 
@@ -14,7 +16,8 @@ class Settings:
     models_dir: Path = root / "data" / "models"
     cache_dir: Path = root / "data" / "cache"
 
-    openai_api_key: str | None = os.getenv("OPENAI_API_KEY")
+    openai_api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
+
     openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 
     # yfinance sometimes needs session caching; keep requests small

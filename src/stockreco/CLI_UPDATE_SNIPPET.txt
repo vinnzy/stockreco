@@ -1,0 +1,12 @@
+In src/stockreco/cli.py inside recommend(), replace:
+
+    agent_out = run_agents(scored, as_of=asof_str, use_llm=use_llm)
+    write_markdown(md_path, target_date, asof_str, agent_out, scored)
+
+with:
+
+    agent_out = run_agents(scored, as_of=asof_str, use_llm=use_llm)
+    scored_for_report = agent_out.get("scored", scored)
+    write_markdown(md_path, target_date, asof_str, agent_out, scored_for_report)
+
+Also, if you build out_json['top15'] from scored, switch to scored_for_report.
