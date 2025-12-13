@@ -1,0 +1,449 @@
+{
+  "target_date": "2025-12-15",
+  "as_of": "2025-12-12",
+  "use_llm": false,
+  "proposer": {
+    "as_of": "2025-12-12",
+    "top10": [
+      {
+        "ticker": "RELIANCE.NS",
+        "rank": 1,
+        "p_up": 0.5332623736029801,
+        "signals": {
+          "rsi_14": 62.79446953612434,
+          "macd_hist": -4.1213621057008964,
+          "adx_14": 33.76133869751019,
+          "rel_strength_5d": 0.015647853029745473,
+          "atr_pct": 0.013927785194266528,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "SUNPHARMA.NS",
+        "rank": 2,
+        "p_up": 0.5166340508806261,
+        "signals": {
+          "rsi_14": 56.3948633933853,
+          "macd_hist": -5.3053099413072005,
+          "adx_14": 50.32056436806182,
+          "rel_strength_5d": -0.001209153896376658,
+          "atr_pct": 0.014409682338744505,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "GRASIM.NS",
+        "rank": 3,
+        "p_up": 0.505958829902492,
+        "signals": {
+          "rsi_14": 63.83864727236887,
+          "macd_hist": 13.077775057276993,
+          "adx_14": 21.780069574958826,
+          "rel_strength_5d": 0.03798096910345228,
+          "atr_pct": 0.015405224266363347,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "TATAMOTORS.NS",
+        "rank": 4,
+        "p_up": 0.511326860841424,
+        "signals": {
+          "rsi_14": 25.44862801146347,
+          "macd_hist": 4.423767882652566,
+          "adx_14": 60.68906689704174,
+          "rel_strength_5d": -0.012065333646821164,
+          "atr_pct": 0.024431957394474957,
+          "close_above_sma20": 0,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "HINDALCO.NS",
+        "rank": 5,
+        "p_up": 0.5021530308049021,
+        "signals": {
+          "rsi_14": 67.66053698247136,
+          "macd_hist": 3.484007578242114,
+          "adx_14": 17.614762595686624,
+          "rel_strength_5d": 0.04037118586967603,
+          "atr_pct": 0.020088244933752622,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "AXISBANK.NS",
+        "rank": 6,
+        "p_up": 0.505958829902492,
+        "signals": {
+          "rsi_14": 61.21397764293935,
+          "macd_hist": -2.1516073763118975,
+          "adx_14": 43.621930372346036,
+          "rel_strength_5d": 0.008134181236096882,
+          "atr_pct": 0.014396863772435507,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "M&M.NS",
+        "rank": 7,
+        "p_up": 0.505958829902492,
+        "signals": {
+          "rsi_14": 51.524968668078124,
+          "macd_hist": -10.749760890219097,
+          "adx_14": 15.182151689583728,
+          "rel_strength_5d": -0.004761326866246751,
+          "atr_pct": 0.017113436823745755,
+          "close_above_sma20": 0,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "SHRIRAMFIN.NS",
+        "rank": 8,
+        "p_up": 0.505958829902492,
+        "signals": {
+          "rsi_14": 60.82963976090708,
+          "macd_hist": -4.7679198793846425,
+          "adx_14": 31.7898474035006,
+          "rel_strength_5d": -0.002743965027934725,
+          "atr_pct": 0.023288218076878,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "TATASTEEL.NS",
+        "rank": 9,
+        "p_up": 0.5000000000000002,
+        "signals": {
+          "rsi_14": 54.73047215637458,
+          "macd_hist": 0.24301370036232228,
+          "adx_14": 27.763808655935545,
+          "rel_strength_5d": 0.033931088909133544,
+          "atr_pct": 0.0203829435417635,
+          "close_above_sma20": 1,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      },
+      {
+        "ticker": "HDFCLIFE.NS",
+        "rank": 10,
+        "p_up": 0.5021530308049021,
+        "signals": {
+          "rsi_14": 57.730894292390055,
+          "macd_hist": 0.682688791306219,
+          "adx_14": 9.645462139249998,
+          "rel_strength_5d": 0.017301687939013766,
+          "atr_pct": 0.01799459054491533,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open",
+          "High IV / wide spreads in options"
+        ]
+      }
+    ]
+  },
+  "reviewer": {
+    "approved": [
+      "RELIANCE.NS",
+      "SUNPHARMA.NS",
+      "GRASIM.NS",
+      "TATAMOTORS.NS",
+      "HINDALCO.NS",
+      "AXISBANK.NS",
+      "M&M.NS",
+      "SHRIRAMFIN.NS",
+      "TATASTEEL.NS",
+      "HDFCLIFE.NS"
+    ],
+    "rejected": []
+  },
+  "analyst": {
+    "final": [
+      {
+        "ticker": "RELIANCE.NS",
+        "p_up": 0.5332623736029801,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "SUNPHARMA.NS",
+        "p_up": 0.5166340508806261,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "GRASIM.NS",
+        "p_up": 0.505958829902492,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "TATAMOTORS.NS",
+        "p_up": 0.511326860841424,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "HINDALCO.NS",
+        "p_up": 0.5021530308049021,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "AXISBANK.NS",
+        "p_up": 0.505958829902492,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "M&M.NS",
+        "p_up": 0.505958829902492,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "SHRIRAMFIN.NS",
+        "p_up": 0.505958829902492,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "TATASTEEL.NS",
+        "p_up": 0.5000000000000002,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "HDFCLIFE.NS",
+        "p_up": 0.5021530308049021,
+        "confidence_label": "Low",
+        "why": "Strong score from calibrated model + relative strength; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      }
+    ],
+    "regime_notes": [
+      "EOD-based model; confirm with next-day price action before taking options."
+    ]
+  },
+  "top15": [
+    {
+      "ticker": "RELIANCE.NS",
+      "p_up": 0.5332623736029801,
+      "score": 0.5349131622977286
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "p_up": 0.5166340508806261,
+      "score": 0.5157321936792323
+    },
+    {
+      "ticker": "GRASIM.NS",
+      "p_up": 0.505958829902492,
+      "score": 0.5108857140546916
+    },
+    {
+      "ticker": "TATAMOTORS.NS",
+      "p_up": 0.511326860841424,
+      "score": 0.5082954629246771
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "p_up": 0.5021530308049021,
+      "score": 0.5072042964386658
+    },
+    {
+      "ticker": "AXISBANK.NS",
+      "p_up": 0.505958829902492,
+      "score": 0.5064591138992848
+    },
+    {
+      "ticker": "M&M.NS",
+      "p_up": 0.505958829902492,
+      "score": 0.5043889590313677
+    },
+    {
+      "ticker": "SHRIRAMFIN.NS",
+      "p_up": 0.505958829902492,
+      "score": 0.5043828242444579
+    },
+    {
+      "ticker": "TATASTEEL.NS",
+      "p_up": 0.5000000000000002,
+      "score": 0.5040705161592821
+    },
+    {
+      "ticker": "HDFCLIFE.NS",
+      "p_up": 0.5021530308049021,
+      "score": 0.5038485544685084
+    },
+    {
+      "ticker": "TECHM.NS",
+      "p_up": 0.5021530308049021,
+      "score": 0.5028390734128283
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "p_up": 0.5021530308049021,
+      "score": 0.5020131073356731
+    },
+    {
+      "ticker": "CIPLA.NS",
+      "p_up": 0.5021530308049021,
+      "score": 0.5019337593862377
+    },
+    {
+      "ticker": "BPCL.NS",
+      "p_up": 0.5000000000000002,
+      "score": 0.5016523640506054
+    },
+    {
+      "ticker": "COALINDIA.NS",
+      "p_up": 0.5000000000000002,
+      "score": 0.5014808634033608
+    }
+  ]
+}
