@@ -9,6 +9,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
+from stockreco.api.routes import options_ltp, options_quotes
+
+
 def _repo_root() -> Path:
     here = Path(__file__).resolve()
     # src/stockreco/api/app.py -> repo root is 4 levels up
@@ -45,6 +48,13 @@ def create_app(repo_root: Optional[Path] = None) -> FastAPI:
     @app.get("/api/health")
     def health():
         return {"ok": True, "repo_root": str(repo)}
+    
+    # Initialize routers with repo root
+    options_ltp.set_repo_root(repo)
+    
+    # Include routers
+    app.include_router(options_ltp.router)
+    app.include_router(options_quotes.router)
 
     # --- Options reco outputs (reports/options) ---
     @app.get("/api/options/dates")

@@ -7,6 +7,7 @@ import math
 
 from stockreco.ingest.derivatives.provider_base import OptionChainRow, UnderlyingSnapshot, normalize_to_nse_symbol
 from stockreco.options.greeks import implied_vol, bs_greeks, intrinsic_extrinsic
+from stockreco.options.risk import delta_based_sl
 
 Mode = Literal["strict", "opportunistic", "speculative"]
 
@@ -481,8 +482,17 @@ class OptionRecoAgent:
 
         # Entry, SL, Targets on premium
         entry = ltp * (1.0 - self.cfg.entry_slippage_frac)
-        risk = max(0.01, entry * self.cfg.stop_loss_frac)
-        sl = max(0.01, entry - risk)
+
+        sl = delta_based_sl(
+            entry=entry,
+            spot=spot,
+            delta=(g.delta if g else None),
+            gamma=(g.gamma if g else None),
+            mode=self.cfg.mode,
+            max_loss_frac=self.cfg.stop_loss_frac,
+        )
+
+        risk = max(0.01, entry - sl)
         t1 = entry + self.cfg.t1_rr * risk
         t2 = entry + self.cfg.t2_rr * risk
 
