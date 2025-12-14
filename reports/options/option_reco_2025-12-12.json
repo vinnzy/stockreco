@@ -1,0 +1,1723 @@
+[
+  {
+    "as_of": "2025-12-12",
+    "symbol": "NIFTY",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "06-JAN-2026",
+    "strike": 26100.0,
+    "entry": 439.34999999999997,
+    "stop_loss": 285.5775,
+    "targets": {
+      "t1_underlying": 26149.95537109375,
+      "t2_underlying": 26252.9607421875,
+      "t1_premium": 549.1875,
+      "t2_premium": 659.025
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 26100.0 exp 06-JAN-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u2248206: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0029166924238643,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 26149.95537109375,
+    "t1_premium": 549.1875,
+    "t2_underlying": 26252.9607421875,
+    "t2_premium": 659.025
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BANKNIFTY",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.1,
+    "rationale": [
+      "No directional edge and ret_oc too small; skipping trade."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0001944526863799
+    },
+    "t1_underlying": null,
+    "t1_premium": null,
+    "t2_underlying": null,
+    "t2_premium": null
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ADANIENT.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 2280.0,
+    "entry": 258.375,
+    "stop_loss": 167.94375,
+    "targets": {
+      "t1_underlying": 2314.342862374442,
+      "t2_underlying": 2346.285724748884,
+      "t1_premium": 322.96875,
+      "t2_premium": 387.5625
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 2280.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224864: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0020634637013786,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 2314.342862374442,
+    "t1_premium": 322.96875,
+    "t2_underlying": 2346.285724748884,
+    "t2_premium": 387.5625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ADANIPORTS.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1520.0,
+    "entry": 139.27499999999998,
+    "stop_loss": 90.52874999999999,
+    "targets": {
+      "t1_underlying": 1536.2321463448661,
+      "t2_underlying": 1549.664292689732,
+      "t1_premium": 174.09374999999997,
+      "t2_premium": 208.91249999999997
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 1520.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224827: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0071428894365906
+    },
+    "t1_underlying": 1536.2321463448661,
+    "t1_premium": 174.09374999999997,
+    "t2_underlying": 1549.664292689732,
+    "t2_premium": 208.91249999999997
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "APOLLOHOSP.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 7100.0,
+    "entry": 461.09999999999997,
+    "stop_loss": 299.715,
+    "targets": {
+      "t1_underlying": 7149.107142857143,
+      "t2_underlying": 7197.214285714285,
+      "t1_premium": 576.375,
+      "t2_premium": 691.65
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 7100.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224896: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0122594440484675
+    },
+    "t1_underlying": 7149.107142857143,
+    "t1_premium": 576.375,
+    "t2_underlying": 7197.214285714285,
+    "t2_premium": 691.65
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ASIANPAINT.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 2760.0,
+    "entry": 132.22500000000002,
+    "stop_loss": 85.94625000000002,
+    "targets": {
+      "t1_underlying": 2738.253578404018,
+      "t2_underlying": 2711.707156808036,
+      "t1_premium": 165.28125000000003,
+      "t2_premium": 198.33750000000003
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 2760.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224853: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0108049914747316
+    },
+    "t1_underlying": 2738.253578404018,
+    "t1_premium": 165.28125000000003,
+    "t2_underlying": 2711.707156808036,
+    "t2_premium": 198.33750000000003
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "AXISBANK.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1280.0,
+    "entry": 89.4,
+    "stop_loss": 58.11000000000001,
+    "targets": {
+      "t1_underlying": 1295.3428632463726,
+      "t2_underlying": 1304.5857264927454,
+      "t1_premium": 111.75,
+      "t2_premium": 134.10000000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 1280.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224818: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0063380090656787
+    },
+    "t1_underlying": 1295.3428632463726,
+    "t1_premium": 111.75,
+    "t2_underlying": 1304.5857264927454,
+    "t2_premium": 134.10000000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BAJAJ-AUTO.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 9000.0,
+    "entry": 491.54999999999995,
+    "stop_loss": 319.5075,
+    "targets": {
+      "t1_underlying": 8941.94642857143,
+      "t2_underlying": 8868.892857142857,
+      "t1_premium": 614.4375,
+      "t2_premium": 737.3249999999999
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 9000.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u2248146: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.005515719801434
+    },
+    "t1_underlying": 8941.94642857143,
+    "t1_premium": 614.4375,
+    "t2_underlying": 8868.892857142857,
+    "t2_premium": 737.3249999999999
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BAJAJFINSV.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 2080.0,
+    "entry": 153.375,
+    "stop_loss": 99.69375000000001,
+    "targets": {
+      "t1_underlying": 2102.5178370884487,
+      "t2_underlying": 2121.8856741768973,
+      "t1_premium": 191.71875,
+      "t2_premium": 230.0625
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 2080.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224839: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.003516739886506,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 2102.5178370884487,
+    "t1_premium": 191.71875,
+    "t2_underlying": 2121.8856741768973,
+    "t2_premium": 230.0625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BAJFINANCE.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1020.0,
+    "entry": 80.1,
+    "stop_loss": 52.065,
+    "targets": {
+      "t1_underlying": 1027.7964359828404,
+      "t2_underlying": 1038.2928719656807,
+      "t1_premium": 100.125,
+      "t2_premium": 120.14999999999999
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 1020.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224821: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0172999877929687
+    },
+    "t1_underlying": 1027.7964359828404,
+    "t1_premium": 100.125,
+    "t2_underlying": 1038.2928719656807,
+    "t2_premium": 120.14999999999999
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BHARTIARTL.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 2080.0,
+    "entry": 136.35000000000002,
+    "stop_loss": 88.62750000000001,
+    "targets": {
+      "t1_underlying": 2100.1285505022324,
+      "t2_underlying": 2116.8571010044643,
+      "t1_premium": 170.43750000000003,
+      "t2_premium": 204.52500000000003
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 2080.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224833: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.014758074738825
+    },
+    "t1_underlying": 2100.1285505022324,
+    "t1_premium": 170.43750000000003,
+    "t2_underlying": 2116.8571010044643,
+    "t2_premium": 204.52500000000003
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BPCL.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 380.0,
+    "entry": 20.025,
+    "stop_loss": 13.01625,
+    "targets": {
+      "t1_underlying": 369.16607251848495,
+      "t2_underlying": 373.2821450369699,
+      "t1_premium": 25.03125,
+      "t2_premium": 30.037499999999998
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 380.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22488: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0356028022495567
+    },
+    "t1_underlying": 369.16607251848495,
+    "t1_premium": 25.03125,
+    "t2_underlying": 373.2821450369699,
+    "t2_premium": 30.037499999999998
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "BRITANNIA.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 5900.0,
+    "entry": 384.15000000000003,
+    "stop_loss": 249.69750000000002,
+    "targets": {
+      "t1_underlying": 5963.464285714285,
+      "t2_underlying": 6011.428571428572,
+      "t1_premium": 480.18750000000006,
+      "t2_premium": 576.225
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 5900.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224896: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0115424076607387
+    },
+    "t1_underlying": 5963.464285714285,
+    "t1_premium": 480.18750000000006,
+    "t2_underlying": 6011.428571428572,
+    "t2_premium": 576.225
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "CIPLA.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 1500.0,
+    "entry": 64.125,
+    "stop_loss": 41.68125,
+    "targets": {
+      "t1_underlying": 1507.6964215959822,
+      "t2_underlying": 1497.9928431919643,
+      "t1_premium": 80.15625,
+      "t2_premium": 96.1875
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 1500.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224819: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0017105102539062
+    },
+    "t1_underlying": 1507.6964215959822,
+    "t1_premium": 80.15625,
+    "t2_underlying": 1497.9928431919643,
+    "t2_premium": 96.1875
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "COALINDIA.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 375.0,
+    "entry": 14.850000000000001,
+    "stop_loss": 9.652500000000002,
+    "targets": {
+      "t1_underlying": 380.8821415492467,
+      "t2_underlying": 378.41428309849334,
+      "t1_premium": 18.5625,
+      "t2_premium": 22.275000000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 375.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22485: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0031204829737224
+    },
+    "t1_underlying": 380.8821415492467,
+    "t1_premium": 18.5625,
+    "t2_underlying": 378.41428309849334,
+    "t2_premium": 22.275000000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "DIVISLAB.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.1,
+    "rationale": [
+      "No directional edge and ret_oc too small; skipping trade."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0005443234836702
+    },
+    "t1_underlying": null,
+    "t1_premium": null,
+    "t2_underlying": null,
+    "t2_premium": null
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "DRREDDY.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1280.0,
+    "entry": 79.19999999999999,
+    "stop_loss": 51.48,
+    "targets": {
+      "t1_underlying": 1288.6821533203124,
+      "t2_underlying": 1298.014306640625,
+      "t1_premium": 98.99999999999999,
+      "t2_premium": 118.79999999999998
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 1280.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224819: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0033725873161764,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 1288.6821533203124,
+    "t1_premium": 98.99999999999999,
+    "t2_underlying": 1298.014306640625,
+    "t2_premium": 118.79999999999998
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "EICHERMOT.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.1,
+    "rationale": [
+      "No directional edge and ret_oc too small; skipping trade."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0008293020041465
+    },
+    "t1_underlying": null,
+    "t1_premium": null,
+    "t2_underlying": null,
+    "t2_premium": null
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "GRASIM.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 2840.0,
+    "entry": 162.0,
+    "stop_loss": 105.3,
+    "targets": {
+      "t1_underlying": 2857.0285784040175,
+      "t2_underlying": 2877.3571568080356,
+      "t1_premium": 202.5,
+      "t2_premium": 243.0
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 2840.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224841: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0080667914612206
+    },
+    "t1_underlying": 2857.0285784040175,
+    "t1_premium": 202.5,
+    "t2_underlying": 2877.3571568080356,
+    "t2_premium": 243.0
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HCLTECH.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 1680.0,
+    "entry": 97.42500000000001,
+    "stop_loss": 63.32625000000001,
+    "targets": {
+      "t1_underlying": 1660.7249982561384,
+      "t2_underlying": 1648.2499965122768,
+      "t1_premium": 121.78125000000001,
+      "t2_premium": 146.13750000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 1680.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224825: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0025039186723838
+    },
+    "t1_underlying": 1660.7249982561384,
+    "t1_premium": 121.78125000000001,
+    "t2_underlying": 1648.2499965122768,
+    "t2_premium": 146.13750000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HDFCBANK.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 990.0,
+    "entry": 26.849999999999998,
+    "stop_loss": 17.4525,
+    "targets": {
+      "t1_underlying": 994.2535744803292,
+      "t2_underlying": 987.1071489606585,
+      "t1_premium": 33.5625,
+      "t2_premium": 40.275
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 990.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224814: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0014955134596211,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 994.2535744803292,
+    "t1_premium": 33.5625,
+    "t2_underlying": 987.1071489606585,
+    "t2_premium": 40.275
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HDFCLIFE.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 760.0,
+    "entry": 27.0,
+    "stop_loss": 17.55,
+    "targets": {
+      "t1_underlying": 769.874997820173,
+      "t2_underlying": 762.249995640346,
+      "t1_premium": 33.75,
+      "t2_premium": 40.5
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 760.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224815: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0020536203774543
+    },
+    "t1_underlying": 769.874997820173,
+    "t1_premium": 33.75,
+    "t2_underlying": 762.249995640346,
+    "t2_premium": 40.5
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HEROMOTOCO.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 6000.0,
+    "entry": 390.59999999999997,
+    "stop_loss": 253.89,
+    "targets": {
+      "t1_underlying": 5897.232142857143,
+      "t2_underlying": 5834.464285714285,
+      "t1_premium": 488.24999999999994,
+      "t2_premium": 585.9
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 6000.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u2248126: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0072457732989089,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 5897.232142857143,
+    "t1_premium": 488.24999999999994,
+    "t2_underlying": 5834.464285714285,
+    "t2_premium": 585.9
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HINDALCO.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 860.0,
+    "entry": 60.0,
+    "stop_loss": 39.0,
+    "targets": {
+      "t1_underlying": 860.2607142857144,
+      "t2_underlying": 868.4214285714286,
+      "t1_premium": 75.0,
+      "t2_premium": 90.0
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 860.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224816: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0256379250191763
+    },
+    "t1_underlying": 860.2607142857144,
+    "t1_premium": 75.0,
+    "t2_underlying": 868.4214285714286,
+    "t2_premium": 90.0
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "HINDUNILVR.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 2280.0,
+    "entry": 99.67500000000001,
+    "stop_loss": 64.78875000000001,
+    "targets": {
+      "t1_underlying": 2237.110733468192,
+      "t2_underlying": 2213.621466936384,
+      "t1_premium": 124.59375000000001,
+      "t2_premium": 149.51250000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 2280.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224847: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0200701402954071
+    },
+    "t1_underlying": 2237.110733468192,
+    "t1_premium": 124.59375000000001,
+    "t2_underlying": 2213.621466936384,
+    "t2_premium": 149.51250000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ICICIBANK.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 1340.0,
+    "entry": 28.5,
+    "stop_loss": 18.525000000000002,
+    "targets": {
+      "t1_underlying": 1357.614297049386,
+      "t2_underlying": 1349.2285940987724,
+      "t1_premium": 35.625,
+      "t2_premium": 42.75
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 1340.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224817: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0014619883040935,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 1357.614297049386,
+    "t1_premium": 35.625,
+    "t2_underlying": 1349.2285940987724,
+    "t2_premium": 42.75
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "INDUSINDBK.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 840.0,
+    "entry": 96.375,
+    "stop_loss": 62.643750000000004,
+    "targets": {
+      "t1_underlying": 855.8499991280692,
+      "t2_underlying": 865.5499982561383,
+      "t1_premium": 120.46875,
+      "t2_premium": 144.5625
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 840.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224819: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0072615162308616
+    },
+    "t1_underlying": 855.8499991280692,
+    "t1_premium": 120.46875,
+    "t2_underlying": 865.5499982561383,
+    "t2_premium": 144.5625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "INFY.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 1600.0,
+    "entry": 91.42500000000001,
+    "stop_loss": 59.42625000000001,
+    "targets": {
+      "t1_underlying": 1585.4749851771764,
+      "t2_underlying": 1572.7499703543526,
+      "t1_premium": 114.28125000000001,
+      "t2_premium": 137.13750000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 1600.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224825: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0019982972357942
+    },
+    "t1_underlying": 1585.4749851771764,
+    "t1_premium": 114.28125000000001,
+    "t2_underlying": 1572.7499703543526,
+    "t2_premium": 137.13750000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ITC.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 390.0,
+    "entry": 7.800000000000001,
+    "stop_loss": 5.07,
+    "targets": {
+      "t1_underlying": 398.06249934605194,
+      "t2_underlying": 396.0249986921038,
+      "t1_premium": 9.75,
+      "t2_premium": 11.700000000000001
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 390.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22484: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0069495850965143
+    },
+    "t1_underlying": 398.06249934605194,
+    "t1_premium": 9.75,
+    "t2_underlying": 396.0249986921038,
+    "t2_premium": 11.700000000000001
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "JSWSTEEL.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1120.0,
+    "entry": 87.375,
+    "stop_loss": 56.79375,
+    "targets": {
+      "t1_underlying": 1139.8464181082588,
+      "t2_underlying": 1154.192836216518,
+      "t1_premium": 109.21875,
+      "t2_premium": 131.0625
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 1120.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224829: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0139639639639639
+    },
+    "t1_underlying": 1139.8464181082588,
+    "t1_premium": 109.21875,
+    "t2_underlying": 1154.192836216518,
+    "t2_premium": 131.0625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "KOTAKBANK.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 2160.0,
+    "entry": 98.39999999999999,
+    "stop_loss": 63.959999999999994,
+    "targets": {
+      "t1_underlying": 2158.78212890625,
+      "t2_underlying": 2140.9642578125,
+      "t1_premium": 122.99999999999999,
+      "t2_premium": 147.6
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 2160.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224836: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0023375595314496,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 2158.78212890625,
+    "t1_premium": 122.99999999999999,
+    "t2_underlying": 2140.9642578125,
+    "t2_premium": 147.6
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "LT.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 4080.0,
+    "entry": 270.9,
+    "stop_loss": 176.08499999999998,
+    "targets": {
+      "t1_underlying": 4107.649987792969,
+      "t2_underlying": 4141.199975585938,
+      "t1_premium": 338.625,
+      "t2_premium": 406.34999999999997
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 4080.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224867: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0032258304989534
+    },
+    "t1_underlying": 4107.649987792969,
+    "t1_premium": 338.625,
+    "t2_underlying": 4141.199975585938,
+    "t2_premium": 406.34999999999997
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "M&M.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 3700.0,
+    "entry": 240.07500000000002,
+    "stop_loss": 156.04875,
+    "targets": {
+      "t1_underlying": 3710.0464285714284,
+      "t2_underlying": 3740.4928571428572,
+      "t1_premium": 300.09375,
+      "t2_premium": 360.1125
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 3700.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224861: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0038741189749636
+    },
+    "t1_underlying": 3710.0464285714284,
+    "t1_premium": 300.09375,
+    "t2_underlying": 3740.4928571428572,
+    "t2_premium": 360.1125
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "MARUTI.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 16600.0,
+    "entry": 1007.4000000000001,
+    "stop_loss": 654.8100000000001,
+    "targets": {
+      "t1_underlying": 16650.285714285714,
+      "t2_underlying": 16778.571428571428,
+      "t1_premium": 1259.25,
+      "t2_premium": 1511.1000000000001
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 16600.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u2248257: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0168636139832594
+    },
+    "t1_underlying": 16650.285714285714,
+    "t1_premium": 1259.25,
+    "t2_underlying": 16778.571428571428,
+    "t2_premium": 1511.1000000000001
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "NESTLEIND.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1240.0,
+    "entry": 75.375,
+    "stop_loss": 48.99375,
+    "targets": {
+      "t1_underlying": 1247.3928606305803,
+      "t2_underlying": 1256.4857212611607,
+      "t1_premium": 94.21875,
+      "t2_premium": 113.0625
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 1240.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224818: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0158326897687653
+    },
+    "t1_underlying": 1247.3928606305803,
+    "t1_premium": 94.21875,
+    "t2_underlying": 1256.4857212611607,
+    "t2_premium": 113.0625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "NTPC.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 335.0,
+    "entry": 15.600000000000001,
+    "stop_loss": 10.14,
+    "targets": {
+      "t1_underlying": 327.1249991280692,
+      "t2_underlying": 329.19999825613843,
+      "t1_premium": 19.5,
+      "t2_premium": 23.400000000000002
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 335.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22484: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0066583893995786
+    },
+    "t1_underlying": 327.1249991280692,
+    "t1_premium": 19.5,
+    "t2_underlying": 329.19999825613843,
+    "t2_premium": 23.400000000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ONGC.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 230.0,
+    "entry": 9.225000000000001,
+    "stop_loss": 5.996250000000001,
+    "targets": {
+      "t1_underlying": 236.33964320591517,
+      "t2_underlying": 234.67928641183036,
+      "t1_premium": 11.531250000000002,
+      "t2_premium": 13.837500000000002
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 230.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22483: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0020125607024698,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 236.33964320591517,
+    "t1_premium": 11.531250000000002,
+    "t2_underlying": 234.67928641183036,
+    "t2_premium": 13.837500000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "POWERGRID.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 255.0,
+    "entry": 9.075,
+    "stop_loss": 5.89875,
+    "targets": {
+      "t1_underlying": 261.64464067731586,
+      "t2_underlying": 259.6892813546317,
+      "t1_premium": 11.34375,
+      "t2_premium": 13.612499999999999
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=-0.10.",
+      "Selected PE 255.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22484: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.00528299583579,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 261.64464067731586,
+    "t1_premium": 11.34375,
+    "t2_underlying": 259.6892813546317,
+    "t2_premium": 13.612499999999999
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "RELIANCE.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1560.0,
+    "entry": 93.67500000000001,
+    "stop_loss": 60.88875000000001,
+    "targets": {
+      "t1_underlying": 1568.2464381626673,
+      "t2_underlying": 1579.992876325335,
+      "t1_premium": 117.09375000000001,
+      "t2_premium": 140.51250000000002
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 1560.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224823: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0036754907095742,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 1568.2464381626673,
+    "t1_premium": 117.09375000000001,
+    "t2_underlying": 1579.992876325335,
+    "t2_premium": 140.51250000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "SBILIFE.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 2040.0,
+    "entry": 118.27499999999999,
+    "stop_loss": 76.87875,
+    "targets": {
+      "t1_underlying": 2044.5928580147881,
+      "t2_underlying": 2063.285716029576,
+      "t1_premium": 147.84375,
+      "t2_premium": 177.4125
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 2040.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224837: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0069085608419793
+    },
+    "t1_underlying": 2044.5928580147881,
+    "t1_premium": 147.84375,
+    "t2_underlying": 2063.285716029576,
+    "t2_premium": 177.4125
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "SBIN.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 950.0,
+    "entry": 26.849999999999998,
+    "stop_loss": 17.4525,
+    "targets": {
+      "t1_underlying": 955.2321446010044,
+      "t2_underlying": 947.3142892020089,
+      "t1_premium": 33.5625,
+      "t2_premium": 40.275
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 950.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224816: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0029502852856495
+    },
+    "t1_underlying": 955.2321446010044,
+    "t1_premium": 33.5625,
+    "t2_underlying": 947.3142892020089,
+    "t2_premium": 40.275
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "SUNPHARMA.NS",
+    "bias": "BEARISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "PE",
+    "expiry": "24-FEB-2026",
+    "strike": 1800.0,
+    "entry": 81.525,
+    "stop_loss": 52.99125000000001,
+    "targets": {
+      "t1_underlying": 1779.9357125418526,
+      "t2_underlying": 1766.3714250837054,
+      "t1_premium": 101.90625,
+      "t2_premium": 122.28750000000001
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected PE 1800.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224827: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 1,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": -0.0080199115044247
+    },
+    "t1_underlying": 1779.9357125418526,
+    "t1_premium": 101.90625,
+    "t2_underlying": 1766.3714250837054,
+    "t2_premium": 122.28750000000001
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "TATACONSUM.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1140.0,
+    "entry": 86.17500000000001,
+    "stop_loss": 56.01375000000001,
+    "targets": {
+      "t1_underlying": 1160.442857142857,
+      "t2_underlying": 1171.5857142857142,
+      "t1_premium": 107.71875000000001,
+      "t2_premium": 129.26250000000002
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 1140.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224822: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0063042407811046,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 1160.442857142857,
+    "t1_premium": 107.71875000000001,
+    "t2_underlying": 1171.5857142857142,
+    "t2_premium": 129.26250000000002
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "TATASTEEL.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 180.0,
+    "entry": 8.82,
+    "stop_loss": 5.7330000000000005,
+    "targets": {
+      "t1_underlying": 173.49714344569617,
+      "t2_underlying": 175.0942868913923,
+      "t1_premium": 11.025,
+      "t2_premium": 13.23
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 180.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22483: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0255966177201876
+    },
+    "t1_underlying": 173.49714344569617,
+    "t1_premium": 11.025,
+    "t2_underlying": 175.0942868913923,
+    "t2_premium": 13.23
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "TECHM.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 1560.0,
+    "entry": 130.64999999999998,
+    "stop_loss": 84.92249999999999,
+    "targets": {
+      "t1_underlying": 1591.0892961774555,
+      "t2_underlying": 1603.7785923549109,
+      "t1_premium": 163.31249999999997,
+      "t2_premium": 195.97499999999997
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 1560.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224825: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0021587456597222,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 1591.0892961774555,
+    "t1_premium": 163.31249999999997,
+    "t2_underlying": 1603.7785923549109,
+    "t2_premium": 195.97499999999997
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "TITAN.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 3880.0,
+    "entry": 251.17499999999998,
+    "stop_loss": 163.26375,
+    "targets": {
+      "t1_underlying": 3911.389278738839,
+      "t2_underlying": 3942.5785574776783,
+      "t1_premium": 313.96875,
+      "t2_premium": 376.7625
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 3880.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u224862: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0092072154323187
+    },
+    "t1_underlying": 3911.389278738839,
+    "t1_premium": 313.96875,
+    "t2_underlying": 3942.5785574776783,
+    "t2_premium": 376.7625
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "ULTRACEMCO.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 11800.0,
+    "entry": 678.1500000000001,
+    "stop_loss": 440.79750000000007,
+    "targets": {
+      "t1_underlying": 11813.871428571429,
+      "t2_underlying": 11904.692857142856,
+      "t1_premium": 847.6875000000001,
+      "t2_premium": 1017.2250000000001
+    },
+    "confidence": 0.25,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.00.",
+      "Selected CE 11800.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u2248182: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 1,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0201897136889739
+    },
+    "t1_underlying": 11813.871428571429,
+    "t1_premium": 847.6875000000001,
+    "t2_underlying": 11904.692857142856,
+    "t2_premium": 1017.2250000000001
+  },
+  {
+    "as_of": "2025-12-12",
+    "symbol": "WIPRO.NS",
+    "bias": "BULLISH",
+    "instrument": "OPTION",
+    "action": "BUY",
+    "side": "CE",
+    "expiry": "24-FEB-2026",
+    "strike": 270.0,
+    "entry": 13.77,
+    "stop_loss": 8.9505,
+    "targets": {
+      "t1_underlying": 262.50107400076735,
+      "t2_underlying": 264.4021480015346,
+      "t1_premium": 17.2125,
+      "t2_premium": 20.655
+    },
+    "confidence": 0.3,
+    "rationale": [
+      "buy_soft=0.00, sell_soft=0.00, direction_score=0.10.",
+      "Selected CE 270.0 exp 24-FEB-2026 using EOD premium as entry proxy.",
+      "Targets from ATR_points\u22484: underlying T1/T2; premium T1/T2 multipliers."
+    ],
+    "diagnostics": {
+      "buy_win": 0,
+      "sell_win": 0,
+      "buy_soft": 0.0,
+      "sell_soft": 0.0,
+      "direction_score": 0.0,
+      "ret_oc": 0.0042389445222182,
+      "fallback_ret_bias": true
+    },
+    "t1_underlying": 262.50107400076735,
+    "t1_premium": 17.2125,
+    "t2_underlying": 264.4021480015346,
+    "t2_premium": 20.655
+  }
+]

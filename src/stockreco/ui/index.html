@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50">
+    <div class="max-w-6xl mx-auto p-6">
+        <div class="flex items-center justify-between gap-4">
+            <h1 class="text-2xl font-semibold">stockreco backtest viewer</h1>
+            <div class="flex gap-2">
+                <input id="q" class="border rounded-xl px-3 py-2 w-64" placeholder="Filter ticker (e.g. ADANIENT)" />
+                <select id="mode" class="border rounded-xl px-3 py-2">
+                    <option value="">All modes</option>
+                    <option value="strict">strict</option>
+                    <option value="aggressive">aggressive</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="mt-4 bg-white rounded-2xl shadow p-4 overflow-x-auto">
+            <table class="min-w-full text-sm" id="tbl"></table>
+        </div>
+    </div>
+
+    <script>
+        async function loadCSV(path) {
+            const txt = await (await fetch(path)).text();
+            const lines = txt.trim().split(/\r?\n/);
+            const headers = lines[0].split(",");
+            const rows = lines.slice(1).map(l => {
+                const cols = l.split(",");
+                const obj = {};
+                headers.forEach((h, i) => obj[h] = cols[i]);
+                return obj;
+            });
+            return { headers, rows };
+        }
+
+        function render(headers, rows) {
+            const tbl = document.getElementById("tbl");
+            tbl.innerHTML = `
+    <thead class="text-left text-slate-600">
+      <tr>${headers.map(h => `<th class="py-2 pr-4">${h}</th>`).join("")}</tr>
+    </thead>
+    <tbody>
+      ${rows.map(r => `
+        <tr class="border-t">
+          ${headers.map(h => `<td class="py-2 pr-4">${r[h] ?? ""}</td>`).join("")}
+        </tr>
+      `).join("")}
+    </tbody>
+  `;
+        }
+
+        let ALL = null;
+
+        function applyFilter() {
+            const q = document.getElementById("q").value.toUpperCase();
+            const m = document.getElementById("mode").value;
+            let rows = ALL.rows;
+
+            if (q) rows = rows.filter(r => (r.ticker || "").toUpperCase().includes(q));
+            if (m) rows = rows.filter(r => r.mode === m);
+
+            render(ALL.headers, rows);
+        }
+
+        (async () => {
+            ALL = await loadCSV("/reports/backtest_aggressive.csv");
+            render(ALL.headers, ALL.rows);
+            document.getElementById("q").addEventListener("input", applyFilter);
+            document.getElementById("mode").addEventListener("change", applyFilter);
+        })();
+    </script>
+</body>
+
+</html>

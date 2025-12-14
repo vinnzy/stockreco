@@ -1,0 +1,1 @@
+This add-on uses: requests, pandas, pyyaml. Install if missing.

@@ -1,0 +1,8 @@
+as_of,symbol,bias,instrument,action,side,expiry,strike,entry_price,sl_premium,sl_invalidation,t1_underlying,t1_premium,t2_underlying,t2_premium,confidence
+2025-12-13,NIFTY,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,BANKNIFTY,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,RELIANCE.NS,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,TCS.NS,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,INFY.NS,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,HDFCBANK.NS,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0
+2025-12-13,ICICIBANK.NS,NEUTRAL,NONE,HOLD,,,,,,,,,,,0.0

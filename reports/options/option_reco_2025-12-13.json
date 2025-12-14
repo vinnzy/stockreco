@@ -1,0 +1,128 @@
+[
+  {
+    "as_of": "2025-12-13",
+    "symbol": "NIFTY",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE response is not valid JSON option chain (blocked or rate-limited). Try --provider zerodha/upstox for production."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "BANKNIFTY",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE response is not valid JSON option chain (blocked or rate-limited). Try --provider zerodha/upstox for production."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "RELIANCE.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE_FALLBACK currently supports indices. Use a broker provider for equities."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "TCS.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE_FALLBACK currently supports indices. Use a broker provider for equities."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "INFY.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE_FALLBACK currently supports indices. Use a broker provider for equities."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "HDFCBANK.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE_FALLBACK currently supports indices. Use a broker provider for equities."
+    ],
+    "diagnostics": null
+  },
+  {
+    "as_of": "2025-12-13",
+    "symbol": "ICICIBANK.NS",
+    "bias": "NEUTRAL",
+    "instrument": "NONE",
+    "action": "HOLD",
+    "side": null,
+    "expiry": null,
+    "strike": null,
+    "entry": null,
+    "stop_loss": null,
+    "targets": null,
+    "confidence": 0.0,
+    "rationale": [
+      "Failed to fetch derivatives data: NSE_FALLBACK currently supports indices. Use a broker provider for equities."
+    ],
+    "diagnostics": null
+  }
+]
