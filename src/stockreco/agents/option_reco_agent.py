@@ -14,6 +14,36 @@ Mode = Literal["strict", "opportunistic", "speculative"]
 _EXP_FMT = "%d-%b-%Y"
 
 
+def _ensure_sell_by(row: dict) -> dict:
+    # already present
+    if row.get("sell_by"):
+        return row
+
+    # try to derive from diagnostics if present
+    diag = row.get("diagnostics") or {}
+    if diag.get("sell_by"):
+        row["sell_by"] = diag["sell_by"]
+        return row
+
+    # if you have expiry + as_of, set conservative fallback sell_by = as_of + 2 days (cap at expiry-1)
+    try:
+        from datetime import datetime, timedelta
+        from stockreco.options.option_reco_agent import _parse_expiry  # if available in that module
+        a = datetime.strptime(row["as_of"], "%Y-%m-%d")
+        e = _parse_expiry(row.get("expiry"))
+        if e:
+            sb = a + timedelta(days=2)
+            cap = e.date() - timedelta(days=1)
+            if sb.date() > cap:
+                sb = datetime.combine(cap, datetime.min.time())
+            if sb < a:
+                sb = a
+            row["sell_by"] = sb.strftime("%Y-%m-%d")
+    except Exception:
+        pass
+
+    return row
+
 def _parse_expiry(exp: str) -> Optional[datetime]:
     if not exp:
         return None

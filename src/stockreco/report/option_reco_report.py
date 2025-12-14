@@ -4,6 +4,8 @@ from pathlib import Path
 from typing import List, Dict, Any
 import json
 import csv
+from stockreco.options.option_reco_agent import _ensure_sell_by
+
 
 def _safe_targets(t):
     # targets can be None, dict, list
@@ -31,11 +33,16 @@ def write_option_recos(out_dir: Path, as_of: str, recos: List[Any]) -> Dict[str,
     payload = []
     for r in recos:
         if hasattr(r, "to_dict"):
-            payload.append(r.to_dict())
+            d = r.to_dict()
         elif isinstance(r, dict):
-            payload.append(r)
+            d = r
         else:
-            payload.append(getattr(r, "__dict__", {}))
+            d = getattr(r, "__dict__", {})
+
+        # ✅ ensure sell_by exists for older schema / edge cases
+        d = _ensure_sell_by(d)
+        payload.append(d)
+
 
     json_path.write_text(json.dumps(payload, indent=2, default=str))
 
