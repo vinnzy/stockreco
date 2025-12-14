@@ -30,3 +30,4 @@ Thumbs.db
 *.parquet
 *.pkl
 
+frontend/node_modules/
