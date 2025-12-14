@@ -17,6 +17,8 @@ from stockreco.models.predict import score_asof
 from stockreco.agents.pipeline import run_agents
 from stockreco.report.render import write_json, write_markdown
 from stockreco.utils.dates import previous_business_day
+from stockreco.models.predict_expand import score_expand_asof
+from stockreco.models.expand_model import train_expand_lgbm  # Model-B trainer
 
 app = typer.Typer(add_completion=False)
 
@@ -53,6 +55,14 @@ def train(asof: str):
     meta = train_calibrated_lgbm(feat, asof=asof, model_dir=model_dir)
     print(f"[green]Trained[/green] model at {model_dir} meta={meta}")
 
+@app.command("train-expand")
+def train_expand(asof: str, thr: float = typer.Option(0.012, "--thr", help="Expansion threshold, e.g. 0.012=+1.2%")):
+    """Train Model-B (expand) up to asof, writes expand.pkl under data/models/<asof>/."""
+    feat = pd.read_parquet(_features_path())
+    model_dir = settings.models_dir / asof
+    meta = train_expand_lgbm(feat, asof=asof, model_dir=model_dir, thr=thr)
+    print(f"[green]Trained[/green] expand model at {model_dir} meta={meta}")
+
 def _ensure_data():
     if not _ohlcv_path().exists():
         fetch()
@@ -64,6 +74,12 @@ def _ensure_model(feat: pd.DataFrame, asof_str: str):
     if not (model_dir / "calib.pkl").exists():
         print(f"[yellow]No model for {asof_str}; training...[/yellow]")
         train_calibrated_lgbm(feat, asof=asof_str, model_dir=model_dir)
+
+def _ensure_expand_model(feat: pd.DataFrame, asof_str: str):
+    model_dir = settings.models_dir / asof_str
+    if not (model_dir / "expand.pkl").exists():
+        print(f"[yellow]No expand model for {asof_str}; training Model-B...[/yellow]")
+        train_expand_lgbm(feat, asof=asof_str, model_dir=model_dir, thr=0.012)
 
 def _run_one(
     target_date: str,
@@ -79,9 +95,28 @@ def _run_one(
     asof_str = as_of.isoformat()
 
     feat = pd.read_parquet(_features_path())
+
+    # Model-A
     _ensure_model(feat, asof_str)
 
+    # Model-B
+    try:
+        _ensure_expand_model(feat, asof_str)
+        expand = score_expand_asof(feat, asof=asof_str, model_dir=settings.models_dir / asof_str)
+        expand = expand[["ticker", "p_expand"]]
+    except Exception as e:
+        print(f"[yellow]Model-B scoring failed; continuing with p_expand=0.0. Reason: {e}[/yellow]")
+        expand = None
+
     scored = score_asof(feat, asof=asof_str, model_dir=settings.models_dir / asof_str)
+
+    # Merge Model-B feature into scored so pipeline can use it
+    if expand is not None and len(expand) > 0:
+        scored = scored.merge(expand, on="ticker", how="left")
+    if "p_expand" not in scored.columns:
+        scored["p_expand"] = 0.0
+    scored["p_expand"] = scored["p_expand"].fillna(0.0).astype(float)
+
     use_llm = bool(settings.openai_api_key)
 
     agent_out = run_agents(

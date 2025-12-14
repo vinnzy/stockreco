@@ -1,0 +1,297 @@
+{
+  "target_date": "2025-12-10",
+  "as_of": "2025-12-09",
+  "mode": "aggressive",
+  "max_trades": 2,
+  "use_llm": false,
+  "proposer": {
+    "as_of": "2025-12-09",
+    "top10": [
+      {
+        "ticker": "SHRIRAMFIN.NS",
+        "rank": 1,
+        "p_up": 0.4921803127874884,
+        "p_expand": 0.3727498721263368,
+        "signals": {
+          "rsi_14": 61.69207213558362,
+          "macd_hist": -5.302636616474157,
+          "adx_14": 35.36054135945913,
+          "rel_strength_5d": 0.011309283605202891,
+          "atr_pct": 0.024233062326710478,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "TATAMOTORS.NS",
+        "rank": 2,
+        "p_up": 0.48851063829787233,
+        "p_expand": 0.1253621905925267,
+        "signals": {
+          "rsi_14": 21.21183220126163,
+          "macd_hist": 4.772539083939385,
+          "adx_14": 60.290930526026536,
+          "rel_strength_5d": -0.03973539947042526,
+          "atr_pct": 0.02669508348739469,
+          "close_above_sma20": 0,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "ADANIENT.NS",
+        "rank": 3,
+        "p_up": 0.4921803127874884,
+        "p_expand": 0.3612421853196068,
+        "signals": {
+          "rsi_14": 39.761306183595224,
+          "macd_hist": -6.525809617699267,
+          "adx_14": 25.51852396315235,
+          "rel_strength_5d": 0.00989694501363747,
+          "atr_pct": 0.02732203168283728,
+          "close_above_sma20": 0,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "INDUSINDBK.NS",
+        "rank": 4,
+        "p_up": 0.4979496192149969,
+        "p_expand": 0.3469207124695315,
+        "signals": {
+          "rsi_14": 54.078913519839936,
+          "macd_hist": -3.049816205500605,
+          "adx_14": 27.660615110952648,
+          "rel_strength_5d": 0.0003990192808162041,
+          "atr_pct": 0.02455198488000089,
+          "close_above_sma20": 0,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "JSWSTEEL.NS",
+        "rank": 5,
+        "p_up": 0.5288135593220341,
+        "p_expand": 0.39069340963193677,
+        "signals": {
+          "rsi_14": 37.83341888375329,
+          "macd_hist": -4.259621785432278,
+          "adx_14": 19.147788364474145,
+          "rel_strength_5d": -0.03924711168644368,
+          "atr_pct": 0.02528133334175929,
+          "close_above_sma20": 0,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "TATASTEEL.NS",
+        "rank": 6,
+        "p_up": 0.5328256302521008,
+        "p_expand": 0.36227520551616293,
+        "signals": {
+          "rsi_14": 28.04671668329516,
+          "macd_hist": -0.7403407424033372,
+          "adx_14": 28.838472599207257,
+          "rel_strength_5d": -0.034980362085248795,
+          "atr_pct": 0.02011228412830377,
+          "close_above_sma20": 0,
+          "close_above_sma50": 0,
+          "sma20_above_sma50": 0
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "ASIANPAINT.NS",
+        "rank": 7,
+        "p_up": 0.4921803127874884,
+        "p_expand": 0.33057785900513437,
+        "signals": {
+          "rsi_14": 48.449120839011314,
+          "macd_hist": -17.050151738566086,
+          "adx_14": 47.57986716316686,
+          "rel_strength_5d": -0.04621835189425372,
+          "atr_pct": 0.02033275189226495,
+          "close_above_sma20": 0,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "HEROMOTOCO.NS",
+        "rank": 8,
+        "p_up": 0.48851063829787233,
+        "p_expand": 0.30179902072366704,
+        "signals": {
+          "rsi_14": 52.82915362125439,
+          "macd_hist": -9.90485816129177,
+          "adx_14": 40.887314603786876,
+          "rel_strength_5d": -0.03558246476473348,
+          "atr_pct": 0.021404663301128148,
+          "close_above_sma20": 0,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "HCLTECH.NS",
+        "rank": 9,
+        "p_up": 0.5288135593220341,
+        "p_expand": 0.24236565733748716,
+        "signals": {
+          "rsi_14": 61.49053546630859,
+          "macd_hist": 1.1777370527256004,
+          "adx_14": 34.863369588102266,
+          "rel_strength_5d": 0.020909236344871518,
+          "atr_pct": 0.017155076902285155,
+          "close_above_sma20": 1,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      },
+      {
+        "ticker": "BPCL.NS",
+        "rank": 10,
+        "p_up": 0.5026343519494202,
+        "p_expand": 0.37683374080094584,
+        "signals": {
+          "rsi_14": 46.01098924780636,
+          "macd_hist": -1.7752809021537612,
+          "adx_14": 18.445899867063094,
+          "rel_strength_5d": -0.0029170588558924404,
+          "atr_pct": 0.021765287866454073,
+          "close_above_sma20": 0,
+          "close_above_sma50": 1,
+          "sma20_above_sma50": 1
+        },
+        "thesis": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "invalidate_if": [
+          "Broad market turns risk-off",
+          "Large gap-down open (breaks structure)",
+          "High IV / wide spreads in options",
+          "Very low liquidity / slippage"
+        ]
+      }
+    ]
+  },
+  "reviewer": {
+    "approved": [
+      "SHRIRAMFIN.NS",
+      "ADANIENT.NS"
+    ],
+    "rejected": [
+      {
+        "ticker": "TATAMOTORS.NS",
+        "reason": "Model-B p_expand too low (0.13 < 0.30) \u2014 options may not expand intraday."
+      },
+      {
+        "ticker": "HCLTECH.NS",
+        "reason": "Model-B p_expand too low (0.24 < 0.30) \u2014 options may not expand intraday."
+      }
+    ]
+  },
+  "analyst": {
+    "final": [
+      {
+        "ticker": "SHRIRAMFIN.NS",
+        "p_up": 0.4921803127874884,
+        "p_expand": 0.3727498721263368,
+        "confidence_label": "Low",
+        "why": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      },
+      {
+        "ticker": "ADANIENT.NS",
+        "p_up": 0.4921803127874884,
+        "p_expand": 0.3612421853196068,
+        "confidence_label": "Low",
+        "why": "Ranked for options suitability (ATR/ADX/RSI impulse + Model-B p_expand) plus calibrated p_up; confirm intraday price action before entry.",
+        "options_playbook": [
+          "Prefer liquid weekly expiry; choose ~0.35\u20130.50 delta call (or slightly ITM).",
+          "Entry only on confirmation: (a) gap-up holds above VWAP for 10\u201315m, OR (b) breakout above first 30m high with volume.",
+          "Stop: premium -15% (moderate) OR underlying breaks VWAP/structure; also use time-stop (exit by 2:30pm if no move).",
+          "Targets: scale out +20\u201330%, trail remainder for +40\u201350% when momentum continues.",
+          "Avoid entries if bid-ask spreads are wide or IV is extremely elevated vs recent days."
+        ]
+      }
+    ],
+    "regime_notes": [
+      "EOD-based; take options only on intraday confirmation.",
+      "STRICT NO-TRADE would have triggered; proceeding in AGGRESSIVE mode.",
+      "Low conviction: mean p_up of top 3 is 0.49 (< 0.55).",
+      "Low expansion: mean p_expand of top 3 is 0.29 (< 0.55).",
+      "NO-TRADE for options recommended (edge too small / too clustered)."
+    ]
+  }
+}

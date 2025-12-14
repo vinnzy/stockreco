@@ -39,6 +39,9 @@ def write_markdown(path: Path, target_date: str, as_of: str, agent_out: dict, sc
         for i, item in enumerate(final, start=1):
             lines.append(f"### {i}) {item['ticker']}")
             lines.append(f"- Calibrated P(up tomorrow): **{item['p_up']:.2f}** ({item['confidence_label']})")
+            # show Model-B if present
+            if "p_expand" in item:
+                lines.append(f"- Model-B P(expand ≥ thr): **{float(item['p_expand']):.2f}**")
             lines.append(f"- Rationale: {item['why']}")
             lines.append("- Options playbook:")
             for b in item.get("options_playbook", []):
@@ -49,7 +52,12 @@ def write_markdown(path: Path, target_date: str, as_of: str, agent_out: dict, sc
     scored_top = scored_top.copy()
     if "options_score" not in scored_top.columns:
         scored_top["options_score"] = 0.0
-    cols = ["ticker", "p_up", "score", "options_score", "rel_strength_5d", "rsi_14", "adx_14", "atr_pct"]
+    if "p_expand" not in scored_top.columns:
+        scored_top["p_expand"] = 0.0
+
+    cols = ["ticker", "p_up", "p_expand", "score", "options_score", "rel_strength_5d", "rsi_14", "adx_14", "atr_pct"]
+    cols = [c for c in cols if c in scored_top.columns]
+
     show = scored_top.head(15)[cols].copy()
     lines.append("")
     lines.append(show.to_markdown(index=False))

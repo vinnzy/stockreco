@@ -2,7 +2,7 @@ Metadata-Version: 2.4
 Name: stockreco
 Version: 0.1.0
 Summary: EOD Nifty-50 momentum recommender with proposer/reviewer/analyst pipeline.
-Requires-Python: >=3.9
+Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 Requires-Dist: pandas>=2.1
 Requires-Dist: numpy>=1.26
@@ -15,8 +15,6 @@ Requires-Dist: ta>=0.11.0
 Requires-Dist: typer>=0.12.5
 Requires-Dist: rich>=13.7
 Requires-Dist: python-dotenv>=1.0
-Requires-Dist: pyarrow>=15.0
-Requires-Dist: tabulate>=0.9
 
 # stockreco (Nifty-50 EOD next-day momentum recommender)
 

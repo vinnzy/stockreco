@@ -1,0 +1,1 @@
+{"asof":"2025-12-01","feature_cols":["ret_1d","ret_5d","ret_10d","vol_surge_20d","rsi_14","macd","macd_signal","macd_hist","sma_20","sma_50","ema_20","bb_h","bb_l","bb_p","atr","atr_pct","adx_14","rel_strength_5d","close_above_sma20","close_above_sma50","sma20_above_sma50"],"auc_cal_fold":0.5238950435}

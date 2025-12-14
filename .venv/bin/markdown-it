@@ -1,4 +1,4 @@
-#!/Users/vinodkeshav/myprojects/stockreco/.venv/bin/python
+#!/Users/vinodkeshav/myprojects/stockreco/.venv/bin/python3.10
 import sys
 from markdown_it.cli.parse import main
 if __name__ == '__main__':

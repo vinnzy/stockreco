@@ -1,4 +1,4 @@
-#!/Users/vinodkeshav/myprojects/stockreco/.venv/bin/python
+#!/Users/vinodkeshav/myprojects/stockreco/.venv/bin/python3.10
 
 import datetime
 import os

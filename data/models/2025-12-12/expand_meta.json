@@ -1,0 +1,16 @@
+{
+  "asof": "2025-12-12",
+  "thr": 0.012,
+  "n_rows": 96285,
+  "pos_rate": 0.37592563743054475,
+  "features": [
+    "rsi_14",
+    "macd_hist",
+    "adx_14",
+    "atr_pct",
+    "rel_strength_5d",
+    "close_above_sma20",
+    "close_above_sma50",
+    "sma20_above_sma50"
+  ]
+}

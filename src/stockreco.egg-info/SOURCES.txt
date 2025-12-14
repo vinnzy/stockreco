@@ -15,7 +15,9 @@ src/stockreco/backtest/simple_backtest.py
 src/stockreco/config/settings.py
 src/stockreco/features/build_features.py
 src/stockreco/ingest/yfinance_fetch.py
+src/stockreco/models/expand_model.py
 src/stockreco/models/predict.py
+src/stockreco/models/predict_expand.py
 src/stockreco/models/train_model.py
 src/stockreco/report/options_playbook.py
 src/stockreco/report/render.py
