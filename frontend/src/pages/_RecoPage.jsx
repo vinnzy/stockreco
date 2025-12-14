@@ -70,74 +70,74 @@ function getT2(r) {
     return r?.t2_premium ?? r?.t2 ?? r?.T2 ?? null;
 }
 
-function Table({ rows, quotes, onRowClick }) {
+function Table({ rows, quotes }) {
     return (
-        <div className="overflow-x-auto border border-slate-100 rounded-2xl">
-            <table className="min-w-full text-sm">
-                <thead className="bg-slate-50 text-slate-600">
-                    <tr>
-                        <th className="text-left px-4 py-3">Symbol</th>
-                        <th className="text-left px-4 py-3">Action</th>
-                        <th className="text-left px-4 py-3">Option</th>
-                        <th className="text-left px-4 py-3">LTP</th>
-                        <th className="text-left px-4 py-3">Entry ≤</th>
-                        <th className="text-left px-4 py-3">SL</th>
-                        <th className="text-left px-4 py-3">T1</th>
-                        <th className="text-left px-4 py-3">T2</th>
-                        <th className="text-left px-4 py-3">Conf</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    {rows.map((r) => {
-                        const optSymRaw = guessOptionSymbol(r);
-                        const optSym = optSymRaw ? String(optSymRaw).trim().toUpperCase().replace(".NS", "") : null;
-                        const q = optSym ? quotes?.[optSym] : null;
-
-
-                        const rowLtp = getLtp(r);
-                        const rowEntry = getEntry(r);
-                        const rowSl = getSL(r);
-                        const rowT1 = getT1(r);
-                        const rowT2 = getT2(r);
-
-                        // Check if quote exists and has valid ltp (not NaN)
-                        const liveLtp = q && typeof q.ltp === "number" && !isNaN(q.ltp) ? q.ltp : rowLtp;
-
-                        return (
-                            <tr
-                                key={(r.symbol ?? "") + (r.strike ?? "") + (r.side ?? "") + (r.expiry ?? "")}
-                                className="border-t hover:bg-slate-50/60 cursor-pointer"
-                                title="Click to open PnL simulator"
-                                onClick={() => onRowClick?.(r, q)}
-                            >
-                                <td className="px-4 py-3 font-medium text-slate-900">{r.symbol}</td>
-
-                                <td className="px-4 py-3">
-                                    <Badge action={r.action} />
-                                </td>
-
-                                <td className="px-4 py-3 text-slate-700">
-                                    {r.side ? `${fmt(r.strike)} ${r.side}${r.expiry ? ` (${r.expiry})` : ""}` : "—"}
-                                </td>
-
-                                <td className="px-4 py-3 font-semibold text-slate-900">{fmt(liveLtp)}</td>
-                                <td className="px-4 py-3 text-slate-700">{fmt(rowEntry)}</td>
-                                <td className="px-4 py-3 text-rose-700">{fmt(rowSl)}</td>
-                                <td className="px-4 py-3 text-emerald-700">{fmt(rowT1)}</td>
-                                <td className="px-4 py-3 text-emerald-700">{fmt(rowT2)}</td>
-
-                                <td className="px-4 py-3 text-slate-700">
-                                    {Math.round((r.confidence || 0) * 100)}%
-                                </td>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
-        </div>
+      <div className="overflow-x-auto border border-slate-100 rounded-2xl">
+        <table className="min-w-full text-sm">
+          <thead className="bg-slate-50 text-slate-600">
+            <tr>
+              <th className="text-left px-4 py-3">Symbol</th>
+              <th className="text-left px-4 py-3">Action</th>
+              <th className="text-left px-4 py-3">Option</th>
+              <th className="text-left px-4 py-3">LTP</th>
+              <th className="text-left px-4 py-3">Entry ≤</th>
+              <th className="text-left px-4 py-3">SL</th>
+              <th className="text-left px-4 py-3">T1</th>
+              <th className="text-left px-4 py-3">T2</th>
+              <th className="text-left px-4 py-3">Conf</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            {rows.map((r) => {
+              const optSym = guessOptionSymbol(r);
+              const q = optSym ? quotes?.[optSym] : null;
+  
+              const entry = r.entry ?? r.entry_price ?? null;
+              const sl = r.stop_loss ?? r.sl_premium ?? null;
+  
+              const t1 = r.targets?.t1_premium ?? r.t1_premium ?? null;
+              const t2 = r.targets?.t2_premium ?? r.t2_premium ?? null;
+  
+              return (
+                <tr
+                  key={`${r.symbol}-${r.strike}-${r.side}-${r.expiry}`}
+                  className="border-t hover:bg-slate-50/60"
+                >
+                  <td className="px-4 py-3 font-medium text-slate-900">{r.symbol}</td>
+  
+                  <td className="px-4 py-3">
+                    <Badge action={r.action} />
+                  </td>
+  
+                  <td className="px-4 py-3 text-slate-700">
+                    {r.side ? `${r.strike} ${r.side} (${r.expiry})` : "—"}
+                  </td>
+  
+                  <td className="px-4 py-3 text-slate-700">
+                    {q ? (q.ok ? fmt(q.ltp) : "NF") : "—"}
+                  </td>
+  
+                  <td className="px-4 py-3 text-slate-700">{fmt(entry)}</td>
+  
+                  <td className="px-4 py-3 text-rose-700">{fmt(sl)}</td>
+  
+                  <td className="px-4 py-3 text-emerald-700">{fmt(t1)}</td>
+  
+                  <td className="px-4 py-3 text-emerald-700">{fmt(t2)}</td>
+  
+                  <td className="px-4 py-3 text-slate-700">
+                    {Math.round((r.confidence || 0) * 100)}%
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     );
-}
+  }
+  
 
 export default function RecoPage({ title, subtitle, pickRows }) {
     const [asOf, setAsOf] = useState("");
