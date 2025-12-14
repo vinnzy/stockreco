@@ -99,6 +99,8 @@ def main():
     ap.add_argument("--provider", default=None, help="local_csv|nse_fallback|zerodha|upstox")
     ap.add_argument("--universe", default=None, help="Comma-separated tickers")
     ap.add_argument("--out-dir", default="reports/options")
+    ap.add_argument("--mode", default="strict", choices=["strict", "opportunistic", "speculative"])
+
     args = ap.parse_args()
 
     repo = _repo_root()
@@ -126,13 +128,15 @@ def main():
         universe = [s.strip().upper() for s in args.universe.split(",") if s.strip()]
     else:
         universe = _default_universe_from_local_derivs(provider, as_of=as_of)
-    agent = OptionRecoAgent(
-        risk_free_rate=cfg.risk_free_rate,
-        entry_slippage_pct=cfg.entry_slippage_pct,
-        stop_loss_premium_factor=cfg.stop_loss_premium_factor,
-        default_atr_points=cfg.default_atr_points or {"NIFTY": 220.0, "BANKNIFTY": 480.0},
-        iv_history={},
-    )
+    #agent = OptionRecoAgent(
+    #    risk_free_rate=cfg.risk_free_rate,
+    #    entry_slippage_pct=cfg.entry_slippage_pct,
+    #    stop_loss_premium_factor=cfg.stop_loss_premium_factor,
+    #    default_atr_points=cfg.default_atr_points or {"NIFTY": 220.0, "BANKNIFTY": 480.0},
+    #    iv_history={},
+    #)
+    from stockreco.agents.option_reco_agent import OptionRecoAgent, OptionRecoConfig
+    agent = OptionRecoAgent(OptionRecoConfig(mode=args.mode))
 
     recos: List[OptionReco] = []
     for sym_out in universe:
