@@ -33,6 +33,7 @@ export default function Sidebar() {
                     <Item to="/recommendations/strict" icon={ShieldCheck} label="Strict" />
                     <Item to="/recommendations/aggressive" icon={Zap} label="Aggressive" />
                     <Item to="/recommendations/options" icon={Layers} label="Options" />
+                    <Item to="/recommendations/mcx" icon={Layers} label="MCX" />
                 </div>
             </nav>
         </aside>

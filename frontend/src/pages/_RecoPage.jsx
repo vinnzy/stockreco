@@ -24,7 +24,6 @@ function fmt(x) {
 }
 
 function ymdToNum(s) {
-    // expects YYYY-MM-DD
     if (!s) return null;
     const m = String(s).trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
     if (!m) return null;
@@ -39,7 +38,44 @@ function todayYmd() {
     return `${yyyy}-${mm}-${dd}`;
 }
 
-// Your existing symbol builder (keep your current implementation if you already adjusted it)
+function getEntry(r) {
+    return r?.entry ?? r?.entry_price ?? null;
+}
+
+function getSL(r) {
+    return r?.stop_loss ?? r?.sl_premium ?? null;
+}
+
+function getSellBy(r) {
+    return r?.sell_by ?? r?.diagnostics?.sell_by ?? r?.diagnostics?.sellBy ?? null;
+}
+
+function getSpot(r) {
+    return r?.spot ?? r?.diagnostics?.spot ?? null;
+}
+
+function getAtrPoints(r) {
+    return r?.diagnostics?.atr_points ?? r?.diagnostics?.atrPoints ?? null;
+}
+
+function getTargetPremium(r, idx /*0|1*/) {
+    // supports:
+    // - targets: [{underlying,premium}, {underlying,premium}]
+    // - targets: {t1_premium, t2_premium}
+    // - flattened: t1_premium, t2_premium
+    const t = r?.targets;
+
+    if (Array.isArray(t)) {
+        const row = t[idx] || null;
+        return row?.premium ?? row?.t1_premium ?? row?.t2_premium ?? null;
+    }
+    if (t && typeof t === "object") {
+        if (idx === 0) return t.t1_premium ?? t[0]?.premium ?? null;
+        if (idx === 1) return t.t2_premium ?? t[1]?.premium ?? null;
+    }
+    return idx === 0 ? (r?.t1_premium ?? null) : (r?.t2_premium ?? null);
+}
+
 function guessOptionSymbol(r) {
     if (!r?.symbol || !r?.strike || !r?.side || !r?.expiry) return null;
 
@@ -74,20 +110,19 @@ function guessOptionSymbol(r) {
     return `${sym}${expStr}${strike}${side}`;
 }
 
-function computePayoffSeries({
-    side, // "CE" | "PE"
-    strike,
-    spot,
-    premium,
-    atrPoints,
-}) {
+function guessCommodityKey(r) {
+    if (!r?.symbol || !r?.expiry) return null;
+    const exp = r.expiry.replace(/-/g, "").slice(2); // 05FEB26
+    return `MCXFUT:${r.symbol.toUpperCase()}:${exp}`;
+}
+
+function computePayoffSeries({ side, strike, spot, premium, atrPoints }) {
     const K = Number(strike);
     const S0 = Number(spot) || K || 0;
     const prem = Number(premium);
 
     if (!Number.isFinite(K) || !Number.isFinite(prem) || prem <= 0) return [];
 
-    // Range: prefer ATR if available, else ±10% around spot
     let low, high;
     const atr = Number(atrPoints);
     if (Number.isFinite(atr) && atr > 0 && Number.isFinite(S0) && S0 > 0) {
@@ -109,16 +144,10 @@ function computePayoffSeries({
         const S = low + i * step;
 
         let pnl;
-        if (String(side).toUpperCase() === "CE") {
-            pnl = Math.max(0, S - K) - prem;
-        } else {
-            pnl = Math.max(0, K - S) - prem;
-        }
+        if (String(side).toUpperCase() === "CE") pnl = Math.max(0, S - K) - prem;
+        else pnl = Math.max(0, K - S) - prem;
 
-        data.push({
-            S: Number(S.toFixed(2)),
-            pnl: Number(pnl.toFixed(2)),
-        });
+        data.push({ S: Number(S.toFixed(2)), pnl: Number(pnl.toFixed(2)) });
     }
     return data;
 }
@@ -127,16 +156,15 @@ function Modal({ open, onClose, title, children }) {
     if (!open) return null;
     return (
         <div className="fixed inset-0 z-50">
-            <div
-                className="absolute inset-0 bg-black/40"
-                onClick={onClose}
-            />
+            <div className="absolute inset-0 bg-black/40" onClick={onClose} />
             <div className="absolute inset-0 flex items-center justify-center p-4">
                 <div className="w-full max-w-4xl rounded-2xl bg-white shadow-xl border border-slate-100">
                     <div className="flex items-start justify-between gap-4 p-5 border-b border-slate-100">
                         <div>
                             <div className="text-lg font-semibold text-slate-900">{title}</div>
-                            <div className="text-xs text-slate-500 mt-1">Payoff at expiry (simple intrinsic - premium)</div>
+                            <div className="text-xs text-slate-500 mt-1">
+                                Payoff at expiry (intrinsic − premium). Not an IV/theta model.
+                            </div>
                         </div>
                         <button
                             className="px-3 py-1 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50"
@@ -178,14 +206,29 @@ function Table({ rows, quotes, onRowClick }) {
                         const optSym = guessOptionSymbol(r);
                         const q = optSym ? quotes?.[optSym] : null;
 
-                        // Support both schemas
-                        const entry = r.entry ?? r.entry_price ?? null;
-                        const sl = r.stop_loss ?? r.sl_premium ?? null;
+                        const entry = getEntry(r);
+                        const sl = getSL(r);
+                        const t1 = getTargetPremium(r, 0);
+                        const t2 = getTargetPremium(r, 1);
 
-                        const t1 = r.targets?.t1_premium ?? r.t1_premium ?? null;
-                        const t2 = r.targets?.t2_premium ?? r.t2_premium ?? null;
+                        const sellBy = getSellBy(r);
+                        const spot = getSpot(r);
 
                         const isExpired = !!r.__expired;
+
+                        const ltpCell = (() => {
+                            // If we have an option symbol, show option LTP (even for HOLD rows)
+                            if (optSym) {
+                                if (!q) return "—";
+                                if (q.ok && Number.isFinite(Number(q.ltp))) return fmt(q.ltp);
+                                // backend can return ok:false, ltp:null for not found
+                                return "NF";
+                            }
+
+                            // If no option (pure HOLD row), show spot if available (so LTP column not empty)
+                            if (Number.isFinite(Number(spot))) return fmt(spot);
+                            return "—";
+                        })();
 
                         return (
                             <tr
@@ -193,12 +236,15 @@ function Table({ rows, quotes, onRowClick }) {
                                 className={[
                                     "border-t",
                                     isExpired ? "bg-slate-50 text-slate-400" : "hover:bg-slate-50/60",
-                                    (!isExpired && r.action === "BUY" && r.side) ? "cursor-pointer" : "",
+                                    (!isExpired && r.side && r.strike && r.expiry) ? "cursor-pointer" : "",
                                 ].join(" ")}
-                                title={isExpired ? "Auto-invalidated (past sell-by)" : (r.action === "BUY" ? "Click for payoff curve" : "")}
+                                title={
+                                    isExpired
+                                        ? "Auto-invalidated (past sell-by)"
+                                        : (r.side && r.strike ? "Click for payoff curve" : "")
+                                }
                                 onClick={() => {
                                     if (isExpired) return;
-                                    if (r.action !== "BUY") return;
                                     if (!r.side || !r.strike) return;
                                     onRowClick?.(r, q);
                                 }}
@@ -220,16 +266,14 @@ function Table({ rows, quotes, onRowClick }) {
                                     {r.side ? `${fmt(r.strike)} ${r.side}${r.expiry ? ` (${r.expiry})` : ""}` : "—"}
                                 </td>
 
-                                <td className="px-4 py-3 text-slate-700">
-                                    {q ? (q.ok ? fmt(q.ltp) : "NF") : "—"}
-                                </td>
+                                <td className="px-4 py-3 text-slate-700">{ltpCell}</td>
 
                                 <td className="px-4 py-3 text-slate-700">{fmt(entry)}</td>
                                 <td className="px-4 py-3 text-rose-700">{fmt(sl)}</td>
                                 <td className="px-4 py-3 text-emerald-700">{fmt(t1)}</td>
                                 <td className="px-4 py-3 text-emerald-700">{fmt(t2)}</td>
 
-                                <td className="px-4 py-3 text-slate-700">{r.sell_by ?? "—"}</td>
+                                <td className="px-4 py-3 text-slate-700">{sellBy ?? "—"}</td>
 
                                 <td className="px-4 py-3 text-slate-700">
                                     {Math.round((r.confidence || 0) * 100)}%
@@ -275,24 +319,28 @@ export default function RecoPage({ title, subtitle, pickRows }) {
             .catch(() => setData(null));
     }, [asOf]);
 
-    const rowsRaw = Array.isArray(data) ? data : pickRows(data);
+    const rowsRaw = useMemo(() => (Array.isArray(data) ? data : pickRows(data)), [data, pickRows]);
 
     // Build symbols to poll
     const optionSymbols = useMemo(() => {
-        return (rowsRaw || [])
-            .map((r) => guessOptionSymbol(r))
-            .filter(Boolean);
+        return (rowsRaw || []).map((r) =>
+            r.instrument === "OPTION"
+                ? guessOptionSymbol(r)
+                : guessCommodityKey(r)
+        )
     }, [rowsRaw]);
 
-    const quotes = useLiveOptionQuotes(optionSymbols, { intervalMs: 15000 });
+    // IMPORTANT: hook returns { quotes, loading }
+    // IMPORTANT: pass asOf so backend can read from data/derivatives/<asOf>/
+    const { quotes } = useLiveOptionQuotes(optionSymbols, { intervalMs: 15000, asOf });
 
-    // Auto invalidate past sell_by
+    // Auto invalidate past sell_by (also checks diagnostics.sell_by)
     const rows = useMemo(() => {
         const today = ymdToNum(todayYmd());
         return (rowsRaw || []).map((r) => {
-            const sb = ymdToNum(r?.sell_by);
+            const sb = ymdToNum(getSellBy(r));
             const expired = !!(today && sb && today > sb);
-            return { ...r, __expired: expired };
+            return { ...r, __expired: expired, sell_by: getSellBy(r) ?? r?.sell_by ?? null };
         });
     }, [rowsRaw]);
 
@@ -300,43 +348,34 @@ export default function RecoPage({ title, subtitle, pickRows }) {
         if (!payoffRow) return [];
         const side = payoffRow.side;
         const strike = payoffRow.strike;
-        const spot =
-            payoffRow.spot ??
-            payoffRow.diagnostics?.spot ??
-            payoffRow.targets?.t1_underlying ??
-            strike;
 
-        // Prefer live LTP; fallback to entry
+        const spot =
+            getSpot(payoffRow) ??
+            (Array.isArray(payoffRow.targets) ? payoffRow.targets?.[0]?.underlying : null) ??
+            payoffRow.strike;
+
         const premium =
             (payoffQuote && payoffQuote.ok && Number.isFinite(Number(payoffQuote.ltp)) ? Number(payoffQuote.ltp) : null) ??
-            payoffRow.entry ??
-            payoffRow.entry_price ??
+            getEntry(payoffRow) ??
             null;
 
-        const atrPoints = payoffRow.diagnostics?.atr_points ?? null;
+        const atrPoints = getAtrPoints(payoffRow);
 
-        return computePayoffSeries({
-            side,
-            strike,
-            spot,
-            premium,
-            atrPoints,
-        });
+        return computePayoffSeries({ side, strike, spot, premium, atrPoints });
     }, [payoffRow, payoffQuote]);
 
     const payoffMeta = useMemo(() => {
         if (!payoffRow) return null;
         const optSym = guessOptionSymbol(payoffRow);
+
         const spot =
-            payoffRow.spot ??
-            payoffRow.diagnostics?.spot ??
-            payoffRow.targets?.t1_underlying ??
+            getSpot(payoffRow) ??
+            (Array.isArray(payoffRow.targets) ? payoffRow.targets?.[0]?.underlying : null) ??
             payoffRow.strike;
 
         const premium =
             (payoffQuote && payoffQuote.ok && Number.isFinite(Number(payoffQuote.ltp)) ? Number(payoffQuote.ltp) : null) ??
-            payoffRow.entry ??
-            payoffRow.entry_price ??
+            getEntry(payoffRow) ??
             null;
 
         return {
@@ -345,7 +384,7 @@ export default function RecoPage({ title, subtitle, pickRows }) {
             strike: payoffRow.strike,
             side: payoffRow.side,
             premium,
-            sellBy: payoffRow.sell_by,
+            sellBy: getSellBy(payoffRow),
             expiry: payoffRow.expiry,
             symbol: payoffRow.symbol,
         };
@@ -443,8 +482,8 @@ export default function RecoPage({ title, subtitle, pickRows }) {
                         </div>
 
                         <div className="text-xs text-slate-500">
-                            This payoff is a simplified expiry payoff: intrinsic − premium (no IV/theta).
-                            Use it as a directional sanity check, not a precise intraday mark-to-market model.
+                            Payoff is expiry intrinsic − premium (no IV/theta). For “price decay towards expiry”, we’ll
+                            add a theta/IV decay overlay next.
                         </div>
                     </div>
                 ) : (

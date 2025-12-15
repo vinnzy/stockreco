@@ -14,8 +14,18 @@ function toArray(x) {
     return [];
 }
 
-export function useLiveOptionQuotes(symbols, { intervalMs = 15000 } = {}) {
+/**
+ * useLiveOptionQuotes(symbols, { intervalMs, asOf })
+ * - symbols: array|string|Set of UI-style symbols (NIFTY06JAN2626100CE...)
+ * - asOf: optional YYYY-MM-DD (your derivatives folder date)
+ *
+ * Returns: { quotes, loading }
+ * quotes shape: { [SYMBOL]: { ok: boolean, ltp: number|null } }
+ */
+export function useLiveOptionQuotes(symbols, { intervalMs = 15000, asOf = null } = {}) {
     const [quotes, setQuotes] = useState({});
+    const [loading, setLoading] = useState(false);
+
     const aliveRef = useRef(true);
 
     // Normalize + de-dupe
@@ -24,7 +34,7 @@ export function useLiveOptionQuotes(symbols, { intervalMs = 15000 } = {}) {
         return Array.from(new Set(arr));
     }, [symbols]);
 
-    // 🔑 stable signature prevents infinite loops
+    // stable signature prevents infinite loops
     const sig = useMemo(() => normSymbols.slice().sort().join("|"), [normSymbols]);
 
     useEffect(() => {
@@ -44,11 +54,14 @@ export function useLiveOptionQuotes(symbols, { intervalMs = 15000 } = {}) {
         let stopped = false;
 
         async function fetchQuotes() {
+            setLoading(true);
             try {
                 const list = sig.split("|").filter(Boolean);
-                const qs = list.map((s) => `options=${encodeURIComponent(s)}`).join("&");
+                const qs = new URLSearchParams();
+                list.forEach((s) => qs.append("options", s));
+                if (asOf) qs.set("as_of", asOf);
 
-                const res = await fetch(`/api/options/ltp?${qs}`);
+                const res = await fetch(`/api/options/ltp?${qs.toString()}`);
                 const json = await res.json();
 
                 const raw = json?.data || {};
@@ -58,7 +71,10 @@ export function useLiveOptionQuotes(symbols, { intervalMs = 15000 } = {}) {
                 if (stopped || !aliveRef.current) return;
                 setQuotes(normalized);
             } catch {
-                // keep old values
+                // keep old values if fetch fails
+            } finally {
+                if (stopped || !aliveRef.current) return;
+                setLoading(false);
             }
         }
 
@@ -69,7 +85,10 @@ export function useLiveOptionQuotes(symbols, { intervalMs = 15000 } = {}) {
             stopped = true;
             if (timer) clearInterval(timer);
         };
-    }, [sig, intervalMs]);
+    }, [sig, intervalMs, asOf]);
 
-    return quotes;
+    return { quotes, loading };
 }
+
+// ✅ also provide default export so BOTH import styles work
+export default useLiveOptionQuotes;
