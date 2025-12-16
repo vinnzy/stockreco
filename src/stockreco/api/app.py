@@ -93,14 +93,14 @@ def create_app(repo_root: Optional[Path] = None) -> FastAPI:
     # --- Options reco outputs (reports/options) ---
     @app.get("/api/options/dates")
     def option_dates():
-        folder = repo / "reports" / "options" / "options"
+        folder = repo / "reports" / "options"
         dates = _list_dates_from_reports(folder, r"^option_reco_(\d{4}-\d{2}-\d{2})\.json$")
         latest = dates[-1] if dates else None
         return {"latest_as_of": latest, "dates": dates, "reports_dir": str(folder)}
 
     @app.get("/api/options/{as_of}")
     def option_reco(as_of: str):
-        folder = repo / "reports" / "options" / "options"
+        folder = repo / "reports" / "options"
         path = folder / f"option_reco_{as_of}.json"
 
         if not path.exists():

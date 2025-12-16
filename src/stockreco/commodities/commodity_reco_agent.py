@@ -5,138 +5,116 @@ from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional
 
 
+def _clean(x: Any) -> str:
+    # handles BOM, quotes, weird whitespace
+    s = str(x or "")
+    s = s.replace("\ufeff", "").replace('"', "").strip()
+    return s
 
-def _as_ymd(as_of: str) -> datetime:
-    return datetime.strptime(as_of, "%Y-%m-%d")
+
+def _sym(x: Any) -> str:
+    return _clean(x).upper()
 
 
-def _parse_bhav_date(s: str) -> Optional[datetime]:
-    # "12 Dec 2025"
+def _fnum(x: Any) -> Optional[float]:
     try:
-        return datetime.strptime(str(s).strip(), "%d %b %Y")
+        s = _clean(x)
+        if not s:
+            return None
+        s = s.replace(",", "")
+        return float(s)
     except Exception:
         return None
-
-
-def _parse_expiry(s: str) -> Optional[datetime]:
-    # "27FEB2026"
-    try:
-        return datetime.strptime(str(s).strip().upper(), "%d%b%Y")
-    except Exception:
-        return None
-
-
-def _sym(s: str) -> str:
-    return str(s or "").strip().upper()
 
 
 def _f2(x: Any) -> Optional[float]:
-    try:
-        v = float(x)
-        return float(f"{v:.2f}")
-    except Exception:
+    v = _fnum(x)
+    if v is None:
         return None
-def _clamp(x: float, lo: float, hi: float) -> float:
-    return max(lo, min(hi, x))
+    return float(f"{v:.2f}")
 
-def _confidence_from_signal(
-    action: str,
-    close: float,
-    prev: float,
-    hi: float,
-    lo: float,
-    vol_lots: float,
-    oi_lots: float,
-) -> float:
+
+def _parse_expiry(x: Any) -> Optional[datetime]:
     """
-    Builds a 0..1 confidence score from:
-      - absolute return vs prev close
-      - intraday range vs prev close
-      - liquidity proxy: volume lots
-      - interest proxy: OI lots
-
-    Tuned for bhavcopy-scale numbers; clamps to sane bounds.
+    MCX bhavcopy commonly has:
+      31DEC2025
+      31-DEC-2025
+      31 Dec 2025
+      2025-12-31
     """
-    if action == "HOLD":
-        # still vary a bit based on liquidity/range so not all 12%
-        base = 0.12
-    else:
-        base = 0.22
+    s = _clean(x).upper()
+    if not s:
+        return None
 
-    if prev <= 0:
-        return base
+    for fmt in ("%d%b%Y", "%d-%b-%Y", "%d %b %Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(s, fmt)
+        except Exception:
+            pass
+    return None
 
-    ret = abs((close - prev) / prev)          # e.g. 0.01 = 1%
-    rng = abs((hi - lo) / prev) if prev > 0 else 0.0
 
-    # Normalize into 0..1 bands (you can tune these)
-    a = _clamp(ret / 0.012, 0.0, 1.0)         # 1.2% move => strong
-    b = _clamp(rng / 0.020, 0.0, 1.0)         # 2.0% range => strong
-    c = _clamp((vol_lots or 0.0) / 5000.0, 0.0, 1.0)
-    d = _clamp((oi_lots or 0.0) / 5000.0, 0.0, 1.0)
-
-    # Weighted blend
-    conf = base + 0.34 * a + 0.22 * b + 0.14 * c + 0.08 * d
-
-    # Penalize ultra-low liquidity
-    if (vol_lots or 0.0) < 50:
-        conf *= 0.80
-    if (oi_lots or 0.0) < 50:
-        conf *= 0.90
-
-    # Final clamp
-    lo_bound = 0.12 if action == "HOLD" else 0.20
-    hi_bound = 0.80
-    return _clamp(conf, lo_bound, hi_bound)
+def _add_trading_days(d: datetime, n: int) -> datetime:
+    """
+    Adds N trading days (skips Sat/Sun).
+    """
+    cur = d
+    added = 0
+    while added < n:
+        cur = cur + timedelta(days=1)
+        if cur.weekday() < 5:  # Mon..Fri
+            added += 1
+    return cur
 
 
 @dataclass
 class CommodityRecoConfig:
-    stop_loss_frac: float = 0.35     # similar to options premium SL%
+    stop_loss_frac: float = 0.35
     t1_rr: float = 1.25
     t2_rr: float = 2.25
-    min_volume_lots: float = 1.0     # filter dead contracts
-    max_days_to_expiry: int = 180    # ignore far contracts
-    sell_by_days: int = 2            # default timebox
+    min_volume_lots: float = 1.0
+    max_days_to_expiry: int = 180
+    sell_by_trading_days: int = 2
 
 
 class CommodityRecoAgent:
     """
-    Rule-based starter:
-    - Uses BhavCopyDateWise FUTCOM rows.
-    - Picks nearest expiry per symbol.
-    - BUY if Close > PrevClose, SELL if Close < PrevClose, HOLD if flat.
-    - Targets from risk multiple; Sell-by capped at expiry-1.
+    Rule-based starter from MCX FUTCOM bhavcopy:
+    - Picks nearest expiry per symbol
+    - BUY if Close > PrevClose, SELL if Close < PrevClose, else HOLD
+    - SL/Targets from risk multiples
+    - sell_by uses trading days (no Sat/Sun), capped at expiry-1 trading day
+    - confidence varies with (move vs range) and volume/oi
     """
+
     def __init__(self, cfg: Optional[CommodityRecoConfig] = None):
         self.cfg = cfg or CommodityRecoConfig()
 
     def recommend_from_bhavcopy_rows(self, as_of: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        a = _as_ymd(as_of)
+        a = datetime.strptime(as_of, "%Y-%m-%d")
 
-        # Keep only FUTCOM rows and valid expiries
         fut = []
         for r in rows:
-            if _sym(r.get("Instrument Name")) != "FUTCOM":
+            inst = _sym(r.get("Instrument Name"))
+            if inst != "FUTCOM":
                 continue
+
             sym = _sym(r.get("Symbol"))
             exp = _parse_expiry(r.get("Expiry Date"))
             if not sym or not exp:
                 continue
 
             dte = (exp.date() - a.date()).days
-            if dte < 0:
-                continue
-            if dte > self.cfg.max_days_to_expiry:
+            if dte < 0 or dte > self.cfg.max_days_to_expiry:
                 continue
 
-            vol = float(r.get("Volume(Lots)") or 0.0)
+            vol = _fnum(r.get("Volume(Lots)")) or 0.0
             if vol < self.cfg.min_volume_lots:
                 continue
 
             fut.append((sym, exp, dte, r))
 
-        # Pick nearest expiry per symbol
+        # nearest expiry per symbol
         best: Dict[str, tuple] = {}
         for sym, exp, dte, r in fut:
             cur = best.get(sym)
@@ -145,10 +123,10 @@ class CommodityRecoAgent:
 
         out: List[Dict[str, Any]] = []
         for sym, exp, dte, r in sorted(best.values(), key=lambda x: x[0]):
-            close = float(r.get("Close") or 0.0)
-            prev = float(r.get("Previous Close") or 0.0)
-            hi = float(r.get("High") or close)
-            lo = float(r.get("Low") or close)
+            close = _fnum(r.get("Close")) or 0.0
+            prev = _fnum(r.get("Previous Close")) or 0.0
+            hi = _fnum(r.get("High")) or close
+            lo = _fnum(r.get("Low")) or close
 
             if close <= 0 or prev <= 0:
                 action = "HOLD"
@@ -159,30 +137,34 @@ class CommodityRecoAgent:
             else:
                 action = "HOLD"
 
-            # crude volatility proxy
-            day_range = max(1e-9, hi - lo)
+            day_range = max(1e-6, hi - lo)
+            move = abs(close - prev)
 
             entry = close
+            sl = t1 = t2 = None
+
             if action == "BUY":
                 sl = entry - max(entry * self.cfg.stop_loss_frac, 0.5 * day_range)
                 risk = max(0.01, entry - sl)
                 t1 = entry + self.cfg.t1_rr * risk
                 t2 = entry + self.cfg.t2_rr * risk
             elif action == "SELL":
+                # NOTE: for SELL, SL is ABOVE entry (that is correct for a short)
                 sl = entry + max(entry * self.cfg.stop_loss_frac, 0.5 * day_range)
                 risk = max(0.01, sl - entry)
                 t1 = entry - self.cfg.t1_rr * risk
                 t2 = entry - self.cfg.t2_rr * risk
-            else:
-                sl = None
-                t1 = None
-                t2 = None
 
-            # sell_by: as_of + N days (cap at expiry-1)
+            # sell_by = as_of + N trading days (skip weekends), cap at expiry-1 day (also trading-day-ish)
             sell_by = None
             try:
-                sb = a + timedelta(days=self.cfg.sell_by_days)
+                sb = _add_trading_days(a, self.cfg.sell_by_trading_days)
+
+                # cap to expiry - 1 calendar day, then if weekend, roll back to Friday
                 cap = datetime.combine(exp.date() - timedelta(days=1), datetime.min.time())
+                if cap.weekday() >= 5:
+                    cap = cap - timedelta(days=(cap.weekday() - 4))  # Sat->Fri(1), Sun->Fri(2)
+
                 if sb > cap:
                     sb = cap
                 if sb < a:
@@ -191,19 +173,21 @@ class CommodityRecoAgent:
             except Exception:
                 pass
 
-            vol_lots = float(r.get("Volume(Lots)") or 0.0)
-            oi_lots = float(r.get("Open Interest(Lots)") or 0.0)
+            # confidence (varies):
+            # - base: HOLD 0.15, trade 0.30
+            # - boost by "move vs range"
+            # - tiny boost by volume/oi (log scaled)
+            vol_lots = _fnum(r.get("Volume(Lots)")) or 0.0
+            oi_lots = _fnum(r.get("Open Interest(Lots)")) or 0.0
 
-            conf = _confidence_from_signal(
-                action=action,
-                close=close,
-                prev=prev,
-                hi=hi,
-                lo=lo,
-                vol_lots=vol_lots,
-                oi_lots=oi_lots,
-            )
-
+            if action == "HOLD":
+                conf = 0.15
+            else:
+                strength = min(1.0, move / day_range)  # 0..1
+                liq = min(1.0, (0.15 * (0.0 if vol_lots <= 0 else (1.0 + (vol_lots ** 0.25))) +
+                                0.10 * (0.0 if oi_lots <= 0 else (1.0 + (oi_lots ** 0.25)))) / 10.0)
+                conf = 0.30 + 0.45 * strength + 0.10 * liq
+                conf = max(0.25, min(0.85, conf))
 
             out.append({
                 "as_of": as_of,
@@ -213,7 +197,7 @@ class CommodityRecoAgent:
                 "expiry": exp.strftime("%d-%b-%Y").upper(),
                 "dte": int(dte),
                 "action": action,
-                "ltp": _f2(close),             # bhavcopy close as LTP proxy
+                "ltp": _f2(close),
                 "entry_price": _f2(entry),
                 "sl": _f2(sl),
                 "t1": _f2(t1),
@@ -224,8 +208,10 @@ class CommodityRecoAgent:
                     "high": _f2(hi),
                     "low": _f2(lo),
                     "prev_close": _f2(prev),
-                    "volume_lots": float(r.get("Volume(Lots)") or 0.0),
-                    "oi_lots": float(r.get("Open Interest(Lots)") or 0.0),
+                    "move": _f2(move),
+                    "day_range": _f2(day_range),
+                    "volume_lots": float(vol_lots),
+                    "oi_lots": float(oi_lots),
                 }
             })
 

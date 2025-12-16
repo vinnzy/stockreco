@@ -197,6 +197,7 @@ function Table({ rows, quotes, onRowClick }) {
                         <th className="text-left px-4 py-3">T1</th>
                         <th className="text-left px-4 py-3">T2</th>
                         <th className="text-left px-4 py-3">Sell-by</th>
+                        <th className="text-left px-4 py-3">Reviewer</th>
                         <th className="text-left px-4 py-3">Conf</th>
                     </tr>
                 </thead>
@@ -229,6 +230,13 @@ function Table({ rows, quotes, onRowClick }) {
                             if (Number.isFinite(Number(spot))) return fmt(spot);
                             return "—";
                         })();
+
+                        const isApproved = r.__reviewerApproved === true;
+                        const isRejected = r.__reviewerRejected === true;
+                        const rejectionReason = r.__rejectionReason || "";
+
+                        // Adjust confidence display for rejected items
+                        const displayConfidence = isRejected ? 0 : (r.confidence || 0);
 
                         return (
                             <tr
@@ -275,8 +283,36 @@ function Table({ rows, quotes, onRowClick }) {
 
                                 <td className="px-4 py-3 text-slate-700">{sellBy ?? "—"}</td>
 
-                                <td className="px-4 py-3 text-slate-700">
-                                    {Math.round((r.confidence || 0) * 100)}%
+                                <td className="px-4 py-3">
+                                    {isApproved ? (
+                                        <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+                                            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                            </svg>
+                                            APPROVED
+                                        </span>
+                                    ) : isRejected ? (
+                                        <span
+                                            className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-rose-100 text-rose-800 cursor-help"
+                                            title={rejectionReason}
+                                        >
+                                            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                                            </svg>
+                                            REJECTED
+                                        </span>
+                                    ) : (
+                                        <span className="text-xs text-slate-400">—</span>
+                                    )}
+                                </td>
+
+                                <td className="px-4 py-3">
+                                    <span className={[
+                                        "font-semibold",
+                                        isApproved ? "text-emerald-700" : isRejected ? "text-rose-400 line-through" : "text-slate-700"
+                                    ].join(" ")}>
+                                        {Math.round(displayConfidence * 100)}%
+                                    </span>
                                 </td>
                             </tr>
                         );
@@ -336,13 +372,24 @@ export default function RecoPage({ title, subtitle, pickRows }) {
 
     // Auto invalidate past sell_by (also checks diagnostics.sell_by)
     const rows = useMemo(() => {
-        const today = ymdToNum(todayYmd());
+        const today = ymdToNum(asOf || latest || todayYmd()); // use report date as basis
+
         return (rowsRaw || []).map((r) => {
             const sb = ymdToNum(getSellBy(r));
             const expired = !!(today && sb && today > sb);
             return { ...r, __expired: expired, sell_by: getSellBy(r) ?? r?.sell_by ?? null };
+        }).sort((a, b) => {
+            // Sort by reviewer status first (approved > no status > rejected)
+            const statusA = a.__reviewerApproved ? 2 : a.__reviewerRejected ? 0 : 1;
+            const statusB = b.__reviewerApproved ? 2 : b.__reviewerRejected ? 0 : 1;
+            if (statusA !== statusB) return statusB - statusA;
+
+            // Then by confidence descending (highest first)
+            const confA = Number(a.confidence) || 0;
+            const confB = Number(b.confidence) || 0;
+            return confB - confA;
         });
-    }, [rowsRaw]);
+    }, [rowsRaw, asOf, latest]);
 
     const payoffData = useMemo(() => {
         if (!payoffRow) return [];

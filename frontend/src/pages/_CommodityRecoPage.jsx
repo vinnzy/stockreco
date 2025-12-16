@@ -18,6 +18,18 @@ function ymdToNum(s) {
     return Number(m[1] + m[2] + m[3]);
 }
 
+function lastTradingYmd() {
+    const d = new Date();
+    const day = d.getDay(); // 0 Sun, 6 Sat
+    if (day === 0) d.setDate(d.getDate() - 2); // Sun -> Fri
+    if (day === 6) d.setDate(d.getDate() - 1); // Sat -> Fri
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    return `${yyyy}-${mm}-${dd}`;
+}
+
+
 function todayYmd() {
     const d = new Date();
     const yyyy = d.getFullYear();
@@ -51,7 +63,7 @@ function Table({ rows }) {
 
                         // CommodityRecoAgent schema
                         const entry = r.entry_price ?? r.entry ?? null;
-                        const sl = r.sl ?? r.stop_loss ?? null;
+                        const sl = r.sl ?? null;
                         const t1 = r.t1 ?? null;
                         const t2 = r.t2 ?? null;
 
@@ -126,15 +138,21 @@ export default function CommodityRecoPage({ title, subtitle, pickRows, apiBase =
             .catch(() => setData(null));
     }, [asOf]);
 
-    const rowsRaw = Array.isArray(data) ? data : [];
+    const rowsRaw = (Array.isArray(data) ? data : []).slice().sort(
+        (a, b) => (Number(b?.confidence) || 0) - (Number(a?.confidence) || 0)
+    );
+
     const rows = useMemo(() => {
-        const today = ymdToNum(todayYmd());
+        // ✅ "basis" = selected report date (last trading day you’re viewing)
+        //const basis = ymdToNum(asOf || latest || todayYmd());
+        const basis = ymdToNum(lastTradingYmd());//ymdToNum(asOf || latest || todayYmd()); // use report date as basis
+
         return (rowsRaw || []).map((r) => {
             const sb = ymdToNum(r?.sell_by);
-            const expired = !!(today && sb && today > sb);
+            const expired = !!(basis && sb && basis > sb);
             return { ...r, __expired: expired };
         });
-    }, [rowsRaw]);
+    }, [rowsRaw, asOf, latest]);
 
     return (
         <div className="space-y-6">

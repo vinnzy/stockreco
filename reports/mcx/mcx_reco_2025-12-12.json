@@ -12,12 +12,14 @@
     "sl": 376.45,
     "t1": 156.85,
     "t2": 59.26,
-    "sell_by": "2025-12-14",
-    "confidence": 0.71,
+    "sell_by": "2025-12-16",
+    "confidence": 0.49,
     "diagnostics": {
       "high": 282.35,
       "low": 277.25,
       "prev_close": 280.8,
+      "move": 1.95,
+      "day_range": 5.1,
       "volume_lots": 2778.0,
       "oi_lots": 1026.0
     }
@@ -35,12 +37,14 @@
     "sl": 376.51,
     "t1": 156.88,
     "t2": 59.27,
-    "sell_by": "2025-12-14",
-    "confidence": 0.67,
+    "sell_by": "2025-12-16",
+    "confidence": 0.51,
     "diagnostics": {
       "high": 282.2,
       "low": 278.0,
       "prev_close": 280.7,
+      "move": 1.8,
+      "day_range": 4.2,
       "volume_lots": 2098.0,
       "oi_lots": 2914.0
     }
@@ -58,12 +62,14 @@
     "sl": 1727.05,
     "t1": 3819.44,
     "t2": 4749.39,
-    "sell_by": "2025-12-14",
-    "confidence": 0.34,
+    "sell_by": "2025-12-16",
+    "confidence": 0.37,
     "diagnostics": {
       "high": 2664.0,
       "low": 2620.0,
       "prev_close": 2651.0,
+      "move": 6.0,
+      "day_range": 44.0,
       "volume_lots": 19.0,
       "oi_lots": 40.0
     }
@@ -81,12 +87,14 @@
     "sl": 1480.68,
     "t1": 616.95,
     "t2": 233.07,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.49,
     "diagnostics": {
       "high": 1124.9,
       "low": 1082.2,
       "prev_close": 1111.85,
+      "move": 15.05,
+      "day_range": 42.7,
       "volume_lots": 25528.0,
       "oi_lots": 7347.0
     }
@@ -104,12 +112,14 @@
     "sl": 33723.0,
     "t1": 14051.25,
     "t2": 5308.25,
-    "sell_by": "2025-12-14",
-    "confidence": 0.46,
+    "sell_by": "2025-12-16",
+    "confidence": 0.39,
     "diagnostics": {
       "high": 25200.0,
       "low": 24180.0,
       "prev_close": 25160.0,
+      "move": 180.0,
+      "day_range": 1020.0,
       "volume_lots": 10.0,
       "oi_lots": 2.0
     }
@@ -127,12 +137,14 @@
     "sl": 3398.2,
     "t1": 7515.25,
     "t2": 9345.05,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.62,
     "diagnostics": {
       "high": 5260.0,
       "low": 5183.0,
       "prev_close": 5179.0,
+      "move": 49.0,
+      "day_range": 77.0,
       "volume_lots": 18678.0,
       "oi_lots": 7894.0
     }
@@ -150,12 +162,14 @@
     "sl": 3398.2,
     "t1": 7515.25,
     "t2": 9345.05,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.58,
     "diagnostics": {
       "high": 5274.0,
       "low": 5189.0,
       "prev_close": 5180.0,
+      "move": 48.0,
+      "day_range": 85.0,
       "volume_lots": 21322.0,
       "oi_lots": 10680.0
     }
@@ -173,12 +187,14 @@
     "sl": 4988.25,
     "t1": 2078.44,
     "t2": 785.19,
-    "sell_by": "2025-12-14",
-    "confidence": 0.73,
+    "sell_by": "2025-12-16",
+    "confidence": 0.59,
     "diagnostics": {
       "high": 3732.0,
       "low": 3670.0,
       "prev_close": 3733.0,
+      "move": 38.0,
+      "day_range": 62.0,
       "volume_lots": 841.0,
       "oi_lots": 731.0
     }
@@ -196,12 +212,14 @@
     "sl": 86854.3,
     "t1": 192081.62,
     "t2": 238849.33,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.5,
     "diagnostics": {
       "high": 135263.0,
       "low": 132275.0,
       "prev_close": 132469.0,
+      "move": 1153.0,
+      "day_range": 2988.0,
       "volume_lots": 20181.0,
       "oi_lots": 13646.0
     }
@@ -219,12 +237,14 @@
     "sl": 69180.8,
     "t1": 152996.0,
     "t2": 190247.2,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.45,
     "diagnostics": {
       "high": 107888.0,
       "low": 105253.0,
       "prev_close": 105706.0,
+      "move": 726.0,
+      "day_range": 2635.0,
       "volume_lots": 19240.0,
       "oi_lots": 7025.0
     }
@@ -242,12 +262,14 @@
     "sl": 85569.25,
     "t1": 189239.69,
     "t2": 235315.44,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.46,
     "diagnostics": {
       "high": 133282.0,
       "low": 130400.0,
       "prev_close": 130905.0,
+      "move": 740.0,
+      "day_range": 2882.0,
       "volume_lots": 98046.0,
       "oi_lots": 43295.0
     }
@@ -265,12 +287,14 @@
     "sl": 8661.25,
     "t1": 19154.69,
     "t2": 23818.44,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.49,
     "diagnostics": {
       "high": 13500.0,
       "low": 13199.0,
       "prev_close": 13239.0,
+      "move": 86.0,
+      "day_range": 301.0,
       "volume_lots": 353917.0,
       "oi_lots": 104015.0
     }
@@ -288,12 +312,14 @@
     "sl": 85731.75,
     "t1": 189599.06,
     "t2": 235762.31,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.45,
     "diagnostics": {
       "high": 133500.0,
       "low": 130681.0,
       "prev_close": 131137.0,
+      "move": 758.0,
+      "day_range": 2819.0,
       "volume_lots": 28931.0,
       "oi_lots": 10516.0
     }
@@ -311,12 +337,14 @@
     "sl": 118.27,
     "t1": 261.55,
     "t2": 325.24,
-    "sell_by": "2025-12-14",
-    "confidence": 0.28,
+    "sell_by": "2025-12-16",
+    "confidence": 0.34,
     "diagnostics": {
       "high": 182.4,
       "low": 181.7,
       "prev_close": 181.9,
+      "move": 0.05,
+      "day_range": 0.7,
       "volume_lots": 155.0,
       "oi_lots": 410.0
     }
@@ -334,12 +362,14 @@
     "sl": 245.56,
     "t1": 102.32,
     "t2": 38.65,
-    "sell_by": "2025-12-14",
-    "confidence": 0.28,
+    "sell_by": "2025-12-16",
+    "confidence": 0.34,
     "diagnostics": {
       "high": 182.3,
       "low": 181.6,
       "prev_close": 181.95,
+      "move": 0.05,
+      "day_range": 0.7,
       "volume_lots": 161.0,
       "oi_lots": 303.0
     }
@@ -357,12 +387,14 @@
     "sl": 603.33,
     "t1": 1334.29,
     "t2": 1659.16,
-    "sell_by": "2025-12-14",
-    "confidence": 0.79,
+    "sell_by": "2025-12-16",
+    "confidence": 0.66,
     "diagnostics": {
       "high": 930.0,
       "low": 908.0,
       "prev_close": 911.0,
+      "move": 17.2,
+      "day_range": 22.0,
       "volume_lots": 208.0,
       "oi_lots": 394.0
     }
@@ -380,12 +412,14 @@
     "sl": 507.87,
     "t1": 211.61,
     "t2": 79.94,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.48,
     "diagnostics": {
       "high": 386.3,
       "low": 369.1,
       "prev_close": 381.3,
+      "move": 5.1,
+      "day_range": 17.2,
       "volume_lots": 134362.0,
       "oi_lots": 27714.0
     }
@@ -403,12 +437,14 @@
     "sl": 508.27,
     "t1": 211.78,
     "t2": 80.01,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.46,
     "diagnostics": {
       "high": 386.2,
       "low": 369.1,
       "prev_close": 381.1,
+      "move": 4.6,
+      "day_range": 17.1,
       "volume_lots": 107103.0,
       "oi_lots": 19694.0
     }
@@ -426,12 +462,14 @@
     "sl": 1728.67,
     "t1": 720.28,
     "t2": 272.11,
-    "sell_by": "2025-12-14",
-    "confidence": 0.39,
+    "sell_by": "2025-12-16",
+    "confidence": 0.57,
     "diagnostics": {
       "high": 1290.1,
       "low": 1275.0,
       "prev_close": 1289.2,
+      "move": 8.7,
+      "day_range": 15.1,
       "volume_lots": 18.0,
       "oi_lots": 19.0
     }
@@ -449,12 +487,14 @@
     "sl": 260348.85,
     "t1": 108478.69,
     "t2": 40980.84,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.57,
     "diagnostics": {
       "high": 201615.0,
       "low": 190077.0,
       "prev_close": 198942.0,
+      "move": 6091.0,
+      "day_range": 11538.0,
       "volume_lots": 39148.0,
       "oi_lots": 10982.0
     }
@@ -472,12 +512,14 @@
     "sl": 261283.05,
     "t1": 108867.94,
     "t2": 41127.89,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.57,
     "diagnostics": {
       "high": 202000.0,
       "low": 190740.0,
       "prev_close": 199210.0,
+      "move": 5667.0,
+      "day_range": 11260.0,
       "volume_lots": 138126.0,
       "oi_lots": 27265.0
     }
@@ -495,12 +537,14 @@
     "sl": 261215.55,
     "t1": 108839.81,
     "t2": 41117.26,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.58,
     "diagnostics": {
       "high": 201990.0,
       "low": 190751.0,
       "prev_close": 199223.0,
+      "move": 5730.0,
+      "day_range": 11239.0,
       "volume_lots": 337456.0,
       "oi_lots": 64075.0
     }
@@ -518,12 +562,14 @@
     "sl": 427.54,
     "t1": 178.14,
     "t2": 67.3,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.48,
     "diagnostics": {
       "high": 324.4,
       "low": 314.7,
       "prev_close": 320.1,
+      "move": 3.4,
+      "day_range": 9.7,
       "volume_lots": 4668.0,
       "oi_lots": 2977.0
     }
@@ -541,12 +587,14 @@
     "sl": 427.48,
     "t1": 178.12,
     "t2": 67.29,
-    "sell_by": "2025-12-14",
-    "confidence": 0.8,
+    "sell_by": "2025-12-16",
+    "confidence": 0.49,
     "diagnostics": {
       "high": 324.35,
       "low": 315.0,
       "prev_close": 320.05,
+      "move": 3.4,
+      "day_range": 9.35,
       "volume_lots": 5941.0,
       "oi_lots": 1196.0
     }

@@ -58,8 +58,12 @@ def main():
     bhav = find_bhavcopy_file(args.as_of)
     rows = read_csv_rows(bhav)
 
+    print("Rows:", len(rows))
+    print("Sample keys:", list(rows[0].keys()) if rows else "NO ROWS")
+
     agent = CommodityRecoAgent()
     recos = agent.recommend_from_bhavcopy_rows(args.as_of, rows)
+    print("Recos:", len(recos))
 
     paths = write_reports(args.as_of, recos)
     print("Wrote:", paths)
