@@ -91,7 +91,7 @@ def _load_signals(models_dir: Path) -> Dict[str, Dict[str, Any]]:
             row["buy_win"] = int(float(r.get(cols["buy_win"]) or 0))
             row["sell_win"] = int(float(r.get(cols["sell_win"]) or 0))
             # carry extra numeric fields if present
-            for k in ["mode","ret_oc","exp_oh","dd_ol","atr_points","atr_pct","buy_thr","sell_thr"]:
+            for k in ["mode","ret_oc","exp_oh","dd_ol","atr_points","atr_pct","buy_thr","sell_thr", "direction_score", "buy_soft", "sell_soft", "strength"]:
                 if k in cols:
                     row[k] = r.get(cols[k])
             best[ticker] = row

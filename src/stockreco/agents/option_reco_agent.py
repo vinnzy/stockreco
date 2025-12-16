@@ -490,13 +490,30 @@ class OptionRecoAgent:
 
         # score: near ATM + high OI + moderate premium (avoid deep ITM/OTM)
         def score_row(row: OptionChainRow, dte: int) -> float:
+            # atm distance in ATR units
+            # we prefer being slightly ITM or ATM, rather than OTM
+            # normalized: 0.0 = exact spot
             atm = abs(row.strike - spot) / max(1.0, atr_points)
+            
             oi = float(row.oi or 0.0)
             vol = float(row.volume or 0.0)
-            prem = float(row.ltp or 0.0)
-            # prefer 7-21 DTE
+            
+            # Use log scaling for liquidity to avoid "buying the wall" (highest OI = resistance)
+            # 100k OI -> 5.0, 1M OI -> 6.0. 
+            # This ensures we pick liquid strikes but don't let 2M OI override 0.5 ATR distance.
+            liq_score = 0.0
+            if oi > 0:
+                liq_score += 0.1 * math.log10(oi)
+            if vol > 0:
+                liq_score += 0.05 * math.log10(vol)
+
+            # prefer 7-21 DTE (approx 2 weeks)
             dte_pref = abs(dte - 14) / 14.0
-            return -atm + 0.000001 * oi + 0.000001 * vol - 0.002 * dte_pref - 0.0005 * prem
+            
+            # small penalty for high premium to improve RR, but not primary driver
+            # prem_penalty = 0.0001 * float(row.ltp or 0)
+
+            return -atm + liq_score - 0.002 * dte_pref
 
         best, best_dte = max(candidates, key=lambda x: score_row(x[0], x[1]))
 
@@ -585,6 +602,16 @@ class OptionRecoAgent:
                 if theta_pd
                 else f"Implied vol ~ {iv*100:.1f}%."
             )
+        
+        # Check if we are buying into the "Wall" (Max OI)
+        max_oi = max([float(c[0].oi or 0) for c in candidates]) if candidates else 0
+        current_oi = float(best.oi or 0)
+        if max_oi > 0 and current_oi >= max_oi * 0.95:
+             rationale.append(f"Warning: Selected strike {strike} has highest OI in eligible chain (potential Resistance/Support wall).")
+             # Penalize confidence significantly for buying into resistance
+             conf *= 0.60
+             rationale.append("Confidence penalized due to proximity to OI resistance wall.")
+
         if sell_by:
             rationale.append(f"Sell-by {sell_by} (time-boxed to manage theta/IV risk).")
 
