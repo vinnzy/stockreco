@@ -34,10 +34,25 @@ export default function Home() {
                 </div>
             </Card>
 
-            <Card title="Select Stock" subtitle="(tables + charts next)">
-                <select className="w-full border border-slate-200 rounded-xl px-4 py-3 bg-white text-slate-700">
-                    <option>Select a stock</option>
-                </select>
+            <Card title="Quick Navigation">
+                <div className="grid grid-cols-2 gap-4">
+                    <a href="/recommendations/strict" className="block p-4 rounded-xl border border-slate-200 hover:bg-slate-50 transition-colors">
+                        <div className="font-semibold text-slate-900">Strict</div>
+                        <div className="text-xs text-slate-500">High confidence stocks</div>
+                    </a>
+                    <a href="/recommendations/aggressive" className="block p-4 rounded-xl border border-slate-200 hover:bg-slate-50 transition-colors">
+                        <div className="font-semibold text-slate-900">Aggressive</div>
+                        <div className="text-xs text-slate-500">Momentum stocks</div>
+                    </a>
+                    <a href="/recommendations/options" className="block p-4 rounded-xl border border-slate-200 hover:bg-slate-50 transition-colors">
+                        <div className="font-semibold text-slate-900">Options</div>
+                        <div className="text-xs text-slate-500">EOD Recommendations</div>
+                    </a>
+                    <a href="/recommendations/intraday" className="block p-4 rounded-xl border border-slate-200 hover:bg-slate-50 transition-colors bg-gradient-to-br from-indigo-50 to-white border-indigo-100">
+                        <div className="font-semibold text-indigo-900">Intraday Options</div>
+                        <div className="text-xs text-indigo-600/80">Quick &gt;15% targets</div>
+                    </a>
+                </div>
             </Card>
         </div>
     );

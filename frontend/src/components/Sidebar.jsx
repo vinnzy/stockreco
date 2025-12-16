@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Home, ShieldCheck, Zap, Layers } from "lucide-react";
+import { Home, ShieldCheck, Zap, Layers, TrendingUp } from "lucide-react";
 
 const Item = ({ to, icon: Icon, label }) => (
     <NavLink
@@ -33,6 +33,7 @@ export default function Sidebar() {
                     <Item to="/recommendations/strict" icon={ShieldCheck} label="Strict" />
                     <Item to="/recommendations/aggressive" icon={Zap} label="Aggressive" />
                     <Item to="/recommendations/options" icon={Layers} label="Options" />
+                    <Item to="/recommendations/intraday" icon={TrendingUp} label="Intraday Options" />
                     <Item to="/recommendations/mcx" icon={Layers} label="MCX" />
                 </div>
             </nav>

@@ -107,6 +107,22 @@ def create_app(repo_root: Optional[Path] = None) -> FastAPI:
             raise HTTPException(status_code=404, detail=f"Missing {path}")
         return _read_json(path)
 
+    # --- Intraday Option Reco ---
+    @app.get("/api/options/intraday/dates")
+    def intraday_option_dates():
+        folder = repo / "reports" / "options"
+        dates = _list_dates_from_reports(folder, r"^intraday_reco_(\d{4}-\d{2}-\d{2})\.json$")
+        latest = dates[-1] if dates else None
+        return {"latest_as_of": latest, "dates": dates, "reports_dir": str(folder)}
+
+    @app.get("/api/options/intraday/{as_of}")
+    def intraday_option_reco(as_of: str):
+        folder = repo / "reports" / "options"
+        path = folder / f"intraday_reco_{as_of}.json"
+        if not path.exists():
+            raise HTTPException(status_code=404, detail=f"Missing {path}")
+        return _read_json(path)
+
     @app.get("/api/quotes/ltp")
     def quotes_ltp(
         keys: List[str] = Query(..., description="Quote keys like MCXFUT:GOLD:05FEB26")

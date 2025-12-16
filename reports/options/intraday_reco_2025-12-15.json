@@ -1,0 +1,2505 @@
+{
+  "reviewer": {
+    "approved": [
+      {
+        "as_of": "2025-12-15",
+        "symbol": "BANKNIFTY",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 60000.0,
+        "entry_price": 334.5,
+        "sl_premium": 309.41,
+        "targets": [
+          {
+            "premium": 384.67
+          },
+          {
+            "premium": 434.85
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.90 (BULLISH)",
+          "Intraday Setup: Buy CE 60000.0 @ 334.5",
+          "Targets: 384.67 (15%) / 434.85 (30%)",
+          "Stop Loss: 309.41 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.8979095985954819,
+          "moneyness_score": 12,
+          "iv": 0.10284981990949016,
+          "rr_ratio": 2.0
+        },
+        "spot": 59461.8,
+        "delta": 0.39,
+        "iv": 10.28,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ADANIPORTS",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 1500.0,
+        "entry_price": 16.15,
+        "sl_premium": 14.94,
+        "targets": [
+          {
+            "premium": 18.57
+          },
+          {
+            "premium": 20.99
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.55 (BEARISH)",
+          "Intraday Setup: Buy PE 1500.0 @ 16.15",
+          "Targets: 18.57 (15%) / 20.99 (30%)",
+          "Stop Loss: 14.94 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.5450796249533186,
+          "moneyness_score": 10,
+          "iv": 0.19442100179120902,
+          "rr_ratio": 2.0
+        },
+        "spot": 1512.6,
+        "delta": -0.38,
+        "iv": 19.44,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "BAJAJ-AUTO",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 8900.0,
+        "entry_price": 97.35,
+        "sl_premium": 90.05,
+        "targets": [
+          {
+            "premium": 111.95
+          },
+          {
+            "premium": 126.55
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.98 (BEARISH)",
+          "Intraday Setup: Buy PE 8900.0 @ 97.35",
+          "Targets: 111.95 (15%) / 126.55 (30%)",
+          "Stop Loss: 90.05 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.9832194654201126,
+          "moneyness_score": 10,
+          "iv": 0.1769174560722895,
+          "rr_ratio": 2.0
+        },
+        "spot": 8939.95,
+        "delta": -0.41,
+        "iv": 17.69,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "COALINDIA",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 385.0,
+        "entry_price": 3.4,
+        "sl_premium": 3.15,
+        "targets": [
+          {
+            "premium": 3.91
+          },
+          {
+            "premium": 4.42
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.57 (BEARISH)",
+          "Intraday Setup: Buy PE 385.0 @ 3.4",
+          "Targets: 3.91 (15%) / 4.42 (30%)",
+          "Stop Loss: 3.15 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.5712059349466979,
+          "moneyness_score": 10,
+          "iv": 0.11816594627201557,
+          "rr_ratio": 2.0
+        },
+        "spot": 384.45,
+        "delta": -0.47,
+        "iv": 11.82,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "DIVISLAB",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 6400.0,
+        "entry_price": 113.75,
+        "sl_premium": 105.22,
+        "targets": [
+          {
+            "premium": 130.81
+          },
+          {
+            "premium": 147.88
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.60 (BEARISH)",
+          "Intraday Setup: Buy PE 6400.0 @ 113.75",
+          "Targets: 130.81 (15%) / 147.88 (30%)",
+          "Stop Loss: 105.22 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.60064792925313,
+          "moneyness_score": 10,
+          "iv": 0.18593233393840491,
+          "rr_ratio": 2.0
+        },
+        "spot": 6347.45,
+        "delta": -0.55,
+        "iv": 18.59,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "EICHERMOT",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 7200.0,
+        "entry_price": 147.65,
+        "sl_premium": 136.58,
+        "targets": [
+          {
+            "premium": 169.8
+          },
+          {
+            "premium": 191.95
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.71 (BEARISH)",
+          "Intraday Setup: Buy PE 7200.0 @ 147.65",
+          "Targets: 169.80 (15%) / 191.95 (30%)",
+          "Stop Loss: 136.58 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.7127402316405753,
+          "moneyness_score": 10,
+          "iv": 0.20141251007346436,
+          "rr_ratio": 2.0
+        },
+        "spot": 7121.5,
+        "delta": -0.57,
+        "iv": 20.14,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "HDFCBANK",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1000.0,
+        "entry_price": 11.35,
+        "sl_premium": 10.5,
+        "targets": [
+          {
+            "premium": 13.05
+          },
+          {
+            "premium": 14.76
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.71 (BULLISH)",
+          "Intraday Setup: Buy CE 1000.0 @ 11.35",
+          "Targets: 13.05 (15%) / 14.76 (30%)",
+          "Stop Loss: 10.50 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.7050262147556403,
+          "moneyness_score": 12,
+          "iv": 0.14710964365974072,
+          "rr_ratio": 2.0
+        },
+        "spot": 996.1,
+        "delta": 0.49,
+        "iv": 14.71,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "HINDUNILVR",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 2300.0,
+        "entry_price": 25.25,
+        "sl_premium": 23.36,
+        "targets": [
+          {
+            "premium": 29.04
+          },
+          {
+            "premium": 32.83
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.60 (BULLISH)",
+          "Intraday Setup: Buy CE 2300.0 @ 25.25",
+          "Targets: 29.04 (15%) / 32.83 (30%)",
+          "Stop Loss: 23.36 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.600214093477135,
+          "moneyness_score": 10,
+          "iv": 0.13584887510091062,
+          "rr_ratio": 2.0
+        },
+        "spot": 2293.5,
+        "delta": 0.51,
+        "iv": 13.58,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ICICIBANK",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1350.0,
+        "entry_price": 28.3,
+        "sl_premium": 26.18,
+        "targets": [
+          {
+            "premium": 32.55
+          },
+          {
+            "premium": 36.79
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.85 (BULLISH)",
+          "Intraday Setup: Buy CE 1350.0 @ 28.3",
+          "Targets: 32.55 (15%) / 36.79 (30%)",
+          "Stop Loss: 26.18 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.8500579244953484,
+          "moneyness_score": 10,
+          "iv": 0.15592316895574332,
+          "rr_ratio": 2.0
+        },
+        "spot": 1365.2,
+        "delta": 0.68,
+        "iv": 15.59,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "INFY",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1600.0,
+        "entry_price": 26.25,
+        "sl_premium": 24.28,
+        "targets": [
+          {
+            "premium": 30.19
+          },
+          {
+            "premium": 34.12
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 1.00 (BULLISH)",
+          "Intraday Setup: Buy CE 1600.0 @ 26.25",
+          "Targets: 30.19 (15%) / 34.12 (30%)",
+          "Stop Loss: 24.28 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.998155859387889,
+          "moneyness_score": 12,
+          "iv": 0.15475835916865618,
+          "rr_ratio": 2.0
+        },
+        "spot": 1606.8,
+        "delta": 0.6,
+        "iv": 15.48,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ITC",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 400.0,
+        "entry_price": 6.05,
+        "sl_premium": 5.6,
+        "targets": [
+          {
+            "premium": 6.96
+          },
+          {
+            "premium": 7.87
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.65 (BULLISH)",
+          "Intraday Setup: Buy CE 400.0 @ 6.05",
+          "Targets: 6.96 (15%) / 7.87 (30%)",
+          "Stop Loss: 5.60 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.6485286924394127,
+          "moneyness_score": 10,
+          "iv": 0.12645596699267628,
+          "rr_ratio": 2.0
+        },
+        "spot": 402.3,
+        "delta": 0.64,
+        "iv": 12.65,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "MARUTI",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 16300.0,
+        "entry_price": 132.1,
+        "sl_premium": 122.19,
+        "targets": [
+          {
+            "premium": 151.91
+          },
+          {
+            "premium": 171.73
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.55 (BEARISH)",
+          "Intraday Setup: Buy PE 16300.0 @ 132.1",
+          "Targets: 151.91 (15%) / 171.73 (30%)",
+          "Stop Loss: 122.19 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.5459115818205873,
+          "moneyness_score": 10,
+          "iv": 0.15352978882088789,
+          "rr_ratio": 2.0
+        },
+        "spot": 16414.95,
+        "delta": -0.37,
+        "iv": 15.35,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ONGC",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 240.0,
+        "entry_price": 5.51,
+        "sl_premium": 5.1,
+        "targets": [
+          {
+            "premium": 6.34
+          },
+          {
+            "premium": 7.16
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.79 (BEARISH)",
+          "Intraday Setup: Buy PE 240.0 @ 5.51",
+          "Targets: 6.34 (15%) / 7.16 (30%)",
+          "Stop Loss: 5.10 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.7916978141439135,
+          "moneyness_score": 10,
+          "iv": 0.16362609566748137,
+          "rr_ratio": 2.0
+        },
+        "spot": 235.35,
+        "delta": -0.69,
+        "iv": 16.36,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "POWERGRID",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 265.0,
+        "entry_price": 4.35,
+        "sl_premium": 4.02,
+        "targets": [
+          {
+            "premium": 5.0
+          },
+          {
+            "premium": 5.65
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score -0.73 (BEARISH)",
+          "Intraday Setup: Buy PE 265.0 @ 4.35",
+          "Targets: 5.00 (15%) / 5.65 (30%)",
+          "Stop Loss: 4.02 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.7318002352757969,
+          "moneyness_score": 10,
+          "iv": 0.15167746601253748,
+          "rr_ratio": 2.0
+        },
+        "spot": 262.2,
+        "delta": -0.59,
+        "iv": 15.17,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "SBIN",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 975.0,
+        "entry_price": 9.3,
+        "sl_premium": 8.6,
+        "targets": [
+          {
+            "premium": 10.7
+          },
+          {
+            "premium": 12.09
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.75 (BULLISH)",
+          "Intraday Setup: Buy CE 975.0 @ 9.3",
+          "Targets: 10.70 (15%) / 12.09 (30%)",
+          "Stop Loss: 8.60 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.7461958880240208,
+          "moneyness_score": 10,
+          "iv": 0.14800715990066526,
+          "rr_ratio": 2.0
+        },
+        "spot": 967.25,
+        "delta": 0.44,
+        "iv": 14.8,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "SUNPHARMA",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1800.0,
+        "entry_price": 20.85,
+        "sl_premium": 19.29,
+        "targets": [
+          {
+            "premium": 23.98
+          },
+          {
+            "premium": 27.11
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.88 (BULLISH)",
+          "Intraday Setup: Buy CE 1800.0 @ 20.85",
+          "Targets: 23.98 (15%) / 27.11 (30%)",
+          "Stop Loss: 19.29 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.878719973450755,
+          "moneyness_score": 10,
+          "iv": 0.1355930086541921,
+          "rr_ratio": 2.0
+        },
+        "spot": 1797.1,
+        "delta": 0.52,
+        "iv": 13.56,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "TATACONSUM",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1200.0,
+        "entry_price": 6.7,
+        "sl_premium": 6.2,
+        "targets": [
+          {
+            "premium": 7.7
+          },
+          {
+            "premium": 8.71
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.87 (BULLISH)",
+          "Intraday Setup: Buy CE 1200.0 @ 6.7",
+          "Targets: 7.70 (15%) / 8.71 (30%)",
+          "Stop Loss: 6.20 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.8718878498106734,
+          "moneyness_score": 5,
+          "iv": 0.21677434541583063,
+          "rr_ratio": 2.0
+        },
+        "spot": 1157.4,
+        "delta": 0.23,
+        "iv": 21.68,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "TATASTEEL",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 172.5,
+        "entry_price": 3.29,
+        "sl_premium": 3.04,
+        "targets": [
+          {
+            "premium": 3.78
+          },
+          {
+            "premium": 4.28
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.54 (BULLISH)",
+          "Intraday Setup: Buy CE 172.5 @ 3.29",
+          "Targets: 3.78 (15%) / 4.28 (30%)",
+          "Stop Loss: 3.04 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.5414629765580019,
+          "moneyness_score": 10,
+          "iv": 0.20419607978761195,
+          "rr_ratio": 2.0
+        },
+        "spot": 172.85,
+        "delta": 0.56,
+        "iv": 20.42,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "TECHM",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 1580.0,
+        "entry_price": 25.95,
+        "sl_premium": 24.0,
+        "targets": [
+          {
+            "premium": 29.84
+          },
+          {
+            "premium": 33.73
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.56 (BULLISH)",
+          "Intraday Setup: Buy CE 1580.0 @ 25.95",
+          "Targets: 29.84 (15%) / 33.73 (30%)",
+          "Stop Loss: 24.00 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.5564829451379438,
+          "moneyness_score": 10,
+          "iv": 0.20392590851224962,
+          "rr_ratio": 2.0
+        },
+        "spot": 1575.4,
+        "delta": 0.51,
+        "iv": 20.39,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ULTRACEMCO",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 11800.0,
+        "entry_price": 127.75,
+        "sl_premium": 118.17,
+        "targets": [
+          {
+            "premium": 146.91
+          },
+          {
+            "premium": 166.08
+          }
+        ],
+        "confidence": 0.9,
+        "rationale": [
+          "Directional Score 0.78 (BULLISH)",
+          "Intraday Setup: Buy CE 11800.0 @ 127.75",
+          "Targets: 146.91 (15%) / 166.08 (30%)",
+          "Stop Loss: 118.17 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.7824672217437074,
+          "moneyness_score": 10,
+          "iv": 0.15374640197032124,
+          "rr_ratio": 2.0
+        },
+        "spot": 11727.9,
+        "delta": 0.46,
+        "iv": 15.37,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "BAJAJFINSV",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 2060.0,
+        "entry_price": 22.9,
+        "sl_premium": 21.18,
+        "targets": [
+          {
+            "premium": 26.33
+          },
+          {
+            "premium": 29.77
+          }
+        ],
+        "confidence": 0.86,
+        "rationale": [
+          "Directional Score -0.46 (BEARISH)",
+          "Intraday Setup: Buy PE 2060.0 @ 22.9",
+          "Targets: 26.33 (15%) / 29.77 (30%)",
+          "Stop Loss: 21.18 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.4614977117075756,
+          "moneyness_score": 10,
+          "iv": 0.18206705003194507,
+          "rr_ratio": 2.0
+        },
+        "spot": 2070.4,
+        "delta": -0.41,
+        "iv": 18.21,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "NIFTY",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "23-DEC-2025",
+        "strike": 26000.0,
+        "entry_price": 180.45,
+        "sl_premium": 166.92,
+        "targets": [
+          {
+            "premium": 207.52
+          },
+          {
+            "premium": 234.58
+          }
+        ],
+        "confidence": 0.85,
+        "rationale": [
+          "Directional Score 0.45 (BULLISH)",
+          "Intraday Setup: Buy CE 26000.0 @ 180.45",
+          "Targets: 207.52 (15%) / 234.58 (30%)",
+          "Stop Loss: 166.92 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.4451477697214003,
+          "moneyness_score": 12,
+          "iv": 0.0940519853388192,
+          "rr_ratio": 2.0
+        },
+        "spot": 26027.3,
+        "delta": 0.58,
+        "iv": 9.41,
+        "dte": 8,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "BRITANNIA",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 6000.0,
+        "entry_price": 112.05,
+        "sl_premium": 103.65,
+        "targets": [
+          {
+            "premium": 128.86
+          },
+          {
+            "premium": 145.66
+          }
+        ],
+        "confidence": 0.84,
+        "rationale": [
+          "Directional Score 0.44 (BULLISH)",
+          "Intraday Setup: Buy CE 6000.0 @ 112.05",
+          "Targets: 128.86 (15%) / 145.66 (30%)",
+          "Stop Loss: 103.65 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.4432973923682803,
+          "moneyness_score": 10,
+          "iv": 0.16754903194485232,
+          "rr_ratio": 2.0
+        },
+        "spot": 6038.05,
+        "delta": 0.61,
+        "iv": 16.75,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "APOLLOHOSP",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 7200.0,
+        "entry_price": 141.3,
+        "sl_premium": 130.7,
+        "targets": [
+          {
+            "premium": 162.5
+          },
+          {
+            "premium": 183.69
+          }
+        ],
+        "confidence": 0.78,
+        "rationale": [
+          "Directional Score -0.38 (BEARISH)",
+          "Intraday Setup: Buy PE 7200.0 @ 141.3",
+          "Targets: 162.50 (15%) / 183.69 (30%)",
+          "Stop Loss: 130.70 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.3773393331025729,
+          "moneyness_score": 10,
+          "iv": 0.15112810378307479,
+          "rr_ratio": 2.0
+        },
+        "spot": 7086.55,
+        "delta": -0.66,
+        "iv": 15.11,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "SBILIFE",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 2020.0,
+        "entry_price": 16.15,
+        "sl_premium": 14.94,
+        "targets": [
+          {
+            "premium": 18.57
+          },
+          {
+            "premium": 20.99
+          }
+        ],
+        "confidence": 0.75,
+        "rationale": [
+          "Directional Score -0.35 (BEARISH)",
+          "Intraday Setup: Buy PE 2020.0 @ 16.15",
+          "Targets: 18.57 (15%) / 20.99 (30%)",
+          "Stop Loss: 14.94 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.3486785155953952,
+          "moneyness_score": 10,
+          "iv": 0.15365742751937359,
+          "rr_ratio": 2.0
+        },
+        "spot": 2034.9,
+        "delta": -0.37,
+        "iv": 15.37,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "WIPRO",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 260.0,
+        "entry_price": 5.38,
+        "sl_premium": 4.98,
+        "targets": [
+          {
+            "premium": 6.19
+          },
+          {
+            "premium": 6.99
+          }
+        ],
+        "confidence": 0.68,
+        "rationale": [
+          "Directional Score 0.28 (BULLISH)",
+          "Intraday Setup: Buy CE 260.0 @ 5.38",
+          "Targets: 6.19 (15%) / 6.99 (30%)",
+          "Stop Loss: 4.98 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.275562339639806,
+          "moneyness_score": 10,
+          "iv": 0.19027643845677378,
+          "rr_ratio": 2.0
+        },
+        "spot": 261.75,
+        "delta": 0.61,
+        "iv": 19.03,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "ASIANPAINT",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 2780.0,
+        "entry_price": 42.9,
+        "sl_premium": 39.68,
+        "targets": [
+          {
+            "premium": 49.33
+          },
+          {
+            "premium": 55.77
+          }
+        ],
+        "confidence": 0.67,
+        "rationale": [
+          "Directional Score 0.27 (BULLISH)",
+          "Intraday Setup: Buy CE 2780.0 @ 42.9",
+          "Targets: 49.33 (15%) / 55.77 (30%)",
+          "Stop Loss: 39.68 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.2683583063836002,
+          "moneyness_score": 10,
+          "iv": 0.1722436652997508,
+          "rr_ratio": 2.0
+        },
+        "spot": 2780.2,
+        "delta": 0.54,
+        "iv": 17.22,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "BAJFINANCE",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 1050.0,
+        "entry_price": 38.6,
+        "sl_premium": 35.71,
+        "targets": [
+          {
+            "premium": 44.39
+          },
+          {
+            "premium": 50.18
+          }
+        ],
+        "confidence": 0.66,
+        "rationale": [
+          "Directional Score -0.26 (BEARISH)",
+          "Intraday Setup: Buy PE 1050.0 @ 38.6",
+          "Targets: 44.39 (15%) / 50.18 (30%)",
+          "Stop Loss: 35.71 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.2615176685800841,
+          "moneyness_score": 10,
+          "iv": 0.19116147522479296,
+          "rr_ratio": 2.0
+        },
+        "spot": 1012.7,
+        "delta": -0.8,
+        "iv": 19.12,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "JSWSTEEL",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 1120.0,
+        "entry_price": 20.4,
+        "sl_premium": 18.87,
+        "targets": [
+          {
+            "premium": 23.46
+          },
+          {
+            "premium": 26.52
+          }
+        ],
+        "confidence": 0.66,
+        "rationale": [
+          "Directional Score -0.26 (BEARISH)",
+          "Intraday Setup: Buy PE 1120.0 @ 20.4",
+          "Targets: 23.46 (15%) / 26.52 (30%)",
+          "Stop Loss: 18.87 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.2631759722100079,
+          "moneyness_score": 10,
+          "iv": 0.21491974673345687,
+          "rr_ratio": 2.0
+        },
+        "spot": 1114.8,
+        "delta": -0.51,
+        "iv": 21.49,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "KOTAKBANK",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 2180.0,
+        "entry_price": 32.55,
+        "sl_premium": 30.11,
+        "targets": [
+          {
+            "premium": 37.43
+          },
+          {
+            "premium": 42.31
+          }
+        ],
+        "confidence": 0.62,
+        "rationale": [
+          "Directional Score 0.22 (BULLISH)",
+          "Intraday Setup: Buy CE 2180.0 @ 32.55",
+          "Targets: 37.43 (15%) / 42.31 (30%)",
+          "Stop Loss: 30.11 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.2182916313397764,
+          "moneyness_score": 10,
+          "iv": 0.1624674324864521,
+          "rr_ratio": 2.0
+        },
+        "spot": 2181.3,
+        "delta": 0.55,
+        "iv": 16.25,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "LT",
+        "bias": "BULLISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "CE",
+        "expiry": "30-DEC-2025",
+        "strike": 4060.0,
+        "entry_price": 67.6,
+        "sl_premium": 62.53,
+        "targets": [
+          {
+            "premium": 77.74
+          },
+          {
+            "premium": 87.88
+          }
+        ],
+        "confidence": 0.62,
+        "rationale": [
+          "Directional Score 0.22 (BULLISH)",
+          "Intraday Setup: Buy CE 4060.0 @ 67.6",
+          "Targets: 77.74 (15%) / 87.88 (30%)",
+          "Stop Loss: 62.53 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": 0.2187201380596971,
+          "moneyness_score": 10,
+          "iv": 0.12762330061346294,
+          "rr_ratio": 2.0
+        },
+        "spot": 4092.3,
+        "delta": 0.67,
+        "iv": 12.76,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      },
+      {
+        "as_of": "2025-12-15",
+        "symbol": "HEROMOTOCO",
+        "bias": "BEARISH",
+        "instrument": "OPTION",
+        "action": "BUY",
+        "side": "PE",
+        "expiry": "30-DEC-2025",
+        "strike": 6100.0,
+        "entry_price": 183.25,
+        "sl_premium": 169.51,
+        "targets": [
+          {
+            "premium": 210.74
+          },
+          {
+            "premium": 238.22
+          }
+        ],
+        "confidence": 0.61,
+        "rationale": [
+          "Directional Score -0.21 (BEARISH)",
+          "Intraday Setup: Buy PE 6100.0 @ 183.25",
+          "Targets: 210.74 (15%) / 238.22 (30%)",
+          "Stop Loss: 169.51 (7.5%)",
+          "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+        ],
+        "diagnostics": {
+          "direction_score": -0.2066721315547607,
+          "moneyness_score": 10,
+          "iv": 0.22819056257316844,
+          "rr_ratio": 2.0
+        },
+        "spot": 5959.5,
+        "delta": -0.66,
+        "iv": 22.82,
+        "dte": 15,
+        "sell_by": "2025-12-16"
+      }
+    ],
+    "rejected": []
+  },
+  "final": [
+    {
+      "as_of": "2025-12-15",
+      "symbol": "BANKNIFTY",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 60000.0,
+      "entry_price": 334.5,
+      "sl_premium": 309.41,
+      "targets": [
+        {
+          "premium": 384.67
+        },
+        {
+          "premium": 434.85
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.90 (BULLISH)",
+        "Intraday Setup: Buy CE 60000.0 @ 334.5",
+        "Targets: 384.67 (15%) / 434.85 (30%)",
+        "Stop Loss: 309.41 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.8979095985954819,
+        "moneyness_score": 12,
+        "iv": 0.10284981990949016,
+        "rr_ratio": 2.0
+      },
+      "spot": 59461.8,
+      "delta": 0.39,
+      "iv": 10.28,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ADANIPORTS",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 1500.0,
+      "entry_price": 16.15,
+      "sl_premium": 14.94,
+      "targets": [
+        {
+          "premium": 18.57
+        },
+        {
+          "premium": 20.99
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.55 (BEARISH)",
+        "Intraday Setup: Buy PE 1500.0 @ 16.15",
+        "Targets: 18.57 (15%) / 20.99 (30%)",
+        "Stop Loss: 14.94 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.5450796249533186,
+        "moneyness_score": 10,
+        "iv": 0.19442100179120902,
+        "rr_ratio": 2.0
+      },
+      "spot": 1512.6,
+      "delta": -0.38,
+      "iv": 19.44,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "BAJAJ-AUTO",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 8900.0,
+      "entry_price": 97.35,
+      "sl_premium": 90.05,
+      "targets": [
+        {
+          "premium": 111.95
+        },
+        {
+          "premium": 126.55
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.98 (BEARISH)",
+        "Intraday Setup: Buy PE 8900.0 @ 97.35",
+        "Targets: 111.95 (15%) / 126.55 (30%)",
+        "Stop Loss: 90.05 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.9832194654201126,
+        "moneyness_score": 10,
+        "iv": 0.1769174560722895,
+        "rr_ratio": 2.0
+      },
+      "spot": 8939.95,
+      "delta": -0.41,
+      "iv": 17.69,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "COALINDIA",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 385.0,
+      "entry_price": 3.4,
+      "sl_premium": 3.15,
+      "targets": [
+        {
+          "premium": 3.91
+        },
+        {
+          "premium": 4.42
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.57 (BEARISH)",
+        "Intraday Setup: Buy PE 385.0 @ 3.4",
+        "Targets: 3.91 (15%) / 4.42 (30%)",
+        "Stop Loss: 3.15 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.5712059349466979,
+        "moneyness_score": 10,
+        "iv": 0.11816594627201557,
+        "rr_ratio": 2.0
+      },
+      "spot": 384.45,
+      "delta": -0.47,
+      "iv": 11.82,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "DIVISLAB",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 6400.0,
+      "entry_price": 113.75,
+      "sl_premium": 105.22,
+      "targets": [
+        {
+          "premium": 130.81
+        },
+        {
+          "premium": 147.88
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.60 (BEARISH)",
+        "Intraday Setup: Buy PE 6400.0 @ 113.75",
+        "Targets: 130.81 (15%) / 147.88 (30%)",
+        "Stop Loss: 105.22 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.60064792925313,
+        "moneyness_score": 10,
+        "iv": 0.18593233393840491,
+        "rr_ratio": 2.0
+      },
+      "spot": 6347.45,
+      "delta": -0.55,
+      "iv": 18.59,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "EICHERMOT",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 7200.0,
+      "entry_price": 147.65,
+      "sl_premium": 136.58,
+      "targets": [
+        {
+          "premium": 169.8
+        },
+        {
+          "premium": 191.95
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.71 (BEARISH)",
+        "Intraday Setup: Buy PE 7200.0 @ 147.65",
+        "Targets: 169.80 (15%) / 191.95 (30%)",
+        "Stop Loss: 136.58 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.7127402316405753,
+        "moneyness_score": 10,
+        "iv": 0.20141251007346436,
+        "rr_ratio": 2.0
+      },
+      "spot": 7121.5,
+      "delta": -0.57,
+      "iv": 20.14,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "HDFCBANK",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1000.0,
+      "entry_price": 11.35,
+      "sl_premium": 10.5,
+      "targets": [
+        {
+          "premium": 13.05
+        },
+        {
+          "premium": 14.76
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.71 (BULLISH)",
+        "Intraday Setup: Buy CE 1000.0 @ 11.35",
+        "Targets: 13.05 (15%) / 14.76 (30%)",
+        "Stop Loss: 10.50 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.7050262147556403,
+        "moneyness_score": 12,
+        "iv": 0.14710964365974072,
+        "rr_ratio": 2.0
+      },
+      "spot": 996.1,
+      "delta": 0.49,
+      "iv": 14.71,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "HINDUNILVR",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 2300.0,
+      "entry_price": 25.25,
+      "sl_premium": 23.36,
+      "targets": [
+        {
+          "premium": 29.04
+        },
+        {
+          "premium": 32.83
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.60 (BULLISH)",
+        "Intraday Setup: Buy CE 2300.0 @ 25.25",
+        "Targets: 29.04 (15%) / 32.83 (30%)",
+        "Stop Loss: 23.36 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.600214093477135,
+        "moneyness_score": 10,
+        "iv": 0.13584887510091062,
+        "rr_ratio": 2.0
+      },
+      "spot": 2293.5,
+      "delta": 0.51,
+      "iv": 13.58,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ICICIBANK",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1350.0,
+      "entry_price": 28.3,
+      "sl_premium": 26.18,
+      "targets": [
+        {
+          "premium": 32.55
+        },
+        {
+          "premium": 36.79
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.85 (BULLISH)",
+        "Intraday Setup: Buy CE 1350.0 @ 28.3",
+        "Targets: 32.55 (15%) / 36.79 (30%)",
+        "Stop Loss: 26.18 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.8500579244953484,
+        "moneyness_score": 10,
+        "iv": 0.15592316895574332,
+        "rr_ratio": 2.0
+      },
+      "spot": 1365.2,
+      "delta": 0.68,
+      "iv": 15.59,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "INFY",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1600.0,
+      "entry_price": 26.25,
+      "sl_premium": 24.28,
+      "targets": [
+        {
+          "premium": 30.19
+        },
+        {
+          "premium": 34.12
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 1.00 (BULLISH)",
+        "Intraday Setup: Buy CE 1600.0 @ 26.25",
+        "Targets: 30.19 (15%) / 34.12 (30%)",
+        "Stop Loss: 24.28 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.998155859387889,
+        "moneyness_score": 12,
+        "iv": 0.15475835916865618,
+        "rr_ratio": 2.0
+      },
+      "spot": 1606.8,
+      "delta": 0.6,
+      "iv": 15.48,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ITC",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 400.0,
+      "entry_price": 6.05,
+      "sl_premium": 5.6,
+      "targets": [
+        {
+          "premium": 6.96
+        },
+        {
+          "premium": 7.87
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.65 (BULLISH)",
+        "Intraday Setup: Buy CE 400.0 @ 6.05",
+        "Targets: 6.96 (15%) / 7.87 (30%)",
+        "Stop Loss: 5.60 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.6485286924394127,
+        "moneyness_score": 10,
+        "iv": 0.12645596699267628,
+        "rr_ratio": 2.0
+      },
+      "spot": 402.3,
+      "delta": 0.64,
+      "iv": 12.65,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "MARUTI",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 16300.0,
+      "entry_price": 132.1,
+      "sl_premium": 122.19,
+      "targets": [
+        {
+          "premium": 151.91
+        },
+        {
+          "premium": 171.73
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.55 (BEARISH)",
+        "Intraday Setup: Buy PE 16300.0 @ 132.1",
+        "Targets: 151.91 (15%) / 171.73 (30%)",
+        "Stop Loss: 122.19 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.5459115818205873,
+        "moneyness_score": 10,
+        "iv": 0.15352978882088789,
+        "rr_ratio": 2.0
+      },
+      "spot": 16414.95,
+      "delta": -0.37,
+      "iv": 15.35,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ONGC",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 240.0,
+      "entry_price": 5.51,
+      "sl_premium": 5.1,
+      "targets": [
+        {
+          "premium": 6.34
+        },
+        {
+          "premium": 7.16
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.79 (BEARISH)",
+        "Intraday Setup: Buy PE 240.0 @ 5.51",
+        "Targets: 6.34 (15%) / 7.16 (30%)",
+        "Stop Loss: 5.10 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.7916978141439135,
+        "moneyness_score": 10,
+        "iv": 0.16362609566748137,
+        "rr_ratio": 2.0
+      },
+      "spot": 235.35,
+      "delta": -0.69,
+      "iv": 16.36,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "POWERGRID",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 265.0,
+      "entry_price": 4.35,
+      "sl_premium": 4.02,
+      "targets": [
+        {
+          "premium": 5.0
+        },
+        {
+          "premium": 5.65
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score -0.73 (BEARISH)",
+        "Intraday Setup: Buy PE 265.0 @ 4.35",
+        "Targets: 5.00 (15%) / 5.65 (30%)",
+        "Stop Loss: 4.02 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.7318002352757969,
+        "moneyness_score": 10,
+        "iv": 0.15167746601253748,
+        "rr_ratio": 2.0
+      },
+      "spot": 262.2,
+      "delta": -0.59,
+      "iv": 15.17,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "SBIN",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 975.0,
+      "entry_price": 9.3,
+      "sl_premium": 8.6,
+      "targets": [
+        {
+          "premium": 10.7
+        },
+        {
+          "premium": 12.09
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.75 (BULLISH)",
+        "Intraday Setup: Buy CE 975.0 @ 9.3",
+        "Targets: 10.70 (15%) / 12.09 (30%)",
+        "Stop Loss: 8.60 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.7461958880240208,
+        "moneyness_score": 10,
+        "iv": 0.14800715990066526,
+        "rr_ratio": 2.0
+      },
+      "spot": 967.25,
+      "delta": 0.44,
+      "iv": 14.8,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "SUNPHARMA",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1800.0,
+      "entry_price": 20.85,
+      "sl_premium": 19.29,
+      "targets": [
+        {
+          "premium": 23.98
+        },
+        {
+          "premium": 27.11
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.88 (BULLISH)",
+        "Intraday Setup: Buy CE 1800.0 @ 20.85",
+        "Targets: 23.98 (15%) / 27.11 (30%)",
+        "Stop Loss: 19.29 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.878719973450755,
+        "moneyness_score": 10,
+        "iv": 0.1355930086541921,
+        "rr_ratio": 2.0
+      },
+      "spot": 1797.1,
+      "delta": 0.52,
+      "iv": 13.56,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "TATACONSUM",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1200.0,
+      "entry_price": 6.7,
+      "sl_premium": 6.2,
+      "targets": [
+        {
+          "premium": 7.7
+        },
+        {
+          "premium": 8.71
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.87 (BULLISH)",
+        "Intraday Setup: Buy CE 1200.0 @ 6.7",
+        "Targets: 7.70 (15%) / 8.71 (30%)",
+        "Stop Loss: 6.20 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.8718878498106734,
+        "moneyness_score": 5,
+        "iv": 0.21677434541583063,
+        "rr_ratio": 2.0
+      },
+      "spot": 1157.4,
+      "delta": 0.23,
+      "iv": 21.68,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "TATASTEEL",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 172.5,
+      "entry_price": 3.29,
+      "sl_premium": 3.04,
+      "targets": [
+        {
+          "premium": 3.78
+        },
+        {
+          "premium": 4.28
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.54 (BULLISH)",
+        "Intraday Setup: Buy CE 172.5 @ 3.29",
+        "Targets: 3.78 (15%) / 4.28 (30%)",
+        "Stop Loss: 3.04 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.5414629765580019,
+        "moneyness_score": 10,
+        "iv": 0.20419607978761195,
+        "rr_ratio": 2.0
+      },
+      "spot": 172.85,
+      "delta": 0.56,
+      "iv": 20.42,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "TECHM",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 1580.0,
+      "entry_price": 25.95,
+      "sl_premium": 24.0,
+      "targets": [
+        {
+          "premium": 29.84
+        },
+        {
+          "premium": 33.73
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.56 (BULLISH)",
+        "Intraday Setup: Buy CE 1580.0 @ 25.95",
+        "Targets: 29.84 (15%) / 33.73 (30%)",
+        "Stop Loss: 24.00 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.5564829451379438,
+        "moneyness_score": 10,
+        "iv": 0.20392590851224962,
+        "rr_ratio": 2.0
+      },
+      "spot": 1575.4,
+      "delta": 0.51,
+      "iv": 20.39,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ULTRACEMCO",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 11800.0,
+      "entry_price": 127.75,
+      "sl_premium": 118.17,
+      "targets": [
+        {
+          "premium": 146.91
+        },
+        {
+          "premium": 166.08
+        }
+      ],
+      "confidence": 0.9,
+      "rationale": [
+        "Directional Score 0.78 (BULLISH)",
+        "Intraday Setup: Buy CE 11800.0 @ 127.75",
+        "Targets: 146.91 (15%) / 166.08 (30%)",
+        "Stop Loss: 118.17 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.7824672217437074,
+        "moneyness_score": 10,
+        "iv": 0.15374640197032124,
+        "rr_ratio": 2.0
+      },
+      "spot": 11727.9,
+      "delta": 0.46,
+      "iv": 15.37,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "BAJAJFINSV",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 2060.0,
+      "entry_price": 22.9,
+      "sl_premium": 21.18,
+      "targets": [
+        {
+          "premium": 26.33
+        },
+        {
+          "premium": 29.77
+        }
+      ],
+      "confidence": 0.86,
+      "rationale": [
+        "Directional Score -0.46 (BEARISH)",
+        "Intraday Setup: Buy PE 2060.0 @ 22.9",
+        "Targets: 26.33 (15%) / 29.77 (30%)",
+        "Stop Loss: 21.18 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.4614977117075756,
+        "moneyness_score": 10,
+        "iv": 0.18206705003194507,
+        "rr_ratio": 2.0
+      },
+      "spot": 2070.4,
+      "delta": -0.41,
+      "iv": 18.21,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "NIFTY",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "23-DEC-2025",
+      "strike": 26000.0,
+      "entry_price": 180.45,
+      "sl_premium": 166.92,
+      "targets": [
+        {
+          "premium": 207.52
+        },
+        {
+          "premium": 234.58
+        }
+      ],
+      "confidence": 0.85,
+      "rationale": [
+        "Directional Score 0.45 (BULLISH)",
+        "Intraday Setup: Buy CE 26000.0 @ 180.45",
+        "Targets: 207.52 (15%) / 234.58 (30%)",
+        "Stop Loss: 166.92 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.4451477697214003,
+        "moneyness_score": 12,
+        "iv": 0.0940519853388192,
+        "rr_ratio": 2.0
+      },
+      "spot": 26027.3,
+      "delta": 0.58,
+      "iv": 9.41,
+      "dte": 8,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "BRITANNIA",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 6000.0,
+      "entry_price": 112.05,
+      "sl_premium": 103.65,
+      "targets": [
+        {
+          "premium": 128.86
+        },
+        {
+          "premium": 145.66
+        }
+      ],
+      "confidence": 0.84,
+      "rationale": [
+        "Directional Score 0.44 (BULLISH)",
+        "Intraday Setup: Buy CE 6000.0 @ 112.05",
+        "Targets: 128.86 (15%) / 145.66 (30%)",
+        "Stop Loss: 103.65 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.4432973923682803,
+        "moneyness_score": 10,
+        "iv": 0.16754903194485232,
+        "rr_ratio": 2.0
+      },
+      "spot": 6038.05,
+      "delta": 0.61,
+      "iv": 16.75,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "APOLLOHOSP",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 7200.0,
+      "entry_price": 141.3,
+      "sl_premium": 130.7,
+      "targets": [
+        {
+          "premium": 162.5
+        },
+        {
+          "premium": 183.69
+        }
+      ],
+      "confidence": 0.78,
+      "rationale": [
+        "Directional Score -0.38 (BEARISH)",
+        "Intraday Setup: Buy PE 7200.0 @ 141.3",
+        "Targets: 162.50 (15%) / 183.69 (30%)",
+        "Stop Loss: 130.70 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.3773393331025729,
+        "moneyness_score": 10,
+        "iv": 0.15112810378307479,
+        "rr_ratio": 2.0
+      },
+      "spot": 7086.55,
+      "delta": -0.66,
+      "iv": 15.11,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "SBILIFE",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 2020.0,
+      "entry_price": 16.15,
+      "sl_premium": 14.94,
+      "targets": [
+        {
+          "premium": 18.57
+        },
+        {
+          "premium": 20.99
+        }
+      ],
+      "confidence": 0.75,
+      "rationale": [
+        "Directional Score -0.35 (BEARISH)",
+        "Intraday Setup: Buy PE 2020.0 @ 16.15",
+        "Targets: 18.57 (15%) / 20.99 (30%)",
+        "Stop Loss: 14.94 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.3486785155953952,
+        "moneyness_score": 10,
+        "iv": 0.15365742751937359,
+        "rr_ratio": 2.0
+      },
+      "spot": 2034.9,
+      "delta": -0.37,
+      "iv": 15.37,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "WIPRO",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 260.0,
+      "entry_price": 5.38,
+      "sl_premium": 4.98,
+      "targets": [
+        {
+          "premium": 6.19
+        },
+        {
+          "premium": 6.99
+        }
+      ],
+      "confidence": 0.68,
+      "rationale": [
+        "Directional Score 0.28 (BULLISH)",
+        "Intraday Setup: Buy CE 260.0 @ 5.38",
+        "Targets: 6.19 (15%) / 6.99 (30%)",
+        "Stop Loss: 4.98 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.275562339639806,
+        "moneyness_score": 10,
+        "iv": 0.19027643845677378,
+        "rr_ratio": 2.0
+      },
+      "spot": 261.75,
+      "delta": 0.61,
+      "iv": 19.03,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "ASIANPAINT",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 2780.0,
+      "entry_price": 42.9,
+      "sl_premium": 39.68,
+      "targets": [
+        {
+          "premium": 49.33
+        },
+        {
+          "premium": 55.77
+        }
+      ],
+      "confidence": 0.67,
+      "rationale": [
+        "Directional Score 0.27 (BULLISH)",
+        "Intraday Setup: Buy CE 2780.0 @ 42.9",
+        "Targets: 49.33 (15%) / 55.77 (30%)",
+        "Stop Loss: 39.68 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.2683583063836002,
+        "moneyness_score": 10,
+        "iv": 0.1722436652997508,
+        "rr_ratio": 2.0
+      },
+      "spot": 2780.2,
+      "delta": 0.54,
+      "iv": 17.22,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "BAJFINANCE",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 1050.0,
+      "entry_price": 38.6,
+      "sl_premium": 35.71,
+      "targets": [
+        {
+          "premium": 44.39
+        },
+        {
+          "premium": 50.18
+        }
+      ],
+      "confidence": 0.66,
+      "rationale": [
+        "Directional Score -0.26 (BEARISH)",
+        "Intraday Setup: Buy PE 1050.0 @ 38.6",
+        "Targets: 44.39 (15%) / 50.18 (30%)",
+        "Stop Loss: 35.71 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.2615176685800841,
+        "moneyness_score": 10,
+        "iv": 0.19116147522479296,
+        "rr_ratio": 2.0
+      },
+      "spot": 1012.7,
+      "delta": -0.8,
+      "iv": 19.12,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "JSWSTEEL",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 1120.0,
+      "entry_price": 20.4,
+      "sl_premium": 18.87,
+      "targets": [
+        {
+          "premium": 23.46
+        },
+        {
+          "premium": 26.52
+        }
+      ],
+      "confidence": 0.66,
+      "rationale": [
+        "Directional Score -0.26 (BEARISH)",
+        "Intraday Setup: Buy PE 1120.0 @ 20.4",
+        "Targets: 23.46 (15%) / 26.52 (30%)",
+        "Stop Loss: 18.87 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.2631759722100079,
+        "moneyness_score": 10,
+        "iv": 0.21491974673345687,
+        "rr_ratio": 2.0
+      },
+      "spot": 1114.8,
+      "delta": -0.51,
+      "iv": 21.49,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "KOTAKBANK",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 2180.0,
+      "entry_price": 32.55,
+      "sl_premium": 30.11,
+      "targets": [
+        {
+          "premium": 37.43
+        },
+        {
+          "premium": 42.31
+        }
+      ],
+      "confidence": 0.62,
+      "rationale": [
+        "Directional Score 0.22 (BULLISH)",
+        "Intraday Setup: Buy CE 2180.0 @ 32.55",
+        "Targets: 37.43 (15%) / 42.31 (30%)",
+        "Stop Loss: 30.11 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.2182916313397764,
+        "moneyness_score": 10,
+        "iv": 0.1624674324864521,
+        "rr_ratio": 2.0
+      },
+      "spot": 2181.3,
+      "delta": 0.55,
+      "iv": 16.25,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "LT",
+      "bias": "BULLISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "strike": 4060.0,
+      "entry_price": 67.6,
+      "sl_premium": 62.53,
+      "targets": [
+        {
+          "premium": 77.74
+        },
+        {
+          "premium": 87.88
+        }
+      ],
+      "confidence": 0.62,
+      "rationale": [
+        "Directional Score 0.22 (BULLISH)",
+        "Intraday Setup: Buy CE 4060.0 @ 67.6",
+        "Targets: 77.74 (15%) / 87.88 (30%)",
+        "Stop Loss: 62.53 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": 0.2187201380596971,
+        "moneyness_score": 10,
+        "iv": 0.12762330061346294,
+        "rr_ratio": 2.0
+      },
+      "spot": 4092.3,
+      "delta": 0.67,
+      "iv": 12.76,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    },
+    {
+      "as_of": "2025-12-15",
+      "symbol": "HEROMOTOCO",
+      "bias": "BEARISH",
+      "instrument": "OPTION",
+      "action": "BUY",
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "strike": 6100.0,
+      "entry_price": 183.25,
+      "sl_premium": 169.51,
+      "targets": [
+        {
+          "premium": 210.74
+        },
+        {
+          "premium": 238.22
+        }
+      ],
+      "confidence": 0.61,
+      "rationale": [
+        "Directional Score -0.21 (BEARISH)",
+        "Intraday Setup: Buy PE 6100.0 @ 183.25",
+        "Targets: 210.74 (15%) / 238.22 (30%)",
+        "Stop Loss: 169.51 (7.5%)",
+        "Sell-By: 2025-12-16 (Strict T+1 Exit)"
+      ],
+      "diagnostics": {
+        "direction_score": -0.2066721315547607,
+        "moneyness_score": 10,
+        "iv": 0.22819056257316844,
+        "rr_ratio": 2.0
+      },
+      "spot": 5959.5,
+      "delta": -0.66,
+      "iv": 22.82,
+      "dte": 15,
+      "sell_by": "2025-12-16"
+    }
+  ]
+}

@@ -196,6 +196,7 @@ function Table({ rows, quotes, onRowClick }) {
                         <th className="text-left px-4 py-3">SL</th>
                         <th className="text-left px-4 py-3">T1</th>
                         <th className="text-left px-4 py-3">T2</th>
+                        <th className="text-left px-4 py-3">RR</th>
                         <th className="text-left px-4 py-3">Sell-by</th>
                         <th className="text-left px-4 py-3">Reviewer</th>
                         <th className="text-left px-4 py-3">Conf</th>
@@ -211,6 +212,7 @@ function Table({ rows, quotes, onRowClick }) {
                         const sl = getSL(r);
                         const t1 = getTargetPremium(r, 0);
                         const t2 = getTargetPremium(r, 1);
+                        const rr = r.rr_ratio ?? (r.diagnostics?.rr_ratio) ?? null;
 
                         const sellBy = getSellBy(r);
                         const spot = getSpot(r);
@@ -280,6 +282,7 @@ function Table({ rows, quotes, onRowClick }) {
                                 <td className="px-4 py-3 text-rose-700">{fmt(sl)}</td>
                                 <td className="px-4 py-3 text-emerald-700">{fmt(t1)}</td>
                                 <td className="px-4 py-3 text-emerald-700">{fmt(t2)}</td>
+                                <td className="px-4 py-3 text-slate-600">{fmt(rr)}</td>
 
                                 <td className="px-4 py-3 text-slate-700">{sellBy ?? "—"}</td>
 
@@ -323,9 +326,10 @@ function Table({ rows, quotes, onRowClick }) {
     );
 }
 
+
 /** ---------- page ---------- **/
 
-export default function RecoPage({ title, subtitle, pickRows }) {
+export default function RecoPage({ title, subtitle, pickRows, apiPrefix = "/api/options" }) {
     const [asOf, setAsOf] = useState("");
     const [dates, setDates] = useState([]);
     const [latest, setLatest] = useState("");
@@ -336,7 +340,9 @@ export default function RecoPage({ title, subtitle, pickRows }) {
     const [payoffQuote, setPayoffQuote] = useState(null);
 
     useEffect(() => {
-        fetch("/api/options/dates")
+        // e.g. /api/options/dates or /api/options/intraday/dates
+        const url = `${apiPrefix}/dates`;
+        fetch(url)
             .then((r) => r.json())
             .then((d) => {
                 setDates(d.dates || []);
@@ -345,15 +351,16 @@ export default function RecoPage({ title, subtitle, pickRows }) {
             })
             .catch(() => { });
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [apiPrefix]);
 
     useEffect(() => {
         if (!asOf) return;
-        fetch(`/api/options/${encodeURIComponent(asOf)}`)
+        // e.g. /api/options/2025-01-01 or /api/options/intraday/2025-01-01
+        fetch(`${apiPrefix}/${encodeURIComponent(asOf)}`)
             .then((r) => r.json())
             .then(setData)
             .catch(() => setData(null));
-    }, [asOf]);
+    }, [asOf, apiPrefix]);
 
     const rowsRaw = useMemo(() => (Array.isArray(data) ? data : pickRows(data)), [data, pickRows]);
 
