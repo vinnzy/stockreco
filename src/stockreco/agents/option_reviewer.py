@@ -27,6 +27,7 @@ class ReviewerConfig:
     spec_min_dte: int = 1
     
     # Theta risk: max theta decay as % of entry price per day
+    # Theta risk: max theta decay as % of entry price per day
     strict_max_theta_pct: float = 0.08  # 8% per day
     opp_max_theta_pct: float = 0.12     # 12% per day
     spec_max_theta_pct: float = 0.15    # 15% per day
@@ -84,20 +85,27 @@ class OptionReviewer:
             return self.cfg.spec_max_theta_pct
         return self.cfg.strict_max_theta_pct
     
-    def review(self, recommendations: List[Any]) -> Tuple[List[Any], List[Dict[str, str]]]:
+    def review(self, recommendations: List[Any], vix: Optional[float] = None) -> Tuple[List[Any], List[Dict[str, str]]]:
         """
         Review a list of option recommendations.
-        
-        Args:
-            recommendations: List of OptionReco objects or dicts
-            
-        Returns:
-            Tuple of (approved_list, rejected_list)
-            - approved_list: recommendations that passed all filters
-            - rejected_list: list of dicts with {symbol, reason}
+        NEW: Accepts 'vix' to dynamically adjust strictness.
         """
         approved = []
         rejected = []
+        
+        # Dynamic Regime Adjustment
+        effective_mode = self.cfg.mode
+        regime_note = ""
+        
+        if vix is not None and vix > 0:
+            if vix > 22.0:
+                if effective_mode != "strict":
+                    effective_mode = "strict"
+                    regime_note = f" [Market Regime: High VIX ({vix:.1f}) -> Enforcing STRICT mode]"
+            elif vix < 12.0:
+                 if effective_mode == "strict":
+                     effective_mode = "opportunistic"
+                     regime_note = f" [Market Regime: Low VIX ({vix:.1f}) -> Allowing OPPORTUNISTIC mode]"
         
         for reco in recommendations:
             # Convert to dict if needed
@@ -109,12 +117,25 @@ class OptionReviewer:
                 reco_dict = getattr(reco, "__dict__", {})
             
             # Skip HOLD recommendations (already neutral)
+            # Do NOT add to approved list (approved means valid signal to trade)
+            # Skip HOLD recommendations (already neutral)
+            # Do NOT add to approved list (approved means valid signal to trade)
             if reco_dict.get("action") == "HOLD":
-                approved.append(reco)
+                # Check if it was due to an error, so we can expose it in Rejected list
+                rats = reco_dict.get("rationale", [])
+                # If rationale contains explicit failure message
+                if any(("Failed to load" in str(r) or "Error" in str(r)) for r in rats):
+                   rejected.append({
+                        "symbol": reco_dict.get("symbol", "UNKNOWN"),
+                        "side": "N/A",
+                        "strike": "N/A",
+                        "expiry": "N/A",
+                        "reason": f"System Error: {'; '.join(str(r) for r in rats)}"
+                    })
                 continue
             
             # Apply filters
-            rejection_reason = self._check_recommendation(reco_dict)
+            rejection_reason = self._check_recommendation(reco_dict, effective_mode)
             
             if rejection_reason:
                 rejected.append({
@@ -122,14 +143,19 @@ class OptionReviewer:
                     "side": reco_dict.get("side"),
                     "strike": reco_dict.get("strike"),
                     "expiry": reco_dict.get("expiry"),
-                    "reason": rejection_reason
+                    "reason": rejection_reason + regime_note
                 })
             else:
+                if regime_note:
+                    # Append regime note to rationale if possible
+                    existing = reco_dict.get("rationale", [])
+                    if isinstance(existing, list):
+                        existing.append(regime_note.strip())
                 approved.append(reco)
         
         return approved, rejected
     
-    def _check_recommendation(self, reco: Dict[str, Any]) -> str:
+    def _check_recommendation(self, reco: Dict[str, Any], mode_override: Optional[str] = None) -> str:
         """
         Check a single recommendation against all filters.
         
@@ -137,24 +163,43 @@ class OptionReviewer:
             Empty string if approved, rejection reason if rejected
         """
         symbol = reco.get("symbol", "UNKNOWN")
+        mode = mode_override or self.cfg.mode
         
         # 1. Confidence check
         confidence = float(reco.get("confidence", 0.0))
-        min_conf = self._min_confidence()
+        # 1. Min Confidence
+        min_conf = {
+            "strict": self.cfg.strict_min_confidence,
+            "opportunistic": self.cfg.opp_min_confidence,
+            "speculative": self.cfg.spec_min_confidence,
+        }.get(mode, self.cfg.strict_min_confidence)
+
         if confidence < min_conf:
-            return f"Confidence {confidence:.2f} below {min_conf:.2f} threshold for {self.cfg.mode} mode"
+            return f"Confidence {confidence:.2f} below {min_conf:.2f} threshold for {mode} mode"
         
         # 2. DTE check
         dte = reco.get("dte")
         if dte is not None:
-            min_dte = self._min_dte()
+            # 2. Min DTE
+            min_dte = {
+                "strict": self.cfg.strict_min_dte,
+                "opportunistic": self.cfg.opp_min_dte,
+                "speculative": self.cfg.spec_min_dte,
+            }.get(mode, self.cfg.strict_min_dte)
+            
             if dte < min_dte:
-                return f"DTE {dte} below minimum {min_dte} for {self.cfg.mode} mode (theta cliff risk)"
+                return f"DTE {dte} below minimum {min_dte} for {mode} mode (theta cliff risk)"
         
         # 3. IV check
         iv = reco.get("iv")
         if iv is not None:
-            max_iv = self._max_iv()
+             # 3. Max IV
+            max_iv = {
+                "strict": self.cfg.strict_max_iv,
+                "opportunistic": self.cfg.opp_max_iv,
+                "speculative": self.cfg.spec_max_iv,
+            }.get(mode, self.cfg.strict_max_iv)
+            
             if iv > max_iv:
                 return f"IV {iv:.1f}% exceeds {max_iv:.1f}% threshold (high premium/IV crush risk)"
         
@@ -163,7 +208,13 @@ class OptionReviewer:
         entry_price = reco.get("entry_price")
         if theta_per_day is not None and entry_price is not None and entry_price > 0:
             theta_pct = abs(theta_per_day) / entry_price
-            max_theta = self._max_theta_pct()
+             # 4. Max Theta
+            max_theta = {
+                "strict": self.cfg.strict_max_theta_pct,
+                "opportunistic": self.cfg.opp_max_theta_pct,
+                "speculative": self.cfg.spec_max_theta_pct,
+            }.get(mode, self.cfg.strict_max_theta_pct)
+            
             if theta_pct > max_theta:
                 return f"Theta decay {theta_pct*100:.1f}% of entry per day exceeds {max_theta*100:.1f}% threshold"
         
@@ -188,7 +239,8 @@ class OptionReviewer:
 
 def review_option_recommendations(
     recommendations: List[Any],
-    mode: Mode = "strict"
+    mode: Mode = "strict",
+    vix: Optional[float] = None
 ) -> Dict[str, Any]:
     """
     Convenience function to review option recommendations.
@@ -206,7 +258,7 @@ def review_option_recommendations(
     cfg = ReviewerConfig(mode=mode)
     reviewer = OptionReviewer(cfg)
     
-    approved, rejected = reviewer.review(recommendations)
+    approved, rejected = reviewer.review(recommendations, vix=vix)
     
     return {
         "recommender": recommendations,

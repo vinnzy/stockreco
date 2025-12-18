@@ -71,7 +71,10 @@ def _pick_cols(df: pd.DataFrame) -> Dict[str, str]:
         "spot": has("UNDRLNG_ST"),
         "close": has("CLOSE_PRIC", "CLOSE_PRICE", "CLOSE"),
         "settle": has("SETTLEMENT", "SETTLE_PR", "SETTLEPRICE"),
-        "oi": has("OI_NO_CON", "OPEN_INT", "OPENINTEREST", "OI"),
+        "open": has("OPEN_PRICE", "OPEN"),
+        "high": has("HIGH_PRICE", "HI_PRICE", "HIGH"),
+        "low": has("LOW_PRICE", "LO_PRICE", "LOW"),
+        "oi": has("OI_NO_CON", "OPEN_INT", "OPENINTEREST", "OI", "OI_LAKHS", "OPEN_INT*"),
         "vol": has("TRADED_QUA", "TOTTRDQTY", "VOLUME", "CONTRACTS"),
         "oi_ch": has("CHG_IN_OI", "CHANGE_IN_OI"),
     }
@@ -93,9 +96,9 @@ def _parse_contract(desc: str) -> Optional[Dict[str, str]]:
 
 def _aliases(nse_sym: str) -> List[str]:
     if nse_sym == "NIFTY":
-        return ["NIFTY"]
+        return ["NIFTY", "NIFTY 50", "NIFTY50"]
     if nse_sym == "BANKNIFTY":
-        return ["BANKNIFTY"]
+        return ["BANKNIFTY", "NIFTY BANK", "BANK NIFTY"]
     return [nse_sym]
 
 def _fnum(v) -> Optional[float]:
@@ -113,42 +116,126 @@ def _fnum(v) -> Optional[float]:
 
 def _build_chain(df: pd.DataFrame, nse_sym: str) -> List[OptionChainRow]:
     m = _pick_cols(df)
-    if not m["contract"]:
-        raise RuntimeError(f"Unsupported op/fo format: missing CONTRACT_D. Have: {list(df.columns)[:25]}")
+    
+    # Format 1: CONTRACT_D
+    if m["contract"]:
+        aliases = set([a.upper() for a in _aliases(nse_sym)])
+        out: List[OptionChainRow] = []
+        
+        # Optimization: Pre-filter dataframe using vectorized string match
+        # Construct regex for aliases: OPTIDXNIFTY... or OPTSTKBHEL...
+        # Anchored to start to avoid false positives
+        # Pattern: ^(OPTIDX|OPTSTK)(ALIAS)(\d|-)
+        # Actually simpler: just contains ONE of the aliases in the right place?
+        # Let's rely on basic string containment first, then parse.
+        # But rigorous way:
+        pat = "|".join([re.escape(a) for a in aliases])
+        # We need to match underlying. 
+        # CONTRACT_D usually: OPTIDX(UND)DD-MMM...
+        # So check if UND is in aliases.
+        
+        # Vectorized filter (much faster than iterating 100k rows)
+        # We look for the underlying inside the string. 
+        # To be safe, specific regex search on the series:
+        # This might still be slow if regex is complex, but faster than python loop.
+        
+        # Fast path: str.contains with regex
+        mask = df[m["contract"]].astype(str).str.contains(pat, regex=True)
+        subset = df[mask]
 
-    aliases = set([a.upper() for a in _aliases(nse_sym)])
-    out: List[OptionChainRow] = []
-    for _, r in df.iterrows():
-        info = _parse_contract(r.get(m["contract"]))
-        if not info:
-            continue
-        if info["underlying"].upper() not in aliases:
-            continue
-        cp = info["cp"]
-        try:
-            strike = float(info["strike"])
-        except Exception:
-            continue
+        contract_col = m["contract"]
+        close_col = m["close"]
+        settle_col = m["settle"]
+        vol_col = m["vol"]
+        oi_col = m["oi"]
+        oi_ch_col = m["oi_ch"]
+        high_col = m["high"]
+        low_col = m["low"]
+        
+        for _, r in subset.iterrows():
+            info = _parse_contract(r.get(contract_col))
+            if not info:
+                continue
+            if info["underlying"].upper() not in aliases:
+                continue
+            cp = info["cp"]
+            try:
+                strike = float(info["strike"])
+            except Exception:
+                continue
 
-        ltp = _fnum(r.get(m["close"]))
-        if (ltp is None or ltp <= 0) and m["settle"]:
-            ltp = _fnum(r.get(m["settle"]))
-        if ltp is None or ltp <= 0:
-            continue
+            ltp = _fnum(r.get(close_col))
+            if (ltp is None or ltp <= 0) and settle_col:
+                ltp = _fnum(r.get(settle_col))
+            if ltp is None or ltp <= 0:
+                continue
 
-        out.append(OptionChainRow(
-            strike=strike,
-            expiry=str(info["expiry"]),
-            option_type=cp,
-            ltp=float(ltp),
-            volume=_fnum(r.get(m["vol"])),
-            oi=_fnum(r.get(m["oi"])),
-            oi_change=_fnum(r.get(m["oi_ch"])) if m["oi_ch"] else None,
-            iv=None,
-            bid=None,
-            ask=None,
-        ))
-    return out
+            out.append(OptionChainRow(
+                strike=strike,
+                expiry=str(info["expiry"]),
+                option_type=cp,
+                ltp=float(ltp),
+                volume=_fnum(r.get(vol_col)),
+                oi=_fnum(r.get(oi_col)),
+                oi_change=_fnum(r.get(oi_ch_col)) if oi_ch_col else None,
+                iv=None,
+                bid=None,
+                ask=None,
+                high=_fnum(r.get(high_col)) if high_col else None,
+                low=_fnum(r.get(low_col)) if low_col else None,
+            ))
+        return out
+
+    # Format 2: SPlit Columns (INSTRUMENT, SYMBOL, EXP_DATE, STR_PRICE, OPT_TYPE)
+    # Check required columns
+    req = ["SYMBOL", "EXP_DATE", "STR_PRICE", "OPT_TYPE"]
+    if all(c in df.columns for c in req):
+         aliases = set([a.upper() for a in _aliases(nse_sym)])
+         out: List[OptionChainRow] = []
+         
+         # Optimization: Pre-filter by symbol
+         # Vectorized filter much faster than row-by-row
+         mask = df["SYMBOL"].astype(str).str.strip().str.upper().isin(aliases)
+         subset = df[mask]
+         
+         for _, r in subset.iterrows():
+             # Symbol check already done by mask
+
+             
+             try:
+                 strike = float(r["STR_PRICE"])
+             except:
+                 continue
+                 
+             cp = str(r["OPT_TYPE"]).strip().upper() # CE/PE
+             expiry = str(r["EXP_DATE"]).strip() # usually DD/MM/YYYY or DD-MMM-YYYY
+             
+             ltp_val = r.get(m["close"])
+             if (ltp_val is None or _fnum(ltp_val) is None) and m["settle"]:
+                  ltp_val = r.get(m["settle"])
+             ltp = _fnum(ltp_val)
+             
+             if ltp is None or ltp <= 0:
+                 continue
+                 
+             out.append(OptionChainRow(
+                strike=strike,
+                expiry=expiry,
+                option_type=cp,
+                ltp=float(ltp),
+                volume=_fnum(r.get(m["vol"])),
+                oi=_fnum(r.get(m["oi"])),
+                oi_change=_fnum(r.get(m["oi_ch"])) if m["oi_ch"] else None,
+                iv=None,
+                bid=None,
+                ask=None,
+                high=_fnum(r.get(m["high"])) if m["high"] else None,
+                low=_fnum(r.get(m["low"])) if m["low"] else None,
+            ))
+         return out
+
+    # If neither format matches
+    raise RuntimeError(f"Unsupported op/fo format: missing CONTRACT_D or split cols. Have: {list(df.columns)[:25]}")
 
 def _spot_from_df(df: pd.DataFrame) -> Optional[float]:
     m = _pick_cols(df)
@@ -197,10 +284,16 @@ class LocalCsvProvider:
         spot = None
 
         # quick filter prefix without capturing groups
+        # quick filter prefix without capturing groups
         def _filter(df: pd.DataFrame) -> pd.DataFrame:
             al = _aliases(nse_sym)
-            pat = "|".join([re.escape(f"OPTIDX{a}") + "|" + re.escape(f"OPTSTK{a}") for a in al])
-            return df[df["CONTRACT_D"].astype(str).str.contains(pat, regex=True, na=False)]
+            if "CONTRACT_D" in df.columns:
+                pat = "|".join([re.escape(f"OPTIDX{a}") + "|" + re.escape(f"OPTSTK{a}") for a in al])
+                return df[df["CONTRACT_D"].astype(str).str.contains(pat, regex=True, na=False)]
+            elif "SYMBOL" in df.columns:
+                 # Exact match on symbol
+                 return df[df["SYMBOL"].str.strip().str.upper().isin([a.upper() for a in al])]
+            return pd.DataFrame() # Should not happen if _build_chain checked cols
 
         op_df = self._load_op_df()
         if op_df is not None:
@@ -212,6 +305,34 @@ class LocalCsvProvider:
             if fo_df is not None:
                 f = _filter(fo_df)
                 spot = _spot_from_df(f) if not f.empty else None
+
+        # Fallback: Equity Bhavcopy in data/stocks/{as_of}/sec_bhavdata_full*.csv
+        if spot is None or spot <= 0:
+            try:
+                stock_dir = self.repo_root / "data" / "stocks" / self.as_of
+                if stock_dir.exists():
+                    bhav_files = list(stock_dir.glob("sec_bhavdata_full*.csv"))
+                    if bhav_files:
+                        # Load only necessary columns
+                        # file: SYMBOL, SERIES, ... CLOSE_PRICE ...
+                        # normalize cols
+                        df_eq = pd.read_csv(bhav_files[0])
+                        df_eq.columns = [c.strip().upper() for c in df_eq.columns]
+                        
+                        # Find symbol row
+                        # NSE symbol might be "RELIANCE", provided "RELIANCE.NS" or "RELIANCE"
+                        # Normalize to pure symbol name
+                        target = nse_sym.replace(".NS", "").upper()
+                        
+                        row = df_eq[df_eq["SYMBOL"].str.strip().str.upper() == target]
+                        if not row.empty:
+                            # Prefer "EQ" series if multiple? Usually one row per symbol in full bhav
+                            val = row.iloc[0].get("CLOSE_PRICE")
+                            if val is not None:
+                                spot = float(val)
+            except Exception as e:
+                print(f"[WARN] Failed to load spot from equity bhavcopy: {e}")
+                pass
 
         if spot is None or spot <= 0:
             spot = _yf_spot(sym)
@@ -233,7 +354,14 @@ class LocalCsvProvider:
                 chain = _build_chain(fo_df, nse_sym)
 
         if not chain:
-            raise RuntimeError(f"No option rows found in local derivatives for {symbol} (op/fo parsed 0 rows)")
+            msg = f"No option rows found in local derivatives for {symbol} (using files {self.op_file}, {self.fo_file})."
+            if self._op_df is not None:
+                msg += f" OP_DF size: {len(self._op_df)}."
+            if self._fo_df is not None:
+                msg += f" FO_DF size: {len(self._fo_df)}."
+            # Don't crash, just log and return empty to allow graceful degradation/other providers? 
+            # Actually, per contract, we raise. But let's raise a clearer error.
+            raise RuntimeError(msg)
 
         if expiry:
             chain = [r for r in chain if str(r.expiry).upper() == str(expiry).upper()]

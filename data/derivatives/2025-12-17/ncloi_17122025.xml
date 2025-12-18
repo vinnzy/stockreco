@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MWPL_Viols>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE935A01035</ISIN>
+	<Scrip_Name>GLENMARK PHARMACEUTICALS</Scrip_Name>
+	<NSE_Symbol>GLENMARK</NSE_Symbol>
+	<MWPL_Limit>22585180</MWPL_Limit>
+	<Open_Interest>21459750</Open_Interest>
+	<Fut_Eq_Open_Interest>12557236.0507875</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE171Z01026</ISIN>
+	<Scrip_Name>BHARAT DYNAMICS LIMITED</Scrip_Name>
+	<NSE_Symbol>BDL</NSE_Symbol>
+	<MWPL_Limit>13786716</MWPL_Limit>
+	<Open_Interest>14804525</Open_Interest>
+	<Fut_Eq_Open_Interest>4535877.26127925</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE522F01014</ISIN>
+	<Scrip_Name>COAL INDIA LTD</Scrip_Name>
+	<NSE_Symbol>COALINDIA</NSE_Symbol>
+	<MWPL_Limit>227199238</MWPL_Limit>
+	<Open_Interest>93789900</Open_Interest>
+	<Fut_Eq_Open_Interest>53920156.327866</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE417T01026</ISIN>
+	<Scrip_Name>PB FINTECH LIMITED</Scrip_Name>
+	<NSE_Symbol>POLICYBZR</NSE_Symbol>
+	<MWPL_Limit>51720057</MWPL_Limit>
+	<Open_Interest>11937100</Open_Interest>
+	<Fut_Eq_Open_Interest>6298786.664821</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE205A01025</ISIN>
+	<Scrip_Name>VEDANTA LIMITED</Scrip_Name>
+	<NSE_Symbol>VEDL</NSE_Symbol>
+	<MWPL_Limit>255091106</MWPL_Limit>
+	<Open_Interest>207294400</Open_Interest>
+	<Fut_Eq_Open_Interest>104006613.4344375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE136B01020</ISIN>
+	<Scrip_Name>CYIENT LIMITED</Scrip_Name>
+	<NSE_Symbol>CYIENT</NSE_Symbol>
+	<MWPL_Limit>12039544</MWPL_Limit>
+	<Open_Interest>5557725</Open_Interest>
+	<Fut_Eq_Open_Interest>3012985.028191</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE195A01028</ISIN>
+	<Scrip_Name>SUPREME INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>SUPREMEIND</NSE_Symbol>
+	<MWPL_Limit>7242074</MWPL_Limit>
+	<Open_Interest>4270000</Open_Interest>
+	<Fut_Eq_Open_Interest>1969025.52442575</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE010B01027</ISIN>
+	<Scrip_Name>ZYDUS LIFESCIENCES LTD</Scrip_Name>
+	<NSE_Symbol>ZYDUSLIFE</NSE_Symbol>
+	<MWPL_Limit>32617803</MWPL_Limit>
+	<Open_Interest>18611100</Open_Interest>
+	<Fut_Eq_Open_Interest>10571121.992952</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE584A01023</ISIN>
+	<Scrip_Name>NMDC LTD.</Scrip_Name>
+	<NSE_Symbol>NMDC</NSE_Symbol>
+	<MWPL_Limit>517037525</MWPL_Limit>
+	<Open_Interest>511386750</Open_Interest>
+	<Fut_Eq_Open_Interest>286791165.0378675</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE752E01010</ISIN>
+	<Scrip_Name>POWER GRID CORP. LTD.</Scrip_Name>
+	<NSE_Symbol>POWERGRID</NSE_Symbol>
+	<MWPL_Limit>488832949</MWPL_Limit>
+	<Open_Interest>136915900</Open_Interest>
+	<Fut_Eq_Open_Interest>80545414.832628</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE07Y701011</ISIN>
+	<Scrip_Name>HITACHI ENERGY INDIA LTD</Scrip_Name>
+	<NSE_Symbol>POWERINDIA</NSE_Symbol>
+	<MWPL_Limit>1917916</MWPL_Limit>
+	<Open_Interest>951550</Open_Interest>
+	<Fut_Eq_Open_Interest>277054.378267</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE457L01029</ISIN>
+	<Scrip_Name>PG ELECTROPLAST LTD</Scrip_Name>
+	<NSE_Symbol>PGEL</NSE_Symbol>
+	<MWPL_Limit>23897684</MWPL_Limit>
+	<Open_Interest>24139900</Open_Interest>
+	<Fut_Eq_Open_Interest>7805195.8870045</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE171A01029</ISIN>
+	<Scrip_Name>FEDERAL BANK LTD</Scrip_Name>
+	<NSE_Symbol>FEDERALBNK</NSE_Symbol>
+	<MWPL_Limit>338654719</MWPL_Limit>
+	<Open_Interest>151355000</Open_Interest>
+	<Fut_Eq_Open_Interest>68362179.00335</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE761H01022</ISIN>
+	<Scrip_Name>PAGE INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>PAGEIND</NSE_Symbol>
+	<MWPL_Limit>955549</MWPL_Limit>
+	<Open_Interest>449805</Open_Interest>
+	<Fut_Eq_Open_Interest>248887.12384125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE066A01021</ISIN>
+	<Scrip_Name>EICHER MOTORS LTD</Scrip_Name>
+	<NSE_Symbol>EICHERMOT</NSE_Symbol>
+	<MWPL_Limit>20353850</MWPL_Limit>
+	<Open_Interest>7769975</Open_Interest>
+	<Fut_Eq_Open_Interest>3366113.37779</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE733E01010</ISIN>
+	<Scrip_Name>NTPC LTD</Scrip_Name>
+	<NSE_Symbol>NTPC</NSE_Symbol>
+	<MWPL_Limit>572782298</MWPL_Limit>
+	<Open_Interest>146761500</Open_Interest>
+	<Fut_Eq_Open_Interest>91735849.07016</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE018E01016</ISIN>
+	<Scrip_Name>SBI CARDS & PAY SER LTD</Scrip_Name>
+	<NSE_Symbol>SBICARD</NSE_Symbol>
+	<MWPL_Limit>39583537</MWPL_Limit>
+	<Open_Interest>27200000</Open_Interest>
+	<Fut_Eq_Open_Interest>15487340.791152</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE758E01017</ISIN>
+	<Scrip_Name>JIO FIN SERVICES LTD</Scrip_Name>
+	<NSE_Symbol>JIOFIN</NSE_Symbol>
+	<MWPL_Limit>446457456</MWPL_Limit>
+	<Open_Interest>269263000</Open_Interest>
+	<Fut_Eq_Open_Interest>151641796.05455</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE216A01030</ISIN>
+	<Scrip_Name>BRITANNIA INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>BRITANNIA</NSE_Symbol>
+	<MWPL_Limit>13082978</MWPL_Limit>
+	<Open_Interest>4667250</Open_Interest>
+	<Fut_Eq_Open_Interest>2804530.7779325</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE053A01029</ISIN>
+	<Scrip_Name>THE INDIAN HOTELS CO. LTD</Scrip_Name>
+	<NSE_Symbol>INDHOTEL</NSE_Symbol>
+	<MWPL_Limit>111956321</MWPL_Limit>
+	<Open_Interest>43956000</Open_Interest>
+	<Fut_Eq_Open_Interest>26888176.53781</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE211B01039</ISIN>
+	<Scrip_Name>THE PHOENIX MILLS LTD</Scrip_Name>
+	<NSE_Symbol>PHOENIXLTD</NSE_Symbol>
+	<MWPL_Limit>28283155</MWPL_Limit>
+	<Open_Interest>5328050</Open_Interest>
+	<Fut_Eq_Open_Interest>2908117.865408</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE208A01029</ISIN>
+	<Scrip_Name>ASHOK LEYLAND LTD</Scrip_Name>
+	<NSE_Symbol>ASHOKLEY</NSE_Symbol>
+	<MWPL_Limit>409181558</MWPL_Limit>
+	<Open_Interest>282170000</Open_Interest>
+	<Fut_Eq_Open_Interest>137807357.30205</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE634S01028</ISIN>
+	<Scrip_Name>MANKIND PHARMA LIMITED</Scrip_Name>
+	<NSE_Symbol>MANKIND</NSE_Symbol>
+	<MWPL_Limit>16915220</MWPL_Limit>
+	<Open_Interest>4284675</Open_Interest>
+	<Fut_Eq_Open_Interest>2698323.1801245</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE860A01027</ISIN>
+	<Scrip_Name>HCL TECHNOLOGIES LTD</Scrip_Name>
+	<NSE_Symbol>HCLTECH</NSE_Symbol>
+	<MWPL_Limit>145993539</MWPL_Limit>
+	<Open_Interest>27993700</Open_Interest>
+	<Fut_Eq_Open_Interest>17105618.563334</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE615H01020</ISIN>
+	<Scrip_Name>TITAGARH RAIL SYSTEMS LTD</Scrip_Name>
+	<NSE_Symbol>TITAGARH</NSE_Symbol>
+	<MWPL_Limit>12028036</MWPL_Limit>
+	<Open_Interest>10531350</Open_Interest>
+	<Fut_Eq_Open_Interest>5070448.04355775</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE038A01020</ISIN>
+	<Scrip_Name>HINDALCO  INDUSTRIES  LTD</Scrip_Name>
+	<NSE_Symbol>HINDALCO</NSE_Symbol>
+	<MWPL_Limit>176136372</MWPL_Limit>
+	<Open_Interest>103743500</Open_Interest>
+	<Fut_Eq_Open_Interest>73358529.896491</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE021A01026</ISIN>
+	<Scrip_Name>ASIAN PAINTS LIMITED</Scrip_Name>
+	<NSE_Symbol>ASIANPAINT</NSE_Symbol>
+	<MWPL_Limit>52357280</MWPL_Limit>
+	<Open_Interest>24834000</Open_Interest>
+	<Fut_Eq_Open_Interest>12071813.926995</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE749A01030</ISIN>
+	<Scrip_Name>JINDAL STEEL LIMITED</Scrip_Name>
+	<NSE_Symbol>JINDALSTEL</NSE_Symbol>
+	<MWPL_Limit>54776702</MWPL_Limit>
+	<Open_Interest>21713125</Open_Interest>
+	<Fut_Eq_Open_Interest>12389860.5340375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE180A01020</ISIN>
+	<Scrip_Name>MAX FINANCIAL SERV LTD</Scrip_Name>
+	<NSE_Symbol>MFSL</NSE_Symbol>
+	<MWPL_Limit>34712157</MWPL_Limit>
+	<Open_Interest>10737600</Open_Interest>
+	<Fut_Eq_Open_Interest>7998358.140368</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE562A01011</ISIN>
+	<Scrip_Name>INDIAN BANK</Scrip_Name>
+	<NSE_Symbol>INDIANB</NSE_Symbol>
+	<MWPL_Limit>52862157</MWPL_Limit>
+	<Open_Interest>28579000</Open_Interest>
+	<Fut_Eq_Open_Interest>11772539.15048</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE202E01016</ISIN>
+	<Scrip_Name>INDIAN RENEWABLE ENERGY</Scrip_Name>
+	<NSE_Symbol>IREDA</NSE_Symbol>
+	<MWPL_Limit>119011160</MWPL_Limit>
+	<Open_Interest>109554750</Open_Interest>
+	<Fut_Eq_Open_Interest>45977020.017567</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE982J01020</ISIN>
+	<Scrip_Name>ONE 97 COMMUNICATIONS LTD</Scrip_Name>
+	<NSE_Symbol>PAYTM</NSE_Symbol>
+	<MWPL_Limit>95715382</MWPL_Limit>
+	<Open_Interest>34789125</Open_Interest>
+	<Fut_Eq_Open_Interest>18030534.21076075</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE117A01022</ISIN>
+	<Scrip_Name>ABB INDIA LIMITED</Scrip_Name>
+	<NSE_Symbol>ABB</NSE_Symbol>
+	<MWPL_Limit>7946564</MWPL_Limit>
+	<Open_Interest>3977750</Open_Interest>
+	<Fut_Eq_Open_Interest>2274396.0533625</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE134E01011</ISIN>
+	<Scrip_Name>POWER FIN CORP LTD.</Scrip_Name>
+	<NSE_Symbol>PFC</NSE_Symbol>
+	<MWPL_Limit>203602113</MWPL_Limit>
+	<Open_Interest>162879600</Open_Interest>
+	<Fut_Eq_Open_Interest>80203557.1311</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE376G01013</ISIN>
+	<Scrip_Name>BIOCON LIMITED.</Scrip_Name>
+	<NSE_Symbol>BIOCON</NSE_Symbol>
+	<MWPL_Limit>90981174</MWPL_Limit>
+	<Open_Interest>95562500</Open_Interest>
+	<Fut_Eq_Open_Interest>43419324.268825</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE002A01018</ISIN>
+	<Scrip_Name>RELIANCE INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>RELIANCE</NSE_Symbol>
+	<MWPL_Limit>662701060</MWPL_Limit>
+	<Open_Interest>175161000</Open_Interest>
+	<Fut_Eq_Open_Interest>102927124.17725</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE070A01015</ISIN>
+	<Scrip_Name>SHREE CEMENT LIMITED</Scrip_Name>
+	<NSE_Symbol>SHREECEM</NSE_Symbol>
+	<MWPL_Limit>1548028</MWPL_Limit>
+	<Open_Interest>516975</Open_Interest>
+	<Fut_Eq_Open_Interest>305684.00083425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE531F01015</ISIN>
+	<Scrip_Name>NUVAMA WEALTH MANAGE LTD</Scrip_Name>
+	<NSE_Symbol>NUVAMA</NSE_Symbol>
+	<MWPL_Limit>2444664</MWPL_Limit>
+	<Open_Interest>853450</Open_Interest>
+	<Fut_Eq_Open_Interest>389818.263394</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE160A01022</ISIN>
+	<Scrip_Name>PUNJAB NATIONAL BANK</Scrip_Name>
+	<NSE_Symbol>PNB</NSE_Symbol>
+	<MWPL_Limit>447910372</MWPL_Limit>
+	<Open_Interest>519992000</Open_Interest>
+	<Fut_Eq_Open_Interest>233281164.07824</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE044A01036</ISIN>
+	<Scrip_Name>SUN PHARMACEUTICAL IND L</Scrip_Name>
+	<NSE_Symbol>SUNPHARMA</NSE_Symbol>
+	<MWPL_Limit>109220043</MWPL_Limit>
+	<Open_Interest>23720200</Open_Interest>
+	<Fut_Eq_Open_Interest>15749719.247206</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE04I401011</ISIN>
+	<Scrip_Name>KPIT TECHNOLOGIES LIMITED</Scrip_Name>
+	<NSE_Symbol>KPITTECH</NSE_Symbol>
+	<MWPL_Limit>24568295</MWPL_Limit>
+	<Open_Interest>7960225</Open_Interest>
+	<Fut_Eq_Open_Interest>3579101.00417075</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE548A01028</ISIN>
+	<Scrip_Name>HFCL LIMITED</Scrip_Name>
+	<NSE_Symbol>HFCL</NSE_Symbol>
+	<MWPL_Limit>147979599</MWPL_Limit>
+	<Open_Interest>209683050</Open_Interest>
+	<Fut_Eq_Open_Interest>90690177.113781</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE040H01021</ISIN>
+	<Scrip_Name>SUZLON ENERGY LIMITED</Scrip_Name>
+	<NSE_Symbol>SUZLON</NSE_Symbol>
+	<MWPL_Limit>1813533848</MWPL_Limit>
+	<Open_Interest>565496200</Open_Interest>
+	<Fut_Eq_Open_Interest>250044138.53975775</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE476A01022</ISIN>
+	<Scrip_Name>CANARA BANK</Scrip_Name>
+	<NSE_Symbol>CANBK</NSE_Symbol>
+	<MWPL_Limit>504315430</MWPL_Limit>
+	<Open_Interest>340179750</Open_Interest>
+	<Fut_Eq_Open_Interest>136330824.9004425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE299U01018</ISIN>
+	<Scrip_Name>CROMPT GREA CON ELEC LTD</Scrip_Name>
+	<NSE_Symbol>CROMPTON</NSE_Symbol>
+	<MWPL_Limit>81400589</MWPL_Limit>
+	<Open_Interest>92061000</Open_Interest>
+	<Fut_Eq_Open_Interest>52537087.998306</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE148I01020</ISIN>
+	<Scrip_Name>SAMMAAN CAPITAL LIMITED</Scrip_Name>
+	<NSE_Symbol>SAMMAANCAP</NSE_Symbol>
+	<MWPL_Limit>122326971</MWPL_Limit>
+	<Open_Interest>213925000</Open_Interest>
+	<Fut_Eq_Open_Interest>92998609.406642</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE121A01024</ISIN>
+	<Scrip_Name>CHOLAMANDALAM IN & FIN CO</Scrip_Name>
+	<NSE_Symbol>CHOLAFIN</NSE_Symbol>
+	<MWPL_Limit>63212268</MWPL_Limit>
+	<Open_Interest>23518750</Open_Interest>
+	<Fut_Eq_Open_Interest>12840226.52838125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE813H01021</ISIN>
+	<Scrip_Name>TORRENT POWER LTD</Scrip_Name>
+	<NSE_Symbol>TORNTPOWER</NSE_Symbol>
+	<MWPL_Limit>24646022</MWPL_Limit>
+	<Open_Interest>4809600</Open_Interest>
+	<Fut_Eq_Open_Interest>2741325.3686665</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE095N01031</ISIN>
+	<Scrip_Name>NBCC (INDIA) LIMITED</Scrip_Name>
+	<NSE_Symbol>NBCC</NSE_Symbol>
+	<MWPL_Limit>154894704</MWPL_Limit>
+	<Open_Interest>165347000</Open_Interest>
+	<Fut_Eq_Open_Interest>87652378.231275</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE062A01020</ISIN>
+	<Scrip_Name>STATE BANK OF INDIA</Scrip_Name>
+	<NSE_Symbol>SBIN</NSE_Symbol>
+	<MWPL_Limit>407307212</MWPL_Limit>
+	<Open_Interest>152499000</Open_Interest>
+	<Fut_Eq_Open_Interest>76922214.27945</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE142M01025</ISIN>
+	<Scrip_Name>TATA TECHNOLOGIES LIMITED</Scrip_Name>
+	<NSE_Symbol>TATATECH</NSE_Symbol>
+	<MWPL_Limit>27246569</MWPL_Limit>
+	<Open_Interest>22888000</Open_Interest>
+	<Fut_Eq_Open_Interest>10526641.54584</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE271C01023</ISIN>
+	<Scrip_Name>DLF LIMITED</Scrip_Name>
+	<NSE_Symbol>DLF</NSE_Symbol>
+	<MWPL_Limit>83667734</MWPL_Limit>
+	<Open_Interest>86074725</Open_Interest>
+	<Fut_Eq_Open_Interest>48951882.89449425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE455K01017</ISIN>
+	<Scrip_Name>POLYCAB INDIA LIMITED</Scrip_Name>
+	<NSE_Symbol>POLYCAB</NSE_Symbol>
+	<MWPL_Limit>8350688</MWPL_Limit>
+	<Open_Interest>3905000</Open_Interest>
+	<Fut_Eq_Open_Interest>2292170.1922125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE047A01021</ISIN>
+	<Scrip_Name>GRASIM INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>GRASIM</NSE_Symbol>
+	<MWPL_Limit>38514157</MWPL_Limit>
+	<Open_Interest>20370750</Open_Interest>
+	<Fut_Eq_Open_Interest>12722127.0647075</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE249Z01020</ISIN>
+	<Scrip_Name>MAZAGON DOCK SHIPBUIL LTD</Scrip_Name>
+	<NSE_Symbol>MAZDOCK</NSE_Symbol>
+	<MWPL_Limit>11364224</MWPL_Limit>
+	<Open_Interest>10230625</Open_Interest>
+	<Fut_Eq_Open_Interest>4448225.91829425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE849A01020</ISIN>
+	<Scrip_Name>TRENT LTD</Scrip_Name>
+	<NSE_Symbol>TRENT</NSE_Symbol>
+	<MWPL_Limit>33590487</MWPL_Limit>
+	<Open_Interest>17030700</Open_Interest>
+	<Fut_Eq_Open_Interest>8797824.931476</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE263A01024</ISIN>
+	<Scrip_Name>BHARAT ELECTRONICS LTD</Scrip_Name>
+	<NSE_Symbol>BEL</NSE_Symbol>
+	<MWPL_Limit>535778534</MWPL_Limit>
+	<Open_Interest>249714150</Open_Interest>
+	<Fut_Eq_Open_Interest>118280445.46853775</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE093I01010</ISIN>
+	<Scrip_Name>OBEROI REALTY LIMITED</Scrip_Name>
+	<NSE_Symbol>OBEROIRLTY</NSE_Symbol>
+	<MWPL_Limit>17614093</MWPL_Limit>
+	<Open_Interest>8066450</Open_Interest>
+	<Fut_Eq_Open_Interest>4376302.434504</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE669E01016</ISIN>
+	<Scrip_Name>VODAFONE IDEA LIMITED</Scrip_Name>
+	<NSE_Symbol>IDEA</NSE_Symbol>
+	<MWPL_Limit>8713529091</MWPL_Limit>
+	<Open_Interest>10488884775</Open_Interest>
+	<Fut_Eq_Open_Interest>6018799008.3146625</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE016A01026</ISIN>
+	<Scrip_Name>DABUR INDIA LTD</Scrip_Name>
+	<NSE_Symbol>DABUR</NSE_Symbol>
+	<MWPL_Limit>89873278</MWPL_Limit>
+	<Open_Interest>42256250</Open_Interest>
+	<Fut_Eq_Open_Interest>19150769.9464375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE797F01020</ISIN>
+	<Scrip_Name>JUBILANT FOODWORKS LTD</Scrip_Name>
+	<NSE_Symbol>JUBLFOOD</NSE_Symbol>
+	<MWPL_Limit>48884739</MWPL_Limit>
+	<Open_Interest>43123750</Open_Interest>
+	<Fut_Eq_Open_Interest>21408415.455775</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE343H01029</ISIN>
+	<Scrip_Name>SOLAR INDUSTRIES (I) LTD</Scrip_Name>
+	<NSE_Symbol>SOLARINDS</NSE_Symbol>
+	<MWPL_Limit>3644817</MWPL_Limit>
+	<Open_Interest>2114825</Open_Interest>
+	<Fut_Eq_Open_Interest>961667.35677975</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE238A01034</ISIN>
+	<Scrip_Name>AXIS BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>AXISBANK</NSE_Symbol>
+	<MWPL_Limit>316147681</MWPL_Limit>
+	<Open_Interest>125820000</Open_Interest>
+	<Fut_Eq_Open_Interest>76792409.6132125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE127D01025</ISIN>
+	<Scrip_Name>HDFC AMC LIMITED</Scrip_Name>
+	<NSE_Symbol>HDFCAMC</NSE_Symbol>
+	<MWPL_Limit>30518916</MWPL_Limit>
+	<Open_Interest>8800200</Open_Interest>
+	<Fut_Eq_Open_Interest>5013116.674374</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE009A01021</ISIN>
+	<Scrip_Name>INFOSYS LIMITED</Scrip_Name>
+	<NSE_Symbol>INFY</NSE_Symbol>
+	<MWPL_Limit>341789333</MWPL_Limit>
+	<Open_Interest>114920400</Open_Interest>
+	<Fut_Eq_Open_Interest>71776610.558996</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE089A01031</ISIN>
+	<Scrip_Name>DR. REDDY S LABORATORIES</Scrip_Name>
+	<NSE_Symbol>DRREDDY</NSE_Symbol>
+	<MWPL_Limit>61006521</MWPL_Limit>
+	<Open_Interest>23270000</Open_Interest>
+	<Fut_Eq_Open_Interest>12617045.88104375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE075A01022</ISIN>
+	<Scrip_Name>WIPRO LTD</Scrip_Name>
+	<NSE_Symbol>WIPRO</NSE_Symbol>
+	<MWPL_Limit>292948819</MWPL_Limit>
+	<Open_Interest>200052000</Open_Interest>
+	<Fut_Eq_Open_Interest>109096402.91985</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE280A01028</ISIN>
+	<Scrip_Name>TITAN COMPANY LIMITED</Scrip_Name>
+	<NSE_Symbol>TITAN</NSE_Symbol>
+	<MWPL_Limit>41744334</MWPL_Limit>
+	<Open_Interest>15018675</Open_Interest>
+	<Fut_Eq_Open_Interest>9399499.894085</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE663F01032</ISIN>
+	<Scrip_Name>INFO EDGE (I) LTD</Scrip_Name>
+	<NSE_Symbol>NAUKRI</NSE_Symbol>
+	<MWPL_Limit>60530911</MWPL_Limit>
+	<Open_Interest>13451625</Open_Interest>
+	<Fut_Eq_Open_Interest>8038502.4239175</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE303R01014</ISIN>
+	<Scrip_Name>KALYAN JEWELLERS IND LTD</Scrip_Name>
+	<NSE_Symbol>KALYANKJIL</NSE_Symbol>
+	<MWPL_Limit>57552009</MWPL_Limit>
+	<Open_Interest>51023200</Open_Interest>
+	<Fut_Eq_Open_Interest>30220802.8457865</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE917I01010</ISIN>
+	<Scrip_Name>BAJAJ AUTO LIMITED</Scrip_Name>
+	<NSE_Symbol>BAJAJ-AUTO</NSE_Symbol>
+	<MWPL_Limit>12547731</MWPL_Limit>
+	<Open_Interest>6751500</Open_Interest>
+	<Fut_Eq_Open_Interest>3306176.36400525</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE111A01025</ISIN>
+	<Scrip_Name>CONTAINER CORP OF IND LTD</Scrip_Name>
+	<NSE_Symbol>CONCOR</NSE_Symbol>
+	<MWPL_Limit>48077012</MWPL_Limit>
+	<Open_Interest>63166250</Open_Interest>
+	<Fut_Eq_Open_Interest>35904070.7239</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE647A01010</ISIN>
+	<Scrip_Name>SRF LTD</Scrip_Name>
+	<NSE_Symbol>SRF</NSE_Symbol>
+	<MWPL_Limit>21205300</MWPL_Limit>
+	<Open_Interest>6823200</Open_Interest>
+	<Fut_Eq_Open_Interest>3510854.124334</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE121E01018</ISIN>
+	<Scrip_Name>JSW ENERGY LIMITED</Scrip_Name>
+	<NSE_Symbol>JSWENERGY</NSE_Symbol>
+	<MWPL_Limit>80203755</MWPL_Limit>
+	<Open_Interest>72561000</Open_Interest>
+	<Fut_Eq_Open_Interest>43721855.29862</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE572E01012</ISIN>
+	<Scrip_Name>PNB HOUSING FIN LTD.</Scrip_Name>
+	<NSE_Symbol>PNBHOUSING</NSE_Symbol>
+	<MWPL_Limit>28062406</MWPL_Limit>
+	<Open_Interest>28301000</Open_Interest>
+	<Fut_Eq_Open_Interest>15583890.282012</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE092T01019</ISIN>
+	<Scrip_Name>IDFC FIRST BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>IDFCFIRSTB</NSE_Symbol>
+	<MWPL_Limit>761294821</MWPL_Limit>
+	<Open_Interest>573751500</Open_Interest>
+	<Fut_Eq_Open_Interest>340164295.83621975</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE931S01010</ISIN>
+	<Scrip_Name>ADANI ENERGY SOLUTION LTD</Scrip_Name>
+	<NSE_Symbol>ADANIENSOL</NSE_Symbol>
+	<MWPL_Limit>51907388</MWPL_Limit>
+	<Open_Interest>24133275</Open_Interest>
+	<Fut_Eq_Open_Interest>16245542.359944</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE414G01012</ISIN>
+	<Scrip_Name>MUTHOOT FINANCE LIMITED</Scrip_Name>
+	<NSE_Symbol>MUTHOOTFIN</NSE_Symbol>
+	<MWPL_Limit>16050690</MWPL_Limit>
+	<Open_Interest>8199400</Open_Interest>
+	<Fut_Eq_Open_Interest>3364101.5181125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE481G01011</ISIN>
+	<Scrip_Name>ULTRATECH CEMENT LIMITED</Scrip_Name>
+	<NSE_Symbol>ULTRACEMCO</NSE_Symbol>
+	<MWPL_Limit>11962066</MWPL_Limit>
+	<Open_Interest>4430100</Open_Interest>
+	<Fut_Eq_Open_Interest>2909581.608059</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE296A01032</ISIN>
+	<Scrip_Name>BAJAJ FINANCE LIMITED</Scrip_Name>
+	<NSE_Symbol>BAJFINANCE</NSE_Symbol>
+	<MWPL_Limit>281116345</MWPL_Limit>
+	<Open_Interest>136718250</Open_Interest>
+	<Fut_Eq_Open_Interest>88194358.4131425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE795G01014</ISIN>
+	<Scrip_Name>HDFC LIFE INS CO LTD</Scrip_Name>
+	<NSE_Symbol>HDFCLIFE</NSE_Symbol>
+	<MWPL_Limit>119296253</MWPL_Limit>
+	<Open_Interest>58867600</Open_Interest>
+	<Fut_Eq_Open_Interest>30952763.61771</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE118H01025</ISIN>
+	<Scrip_Name>BSE LIMITED</Scrip_Name>
+	<NSE_Symbol>BSE</NSE_Symbol>
+	<MWPL_Limit>48385387</MWPL_Limit>
+	<Open_Interest>32716875</Open_Interest>
+	<Fut_Eq_Open_Interest>11853983.3584425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE356A01018</ISIN>
+	<Scrip_Name>MPHASIS LIMITED</Scrip_Name>
+	<NSE_Symbol>MPHASIS</NSE_Symbol>
+	<MWPL_Limit>14652855</MWPL_Limit>
+	<Open_Interest>8738675</Open_Interest>
+	<Fut_Eq_Open_Interest>6228436.0053355</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE437A01024</ISIN>
+	<Scrip_Name>APOLLO HOSPITALS ENTER. L</Scrip_Name>
+	<NSE_Symbol>APOLLOHOSP</NSE_Symbol>
+	<MWPL_Limit>15240043</MWPL_Limit>
+	<Open_Interest>6821125</Open_Interest>
+	<Fut_Eq_Open_Interest>3354660.10072875</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE918I01026</ISIN>
+	<Scrip_Name>BAJAJ FINSERV LTD.</Scrip_Name>
+	<NSE_Symbol>BAJAJFINSV</NSE_Symbol>
+	<MWPL_Limit>65659712</MWPL_Limit>
+	<Open_Interest>27511750</Open_Interest>
+	<Fut_Eq_Open_Interest>18404737.6190225</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE022Q01020</ISIN>
+	<Scrip_Name>INDIAN ENERGY EXC LTD</Scrip_Name>
+	<NSE_Symbol>IEX</NSE_Symbol>
+	<MWPL_Limit>133395043</MWPL_Limit>
+	<Open_Interest>134021250</Open_Interest>
+	<Fut_Eq_Open_Interest>53757385.7881125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE066P01011</ISIN>
+	<Scrip_Name>INOX WIND LIMITED</Scrip_Name>
+	<NSE_Symbol>INOXWIND</NSE_Symbol>
+	<MWPL_Limit>144708707</MWPL_Limit>
+	<Open_Interest>154002216</Open_Interest>
+	<Fut_Eq_Open_Interest>76266083.47452319</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE646L01027</ISIN>
+	<Scrip_Name>INTERGLOBE AVIATION LTD</Scrip_Name>
+	<NSE_Symbol>INDIGO</NSE_Symbol>
+	<MWPL_Limit>32732860</MWPL_Limit>
+	<Open_Interest>36082950</Open_Interest>
+	<Fut_Eq_Open_Interest>12558110.900658</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE323A01026</ISIN>
+	<Scrip_Name>BOSCH LIMITED</Scrip_Name>
+	<NSE_Symbol>BOSCHLTD</NSE_Symbol>
+	<MWPL_Limit>982526</MWPL_Limit>
+	<Open_Interest>340050</Open_Interest>
+	<Fut_Eq_Open_Interest>207943.32216975</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE237A01028</ISIN>
+	<Scrip_Name>KOTAK MAHINDRA BANK LTD</Scrip_Name>
+	<NSE_Symbol>KOTAKBANK</NSE_Symbol>
+	<MWPL_Limit>215751979</MWPL_Limit>
+	<Open_Interest>56377200</Open_Interest>
+	<Fut_Eq_Open_Interest>39534094.603144</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE226A01021</ISIN>
+	<Scrip_Name>VOLTAS LTD</Scrip_Name>
+	<NSE_Symbol>VOLTAS</NSE_Symbol>
+	<MWPL_Limit>34594689</MWPL_Limit>
+	<Open_Interest>16797000</Open_Interest>
+	<Fut_Eq_Open_Interest>9088008.343845</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE090A01021</ISIN>
+	<Scrip_Name>ICICI BANK LTD.</Scrip_Name>
+	<NSE_Symbol>ICICIBANK</NSE_Symbol>
+	<MWPL_Limit>579785172</MWPL_Limit>
+	<Open_Interest>183283100</Open_Interest>
+	<Fut_Eq_Open_Interest>116349160.615653</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE405E01023</ISIN>
+	<Scrip_Name>UNO MINDA LIMITED</Scrip_Name>
+	<NSE_Symbol>UNOMINDA</NSE_Symbol>
+	<MWPL_Limit>22813802</MWPL_Limit>
+	<Open_Interest>8516200</Open_Interest>
+	<Fut_Eq_Open_Interest>4289778.071876</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE00R701025</ISIN>
+	<Scrip_Name>DALMIA BHARAT LIMITED</Scrip_Name>
+	<NSE_Symbol>DALBHARAT</NSE_Symbol>
+	<MWPL_Limit>12425041</MWPL_Limit>
+	<Open_Interest>4723875</Open_Interest>
+	<Fut_Eq_Open_Interest>2279391.321142</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE192R01011</ISIN>
+	<Scrip_Name>AVENUE SUPERMARTS LIMITED</Scrip_Name>
+	<NSE_Symbol>DMART</NSE_Symbol>
+	<MWPL_Limit>22136392</MWPL_Limit>
+	<Open_Interest>9257700</Open_Interest>
+	<Fut_Eq_Open_Interest>4939571.06526</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE721A01047</ISIN>
+	<Scrip_Name>SHRIRAM FINANCE LIMITED</Scrip_Name>
+	<NSE_Symbol>SHRIRAMFIN</NSE_Symbol>
+	<MWPL_Limit>210459276</MWPL_Limit>
+	<Open_Interest>100320000</Open_Interest>
+	<Fut_Eq_Open_Interest>63194737.50597975</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE670K01029</ISIN>
+	<Scrip_Name>LODHA DEVELOPERS LIMITED</Scrip_Name>
+	<NSE_Symbol>LODHA</NSE_Symbol>
+	<MWPL_Limit>42060143</MWPL_Limit>
+	<Open_Interest>20845350</Open_Interest>
+	<Fut_Eq_Open_Interest>12558731.1315525</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE154A01025</ISIN>
+	<Scrip_Name>ITC LTD</Scrip_Name>
+	<NSE_Symbol>ITC</NSE_Symbol>
+	<MWPL_Limit>1251412841</MWPL_Limit>
+	<Open_Interest>273240000</Open_Interest>
+	<Fut_Eq_Open_Interest>171850447.38048</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE040A01034</ISIN>
+	<Scrip_Name>HDFC BANK LTD</Scrip_Name>
+	<NSE_Symbol>HDFCBANK</NSE_Symbol>
+	<MWPL_Limit>1329733550</MWPL_Limit>
+	<Open_Interest>289273050</Open_Interest>
+	<Fut_Eq_Open_Interest>217012098.627126</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE003A01024</ISIN>
+	<Scrip_Name>SIEMENS LTD</Scrip_Name>
+	<NSE_Symbol>SIEMENS</NSE_Symbol>
+	<MWPL_Limit>13354588</MWPL_Limit>
+	<Open_Interest>6380825</Open_Interest>
+	<Fut_Eq_Open_Interest>3094698.20221675</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE214T01019</ISIN>
+	<Scrip_Name>LTIMINDTREE LIMITED</Scrip_Name>
+	<NSE_Symbol>LTIM</NSE_Symbol>
+	<MWPL_Limit>9315942</MWPL_Limit>
+	<Open_Interest>3882900</Open_Interest>
+	<Fut_Eq_Open_Interest>2192330.828505</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE371P01015</ISIN>
+	<Scrip_Name>AMBER ENTERPRISES (I) LTD</Scrip_Name>
+	<NSE_Symbol>AMBER</NSE_Symbol>
+	<MWPL_Limit>3067454</MWPL_Limit>
+	<Open_Interest>3036300</Open_Interest>
+	<Fut_Eq_Open_Interest>915762.678519</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE347G01014</ISIN>
+	<Scrip_Name>PETRONET LNG LIMITED</Scrip_Name>
+	<NSE_Symbol>PETRONET</NSE_Symbol>
+	<MWPL_Limit>93668136</MWPL_Limit>
+	<Open_Interest>80119600</Open_Interest>
+	<Fut_Eq_Open_Interest>38292357.971236</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE095A01012</ISIN>
+	<Scrip_Name>INDUSIND BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>INDUSINDBK</NSE_Symbol>
+	<MWPL_Limit>93805784</MWPL_Limit>
+	<Open_Interest>71074500</Open_Interest>
+	<Fut_Eq_Open_Interest>44270768.336193</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE200M01039</ISIN>
+	<Scrip_Name>VARUN BEVERAGES LIMITED</Scrip_Name>
+	<NSE_Symbol>VBL</NSE_Symbol>
+	<MWPL_Limit>203804339</MWPL_Limit>
+	<Open_Interest>81284650</Open_Interest>
+	<Fut_Eq_Open_Interest>46176375.47808575</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE121J01017</ISIN>
+	<Scrip_Name>INDUS TOWERS LIMITED</Scrip_Name>
+	<NSE_Symbol>INDUSTOWER</NSE_Symbol>
+	<MWPL_Limit>197705578</MWPL_Limit>
+	<Open_Interest>124366900</Open_Interest>
+	<Fut_Eq_Open_Interest>76166690.396784</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE591G01025</ISIN>
+	<Scrip_Name>COFORGE LIMITED</Scrip_Name>
+	<NSE_Symbol>COFORGE</NSE_Symbol>
+	<MWPL_Limit>50163899</MWPL_Limit>
+	<Open_Interest>22729875</Open_Interest>
+	<Fut_Eq_Open_Interest>12823092.35163375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE484J01027</ISIN>
+	<Scrip_Name>GODREJ PROPERTIES LTD</Scrip_Name>
+	<NSE_Symbol>GODREJPROP</NSE_Symbol>
+	<MWPL_Limit>24082879</MWPL_Limit>
+	<Open_Interest>14349225</Open_Interest>
+	<Fut_Eq_Open_Interest>8820594.5029565</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE066F01020</ISIN>
+	<Scrip_Name>HINDUSTAN AERONAUTICS LTD</Scrip_Name>
+	<NSE_Symbol>HAL</NSE_Symbol>
+	<MWPL_Limit>28450886</MWPL_Limit>
+	<Open_Interest>23453850</Open_Interest>
+	<Fut_Eq_Open_Interest>9842229.5551965</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE848E01016</ISIN>
+	<Scrip_Name>NHPC LTD</Scrip_Name>
+	<NSE_Symbol>NHPC</NSE_Symbol>
+	<MWPL_Limit>398201603</MWPL_Limit>
+	<Open_Interest>139724800</Open_Interest>
+	<Fut_Eq_Open_Interest>69892832.214464</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE006I01046</ISIN>
+	<Scrip_Name>ASTRAL LIMITED</Scrip_Name>
+	<NSE_Symbol>ASTRAL</NSE_Symbol>
+	<MWPL_Limit>18495534</MWPL_Limit>
+	<Open_Interest>12951025</Open_Interest>
+	<Fut_Eq_Open_Interest>6719984.4922335</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE274J01014</ISIN>
+	<Scrip_Name>OIL INDIA LTD</Scrip_Name>
+	<NSE_Symbol>OIL</NSE_Symbol>
+	<MWPL_Limit>94123587</MWPL_Limit>
+	<Open_Interest>22017800</Open_Interest>
+	<Fut_Eq_Open_Interest>11060434.279468</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE326A01037</ISIN>
+	<Scrip_Name>LUPIN LIMITED</Scrip_Name>
+	<NSE_Symbol>LUPIN</NSE_Symbol>
+	<MWPL_Limit>35341043</MWPL_Limit>
+	<Open_Interest>12258700</Open_Interest>
+	<Fut_Eq_Open_Interest>7252301.14003375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE415G01027</ISIN>
+	<Scrip_Name>RAIL VIKAS NIGAM LIMITED</Scrip_Name>
+	<NSE_Symbol>RVNL</NSE_Symbol>
+	<MWPL_Limit>84941460</MWPL_Limit>
+	<Open_Interest>76691275</Open_Interest>
+	<Fut_Eq_Open_Interest>34422740.28959475</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE102D01028</ISIN>
+	<Scrip_Name>GODREJ CONSUMER PRODUCTS</Scrip_Name>
+	<NSE_Symbol>GODREJCP</NSE_Symbol>
+	<MWPL_Limit>58001204</MWPL_Limit>
+	<Open_Interest>14011500</Open_Interest>
+	<Fut_Eq_Open_Interest>9146847.905215</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE466L01038</ISIN>
+	<Scrip_Name>360 ONE WAM LIMITED</Scrip_Name>
+	<NSE_Symbol>360ONE</NSE_Symbol>
+	<MWPL_Limit>44660948</MWPL_Limit>
+	<Open_Interest>4681000</Open_Interest>
+	<Fut_Eq_Open_Interest>1837388.409815</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE397D01024</ISIN>
+	<Scrip_Name>BHARTI AIRTEL LIMITED</Scrip_Name>
+	<NSE_Symbol>BHARTIARTL</NSE_Symbol>
+	<MWPL_Limit>314058656</MWPL_Limit>
+	<Open_Interest>73443075</Open_Interest>
+	<Fut_Eq_Open_Interest>48341512.62602325</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE467B01029</ISIN>
+	<Scrip_Name>TATA CONSULTANCY SERV LT</Scrip_Name>
+	<NSE_Symbol>TCS</NSE_Symbol>
+	<MWPL_Limit>123298271</MWPL_Limit>
+	<Open_Interest>41938750</Open_Interest>
+	<Fut_Eq_Open_Interest>24315346.73906275</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE114A01011</ISIN>
+	<Scrip_Name>STEEL AUTHORITY OF INDIA</Scrip_Name>
+	<NSE_Symbol>SAIL</NSE_Symbol>
+	<MWPL_Limit>216861410</MWPL_Limit>
+	<Open_Interest>254114900</Open_Interest>
+	<Fut_Eq_Open_Interest>151764982.236092</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE692A01016</ISIN>
+	<Scrip_Name>UNION BANK OF INDIA</Scrip_Name>
+	<NSE_Symbol>UNIONBANK</NSE_Symbol>
+	<MWPL_Limit>289041713</MWPL_Limit>
+	<Open_Interest>138343200</Open_Interest>
+	<Fut_Eq_Open_Interest>73152760.13827575</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE868B01028</ISIN>
+	<Scrip_Name>NCC LIMITED</Scrip_Name>
+	<NSE_Symbol>NCC</NSE_Symbol>
+	<MWPL_Limit>72342848</MWPL_Limit>
+	<Open_Interest>54413100</Open_Interest>
+	<Fut_Eq_Open_Interest>22289244.509448</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE974X01010</ISIN>
+	<Scrip_Name>TUBE INVEST OF INDIA LTD</Scrip_Name>
+	<NSE_Symbol>TIINDIA</NSE_Symbol>
+	<MWPL_Limit>14039249</MWPL_Limit>
+	<Open_Interest>5654800</Open_Interest>
+	<Fut_Eq_Open_Interest>3149008.999408</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE262H01021</ISIN>
+	<Scrip_Name>PERSISTENT SYSTEMS LTD</Scrip_Name>
+	<NSE_Symbol>PERSISTENT</NSE_Symbol>
+	<MWPL_Limit>16151851</MWPL_Limit>
+	<Open_Interest>3924800</Open_Interest>
+	<Fut_Eq_Open_Interest>2199738.734963</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE129A01019</ISIN>
+	<Scrip_Name>GAIL (INDIA) LTD</Scrip_Name>
+	<NSE_Symbol>GAIL</NSE_Symbol>
+	<MWPL_Limit>402429848</MWPL_Limit>
+	<Open_Interest>207931500</Open_Interest>
+	<Fut_Eq_Open_Interest>98280935.1429255</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE053F01010</ISIN>
+	<Scrip_Name>INDIAN RAILWAY FIN CORP L</Scrip_Name>
+	<NSE_Symbol>IRFC</NSE_Symbol>
+	<MWPL_Limit>226853356</MWPL_Limit>
+	<Open_Interest>111511500</Open_Interest>
+	<Fut_Eq_Open_Interest>44749778.491675</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE245A01021</ISIN>
+	<Scrip_Name>TATA POWER CO LTD</Scrip_Name>
+	<NSE_Symbol>TATAPOWER</NSE_Symbol>
+	<MWPL_Limit>169808198</MWPL_Limit>
+	<Open_Interest>123316700</Open_Interest>
+	<Fut_Eq_Open_Interest>52393002.111496</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE406A01037</ISIN>
+	<Scrip_Name>AUROBINDO PHARMA LTD</Scrip_Name>
+	<NSE_Symbol>AUROPHARMA</NSE_Symbol>
+	<MWPL_Limit>41977935</MWPL_Limit>
+	<Open_Interest>30779650</Open_Interest>
+	<Fut_Eq_Open_Interest>21134396.2631395</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE115A01026</ISIN>
+	<Scrip_Name>LIC HOUSING FINANCE LTD</Scrip_Name>
+	<NSE_Symbol>LICHSGFIN</NSE_Symbol>
+	<MWPL_Limit>45183075</MWPL_Limit>
+	<Open_Interest>53653000</Open_Interest>
+	<Fut_Eq_Open_Interest>33175734.26802</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE335Y01020</ISIN>
+	<Scrip_Name>INDIAN RAIL TOUR CORP LTD</Scrip_Name>
+	<NSE_Symbol>IRCTC</NSE_Symbol>
+	<MWPL_Limit>30082783</MWPL_Limit>
+	<Open_Interest>37895375</Open_Interest>
+	<Fut_Eq_Open_Interest>18183899.85647375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE528G01035</ISIN>
+	<Scrip_Name>YES BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>YESBANK</NSE_Symbol>
+	<MWPL_Limit>3136562346</MWPL_Limit>
+	<Open_Interest>1811730500</Open_Interest>
+	<Fut_Eq_Open_Interest>1022147742.891359</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE123W01016</ISIN>
+	<Scrip_Name>SBI LIFE INSURANCE CO LTD</Scrip_Name>
+	<NSE_Symbol>SBILIFE</NSE_Symbol>
+	<MWPL_Limit>44735132</MWPL_Limit>
+	<Open_Interest>14237625</Open_Interest>
+	<Fut_Eq_Open_Interest>8523898.5523275</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE213A01029</ISIN>
+	<Scrip_Name>OIL AND NATURAL GAS CORP.</Scrip_Name>
+	<NSE_Symbol>ONGC</NSE_Symbol>
+	<MWPL_Limit>517141211</MWPL_Limit>
+	<Open_Interest>189054000</Open_Interest>
+	<Fut_Eq_Open_Interest>101370968.20071</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE918Z01012</ISIN>
+	<Scrip_Name>KAYNES TECHNOLOGY IND LTD</Scrip_Name>
+	<NSE_Symbol>KAYNES</NSE_Symbol>
+	<MWPL_Limit>4667784</MWPL_Limit>
+	<Open_Interest>14862400</Open_Interest>
+	<Fut_Eq_Open_Interest>3321153.019611</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE239A01024</ISIN>
+	<Scrip_Name>NESTLE INDIA LIMITED</Scrip_Name>
+	<NSE_Symbol>NESTLEIND</NSE_Symbol>
+	<MWPL_Limit>71801274</MWPL_Limit>
+	<Open_Interest>25873500</Open_Interest>
+	<Fut_Eq_Open_Interest>16740694.104915</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE949L01017</ISIN>
+	<Scrip_Name>AU SMALL FINANCE BANK LTD</Scrip_Name>
+	<NSE_Symbol>AUBANK</NSE_Symbol>
+	<MWPL_Limit>86234186</MWPL_Limit>
+	<Open_Interest>36192000</Open_Interest>
+	<Fut_Eq_Open_Interest>20992845.40202</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE267A01025</ISIN>
+	<Scrip_Name>HINDUSTAN ZINC LIMITED</Scrip_Name>
+	<NSE_Symbol>HINDZINC</NSE_Symbol>
+	<MWPL_Limit>167680340</MWPL_Limit>
+	<Open_Interest>118466075</Open_Interest>
+	<Fut_Eq_Open_Interest>40567578.50794425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE192A01025</ISIN>
+	<Scrip_Name>TATA CONSUMER PRODUCT LTD</Scrip_Name>
+	<NSE_Symbol>TATACONSUM</NSE_Symbol>
+	<MWPL_Limit>65471528</MWPL_Limit>
+	<Open_Interest>20950050</Open_Interest>
+	<Fut_Eq_Open_Interest>12218021.2805365</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE976G01028</ISIN>
+	<Scrip_Name>RBL BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>RBLBANK</NSE_Symbol>
+	<MWPL_Limit>91351468</MWPL_Limit>
+	<Open_Interest>120627775</Open_Interest>
+	<Fut_Eq_Open_Interest>65615224.2025505</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE318A01026</ISIN>
+	<Scrip_Name>PIDILITE INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>PIDILITIND</NSE_Symbol>
+	<MWPL_Limit>31170515</MWPL_Limit>
+	<Open_Interest>9606500</Open_Interest>
+	<Fut_Eq_Open_Interest>6993274.59057</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE670A01012</ISIN>
+	<Scrip_Name>TATA ELXSI LIMITED</Scrip_Name>
+	<NSE_Symbol>TATAELXSI</NSE_Symbol>
+	<MWPL_Limit>4309631</MWPL_Limit>
+	<Open_Interest>4010000</Open_Interest>
+	<Fut_Eq_Open_Interest>1693953.57315</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE028A01039</ISIN>
+	<Scrip_Name>BANK OF BARODA</Scrip_Name>
+	<NSE_Symbol>BANKBARODA</NSE_Symbol>
+	<MWPL_Limit>257509827</MWPL_Limit>
+	<Open_Interest>174309525</Open_Interest>
+	<Fut_Eq_Open_Interest>84898894.9093155</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE854D01024</ISIN>
+	<Scrip_Name>UNITED SPIRITS LIMITED</Scrip_Name>
+	<NSE_Symbol>UNITDSPR</NSE_Symbol>
+	<MWPL_Limit>47269416</MWPL_Limit>
+	<Open_Interest>19481200</Open_Interest>
+	<Fut_Eq_Open_Interest>12262214.278244</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE545U01014</ISIN>
+	<Scrip_Name>BANDHAN BANK LIMITED</Scrip_Name>
+	<NSE_Symbol>BANDHANBNK</NSE_Symbol>
+	<MWPL_Limit>142752962</MWPL_Limit>
+	<Open_Interest>178833600</Open_Interest>
+	<Fut_Eq_Open_Interest>105366121.404984</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE176B01034</ISIN>
+	<Scrip_Name>HAVELLS INDIA LIMITED</Scrip_Name>
+	<NSE_Symbol>HAVELLS</NSE_Symbol>
+	<MWPL_Limit>38133766</MWPL_Limit>
+	<Open_Interest>13105500</Open_Interest>
+	<Fut_Eq_Open_Interest>8277701.04837</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE811K01011</ISIN>
+	<Scrip_Name>PRESTIGE ESTATE LTD</Scrip_Name>
+	<NSE_Symbol>PRESTIGE</NSE_Symbol>
+	<MWPL_Limit>25234534</MWPL_Limit>
+	<Open_Interest>7366500</Open_Interest>
+	<Fut_Eq_Open_Interest>4061138.277672</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE079A01024</ISIN>
+	<Scrip_Name>AMBUJA CEMENTS LTD</Scrip_Name>
+	<NSE_Symbol>AMBUJACEM</NSE_Symbol>
+	<MWPL_Limit>119762774</MWPL_Limit>
+	<Open_Interest>68570250</Open_Interest>
+	<Fut_Eq_Open_Interest>44372079.1813425</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE736A01011</ISIN>
+	<Scrip_Name>CENTRAL DEPO SER (I) LTD</Scrip_Name>
+	<NSE_Symbol>CDSL</NSE_Symbol>
+	<MWPL_Limit>26647500</MWPL_Limit>
+	<Open_Interest>26079400</Open_Interest>
+	<Fut_Eq_Open_Interest>9336011.88397025</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE027H01010</ISIN>
+	<Scrip_Name>MAX HEALTHCARE INS LTD</Scrip_Name>
+	<NSE_Symbol>MAXHEALTH</NSE_Symbol>
+	<MWPL_Limit>97211768</MWPL_Limit>
+	<Open_Interest>30276225</Open_Interest>
+	<Fut_Eq_Open_Interest>19902349.02201</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE776C01039</ISIN>
+	<Scrip_Name>GMR AIRPORTS LIMITED</Scrip_Name>
+	<NSE_Symbol>GMRAIRPORT</NSE_Symbol>
+	<MWPL_Limit>534704421</MWPL_Limit>
+	<Open_Interest>397700550</Open_Interest>
+	<Fut_Eq_Open_Interest>155224741.65012675</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE702C01027</ISIN>
+	<Scrip_Name>APL APOLLO TUBES LTD</Scrip_Name>
+	<NSE_Symbol>APLAPOLLO</NSE_Symbol>
+	<MWPL_Limit>27232196</MWPL_Limit>
+	<Open_Interest>9824500</Open_Interest>
+	<Fut_Eq_Open_Interest>7441171.9029585</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE084A01016</ISIN>
+	<Scrip_Name>BANK OF INDIA</Scrip_Name>
+	<NSE_Symbol>BANKINDIA</NSE_Symbol>
+	<MWPL_Limit>181770921</MWPL_Limit>
+	<Open_Interest>95955600</Open_Interest>
+	<Fut_Eq_Open_Interest>50655711.880228</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE685A01028</ISIN>
+	<Scrip_Name>TORRENT PHARMACEUTICALS L</Scrip_Name>
+	<NSE_Symbol>TORNTPHARM</NSE_Symbol>
+	<MWPL_Limit>16072672</MWPL_Limit>
+	<Open_Interest>3311750</Open_Interest>
+	<Fut_Eq_Open_Interest>2379174.9180775</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE257A01026</ISIN>
+	<Scrip_Name>BHEL</Scrip_Name>
+	<NSE_Symbol>BHEL</NSE_Symbol>
+	<MWPL_Limit>169029877</MWPL_Limit>
+	<Open_Interest>134940750</Open_Interest>
+	<Fut_Eq_Open_Interest>60787372.9776075</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE765G01017</ISIN>
+	<Scrip_Name>ICICI LOMBARD GIC LIMITED</Scrip_Name>
+	<NSE_Symbol>ICICIGI</NSE_Symbol>
+	<MWPL_Limit>26688038</MWPL_Limit>
+	<Open_Interest>8709350</Open_Interest>
+	<Fut_Eq_Open_Interest>5661109.06485475</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE603J01030</ISIN>
+	<Scrip_Name>PI INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>PIIND</NSE_Symbol>
+	<MWPL_Limit>8178275</MWPL_Limit>
+	<Open_Interest>4409125</Open_Interest>
+	<Fut_Eq_Open_Interest>2356409.18359</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE628A01036</ISIN>
+	<Scrip_Name>UPL LIMITED</Scrip_Name>
+	<NSE_Symbol>UPL</NSE_Symbol>
+	<MWPL_Limit>82588393</MWPL_Limit>
+	<Open_Interest>51271845</Open_Interest>
+	<Fut_Eq_Open_Interest>29644078.1150078</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE674K01013</ISIN>
+	<Scrip_Name>ADITYA BIRLA CAPITAL LTD.</Scrip_Name>
+	<NSE_Symbol>ABCAPITAL</NSE_Symbol>
+	<MWPL_Limit>122316423</MWPL_Limit>
+	<Open_Interest>117403200</Open_Interest>
+	<Fut_Eq_Open_Interest>75460751.224485</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE148O01028</ISIN>
+	<Scrip_Name>DELHIVERY LIMITED</Scrip_Name>
+	<NSE_Symbol>DELHIVERY</NSE_Symbol>
+	<MWPL_Limit>94196226</MWPL_Limit>
+	<Open_Interest>38161325</Open_Interest>
+	<Fut_Eq_Open_Interest>15506152.06088175</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE158A01026</ISIN>
+	<Scrip_Name>HERO MOTOCORP LIMITED</Scrip_Name>
+	<NSE_Symbol>HEROMOTOCO</NSE_Symbol>
+	<MWPL_Limit>19579129</MWPL_Limit>
+	<Open_Interest>11451600</Open_Interest>
+	<Fut_Eq_Open_Interest>6211563.546795</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE775A01035</ISIN>
+	<Scrip_Name>SAMVRDHNA MTHRSN INTL LTD</Scrip_Name>
+	<NSE_Symbol>MOTHERSON</NSE_Symbol>
+	<MWPL_Limit>542522848</MWPL_Limit>
+	<Open_Interest>296374650</Open_Interest>
+	<Fut_Eq_Open_Interest>182770459.169505</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE585B01010</ISIN>
+	<Scrip_Name>MARUTI SUZUKI INDIA LTD.</Scrip_Name>
+	<NSE_Symbol>MARUTI</NSE_Symbol>
+	<MWPL_Limit>16752897</MWPL_Limit>
+	<Open_Interest>5805150</Open_Interest>
+	<Fut_Eq_Open_Interest>3036468.181587</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE619A01035</ISIN>
+	<Scrip_Name>PATANJALI FOODS LIMITED</Scrip_Name>
+	<NSE_Symbol>PATANJALI</NSE_Symbol>
+	<MWPL_Limit>50840137</MWPL_Limit>
+	<Open_Interest>48541500</Open_Interest>
+	<Fut_Eq_Open_Interest>22105711.399374</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE947Q01028</ISIN>
+	<Scrip_Name>LAURUS LABS LIMITED</Scrip_Name>
+	<NSE_Symbol>LAURUSLABS</NSE_Symbol>
+	<MWPL_Limit>58629477</MWPL_Limit>
+	<Open_Interest>29286750</Open_Interest>
+	<Fut_Eq_Open_Interest>13909325.770214</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE522D01027</ISIN>
+	<Scrip_Name>MANAPPURAM FINANCE LTD</Scrip_Name>
+	<NSE_Symbol>MANAPPURAM</NSE_Symbol>
+	<MWPL_Limit>82205057</MWPL_Limit>
+	<Open_Interest>68325000</Open_Interest>
+	<Fut_Eq_Open_Interest>34033252.59552</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE465A01025</ISIN>
+	<Scrip_Name>BHARAT FORGE LTD</Scrip_Name>
+	<NSE_Symbol>BHARATFORG</NSE_Symbol>
+	<MWPL_Limit>35155737</MWPL_Limit>
+	<Open_Interest>13557000</Open_Interest>
+	<Fut_Eq_Open_Interest>7422169.56973</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE878B01027</ISIN>
+	<Scrip_Name>KEI INDUSTRIES LTD.</Scrip_Name>
+	<NSE_Symbol>KEI</NSE_Symbol>
+	<MWPL_Limit>9313740</MWPL_Limit>
+	<Open_Interest>2236325</Open_Interest>
+	<Fut_Eq_Open_Interest>1105421.29481</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE031A01017</ISIN>
+	<Scrip_Name>HSG & URBAN DEV CORPN LTD</Scrip_Name>
+	<NSE_Symbol>HUDCO</NSE_Symbol>
+	<MWPL_Limit>75071250</MWPL_Limit>
+	<Open_Interest>90834075</Open_Interest>
+	<Fut_Eq_Open_Interest>32273161.57282125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE138Y01010</ISIN>
+	<Scrip_Name>KFIN TECHNOLOGIES LIMITED</Scrip_Name>
+	<NSE_Symbol>KFINTECH</NSE_Symbol>
+	<MWPL_Limit>19911179</MWPL_Limit>
+	<Open_Interest>8434250</Open_Interest>
+	<Fut_Eq_Open_Interest>3178717.6585805</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE242A01010</ISIN>
+	<Scrip_Name>INDIAN OIL CORP LTD</Scrip_Name>
+	<NSE_Symbol>IOC</NSE_Symbol>
+	<MWPL_Limit>684903861</MWPL_Limit>
+	<Open_Interest>199504500</Open_Interest>
+	<Fut_Eq_Open_Interest>97836874.03069125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE0J1Y01017</ISIN>
+	<Scrip_Name>LIFE INSURA CORP OF INDIA</Scrip_Name>
+	<NSE_Symbol>LICI</NSE_Symbol>
+	<MWPL_Limit>32057152</MWPL_Limit>
+	<Open_Interest>25197900</Open_Interest>
+	<Fut_Eq_Open_Interest>9946227.615086</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE494B01023</ISIN>
+	<Scrip_Name>TVS MOTOR COMPANY  LTD</Scrip_Name>
+	<NSE_Symbol>TVSMOTOR</NSE_Symbol>
+	<MWPL_Limit>35369445</MWPL_Limit>
+	<Open_Interest>10915275</Open_Interest>
+	<Fut_Eq_Open_Interest>7593505.130253</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE302A01020</ISIN>
+	<Scrip_Name>EXIDE INDUSTRIES LTD</Scrip_Name>
+	<NSE_Symbol>EXIDEIND</NSE_Symbol>
+	<MWPL_Limit>68856800</MWPL_Limit>
+	<Open_Interest>49804200</Open_Interest>
+	<Fut_Eq_Open_Interest>25501488.041844</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE364U01010</ISIN>
+	<Scrip_Name>ADANI GREEN ENERGY LTD</Scrip_Name>
+	<NSE_Symbol>ADANIGREEN</NSE_Symbol>
+	<MWPL_Limit>61877951</MWPL_Limit>
+	<Open_Interest>43672200</Open_Interest>
+	<Fut_Eq_Open_Interest>22635768.422862</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE935N01020</ISIN>
+	<Scrip_Name>DIXON TECHNO (INDIA) LTD</Scrip_Name>
+	<NSE_Symbol>DIXON</NSE_Symbol>
+	<MWPL_Limit>6445442</MWPL_Limit>
+	<Open_Interest>7292600</Open_Interest>
+	<Fut_Eq_Open_Interest>2193110.3130895</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE061F01013</ISIN>
+	<Scrip_Name>FORTIS HEALTHCARE LTD</Scrip_Name>
+	<NSE_Symbol>FORTIS</NSE_Symbol>
+	<MWPL_Limit>62490435</MWPL_Limit>
+	<Open_Interest>23621225</Open_Interest>
+	<Fut_Eq_Open_Interest>13391722.09878725</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE732I01013</ISIN>
+	<Scrip_Name>ANGEL ONE LIMITED</Scrip_Name>
+	<NSE_Symbol>ANGELONE</NSE_Symbol>
+	<MWPL_Limit>9647634</MWPL_Limit>
+	<Open_Interest>11007000</Open_Interest>
+	<Fut_Eq_Open_Interest>3525426.41212</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE398R01022</ISIN>
+	<Scrip_Name>SYNGENE INTERNATIONAL LTD</Scrip_Name>
+	<NSE_Symbol>SYNGENE</NSE_Symbol>
+	<MWPL_Limit>28408333</MWPL_Limit>
+	<Open_Interest>13206000</Open_Interest>
+	<Fut_Eq_Open_Interest>8362447.76997</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE155A01022</ISIN>
+	<Scrip_Name>TATA MOTORS PASS VEH LTD</Scrip_Name>
+	<NSE_Symbol>TMPV</NSE_Symbol>
+	<MWPL_Limit>284575867</MWPL_Limit>
+	<Open_Interest>202684000</Open_Interest>
+	<Fut_Eq_Open_Interest>86646608.375576</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE726G01019</ISIN>
+	<Scrip_Name>ICICI PRU LIFE INS CO LTD</Scrip_Name>
+	<NSE_Symbol>ICICIPRULI</NSE_Symbol>
+	<MWPL_Limit>48653643</MWPL_Limit>
+	<Open_Interest>23087075</Open_Interest>
+	<Fut_Eq_Open_Interest>16401172.671257</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE018A01030</ISIN>
+	<Scrip_Name>LARSEN & TOUBRO LTD.</Scrip_Name>
+	<NSE_Symbol>LT</NSE_Symbol>
+	<MWPL_Limit>136007303</MWPL_Limit>
+	<Open_Interest>22284675</Open_Interest>
+	<Fut_Eq_Open_Interest>14046160.72065675</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE758T01015</ISIN>
+	<Scrip_Name>ETERNAL LIMITED</Scrip_Name>
+	<NSE_Symbol>ETERNAL</NSE_Symbol>
+	<MWPL_Limit>1361988292</MWPL_Limit>
+	<Open_Interest>446093300</Open_Interest>
+	<Fut_Eq_Open_Interest>299144203.0986875</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE745G01035</ISIN>
+	<Scrip_Name>MULTI COMMODITY EXCHANGE</Scrip_Name>
+	<NSE_Symbol>MCX</NSE_Symbol>
+	<MWPL_Limit>7635422</MWPL_Limit>
+	<Open_Interest>7657625</Open_Interest>
+	<Fut_Eq_Open_Interest>3040516.63232875</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE361B01024</ISIN>
+	<Scrip_Name>DIVI S LABORATORIES LTD</Scrip_Name>
+	<NSE_Symbol>DIVISLAB</NSE_Symbol>
+	<MWPL_Limit>16353614</MWPL_Limit>
+	<Open_Interest>4583300</Open_Interest>
+	<Fut_Eq_Open_Interest>2863490.786833</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE0DK501011</ISIN>
+	<Scrip_Name>PIRAMAL PHARMA LIMITED</Scrip_Name>
+	<NSE_Symbol>PPLPHARMA</NSE_Symbol>
+	<MWPL_Limit>120138597</MWPL_Limit>
+	<Open_Interest>53325250</Open_Interest>
+	<Fut_Eq_Open_Interest>22216936.86861</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE881D01027</ISIN>
+	<Scrip_Name>ORACLE FIN SERV SOFT LTD.</Scrip_Name>
+	<NSE_Symbol>OFSS</NSE_Symbol>
+	<MWPL_Limit>3401732</MWPL_Limit>
+	<Open_Interest>2711700</Open_Interest>
+	<Fut_Eq_Open_Interest>1352746.57423875</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE020B01018</ISIN>
+	<Scrip_Name>REC LIMITED</Scrip_Name>
+	<NSE_Symbol>RECLTD</NSE_Symbol>
+	<MWPL_Limit>187084550</MWPL_Limit>
+	<Open_Interest>182147275</Open_Interest>
+	<Fut_Eq_Open_Interest>93704573.01824225</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE139A01034</ISIN>
+	<Scrip_Name>NATIONAL ALUMINIUM CO LTD</Scrip_Name>
+	<NSE_Symbol>NATIONALUM</NSE_Symbol>
+	<MWPL_Limit>134225816</MWPL_Limit>
+	<Open_Interest>119021250</Open_Interest>
+	<Fut_Eq_Open_Interest>57572756.868825</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE029A01011</ISIN>
+	<Scrip_Name>BHARAT PETROLEUM CORP  LT</Scrip_Name>
+	<NSE_Symbol>BPCL</NSE_Symbol>
+	<MWPL_Limit>281577339</MWPL_Limit>
+	<Open_Interest>58489625</Open_Interest>
+	<Fut_Eq_Open_Interest>28911749.80885225</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE669C01036</ISIN>
+	<Scrip_Name>TECH MAHINDRA LIMITED</Scrip_Name>
+	<NSE_Symbol>TECHM</NSE_Symbol>
+	<MWPL_Limit>76137451</MWPL_Limit>
+	<Open_Interest>32868600</Open_Interest>
+	<Fut_Eq_Open_Interest>22293916.691706</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE423A01024</ISIN>
+	<Scrip_Name>ADANI ENTERPRISES LIMITED</Scrip_Name>
+	<NSE_Symbol>ADANIENT</NSE_Symbol>
+	<MWPL_Limit>30942206</MWPL_Limit>
+	<Open_Interest>43971318</Open_Interest>
+	<Fut_Eq_Open_Interest>19687505.91188697</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE298A01020</ISIN>
+	<Scrip_Name>CUMMINS INDIA LTD</Scrip_Name>
+	<NSE_Symbol>CUMMINSIND</NSE_Symbol>
+	<MWPL_Limit>20374200</MWPL_Limit>
+	<Open_Interest>4691800</Open_Interest>
+	<Fut_Eq_Open_Interest>2973016.552926</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE388Y01029</ISIN>
+	<Scrip_Name>FSN E COMMERCE VENTURES</Scrip_Name>
+	<NSE_Symbol>NYKAA</NSE_Symbol>
+	<MWPL_Limit>205324177</MWPL_Limit>
+	<Open_Interest>85803125</Open_Interest>
+	<Fut_Eq_Open_Interest>50307015.50509375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE101A01026</ISIN>
+	<Scrip_Name>MAHINDRA & MAHINDRA LTD</Scrip_Name>
+	<NSE_Symbol>M&M</NSE_Symbol>
+	<MWPL_Limit>100261459</MWPL_Limit>
+	<Open_Interest>28112000</Open_Interest>
+	<Fut_Eq_Open_Interest>18507843.808482</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE530B01024</ISIN>
+	<Scrip_Name>IIFL FINANCE LIMITED</Scrip_Name>
+	<NSE_Symbol>IIFL</NSE_Symbol>
+	<MWPL_Limit>47888370</MWPL_Limit>
+	<Open_Interest>23670900</Open_Interest>
+	<Fut_Eq_Open_Interest>11424193.4749635</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE030A01027</ISIN>
+	<Scrip_Name>HINDUSTAN UNILEVER LTD.</Scrip_Name>
+	<NSE_Symbol>HINDUNILVR</NSE_Symbol>
+	<MWPL_Limit>89517840</MWPL_Limit>
+	<Open_Interest>20581200</Open_Interest>
+	<Fut_Eq_Open_Interest>10258064.758428</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE596I01020</ISIN>
+	<Scrip_Name>COMPUTER AGE MNGT SER LTD</Scrip_Name>
+	<NSE_Symbol>CAMS</NSE_Symbol>
+	<MWPL_Limit>37106075</MWPL_Limit>
+	<Open_Interest>18803250</Open_Interest>
+	<Fut_Eq_Open_Interest>8467854.5226375</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE498L01015</ISIN>
+	<Scrip_Name>L&T FINANCE LIMITED</Scrip_Name>
+	<NSE_Symbol>LTF</NSE_Symbol>
+	<MWPL_Limit>126777205</MWPL_Limit>
+	<Open_Interest>97457438</Open_Interest>
+	<Fut_Eq_Open_Interest>40754696.53913876</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE094A01015</ISIN>
+	<Scrip_Name>HINDUSTAN PETROLEUM CORP</Scrip_Name>
+	<NSE_Symbol>HINDPETRO</NSE_Symbol>
+	<MWPL_Limit>143933168</MWPL_Limit>
+	<Open_Interest>61410150</Open_Interest>
+	<Fut_Eq_Open_Interest>36927572.809329</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE259A01022</ISIN>
+	<Scrip_Name>COLGATE PALMOLIVE LTD.</Scrip_Name>
+	<NSE_Symbol>COLPAL</NSE_Symbol>
+	<MWPL_Limit>19990944</MWPL_Limit>
+	<Open_Interest>12047400</Open_Interest>
+	<Fut_Eq_Open_Interest>6301208.525157</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE019A01038</ISIN>
+	<Scrip_Name>JSW STEEL LIMITED</Scrip_Name>
+	<NSE_Symbol>JSWSTEEL</NSE_Symbol>
+	<MWPL_Limit>133166619</MWPL_Limit>
+	<Open_Interest>78655050</Open_Interest>
+	<Fut_Eq_Open_Interest>46920085.608366</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE742F01042</ISIN>
+	<Scrip_Name>ADANI PORT & SEZ LTD</Scrip_Name>
+	<NSE_Symbol>ADANIPORTS</NSE_Symbol>
+	<MWPL_Limit>73799006</MWPL_Limit>
+	<Open_Interest>37002975</Open_Interest>
+	<Fut_Eq_Open_Interest>23162098.46704025</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE540L01014</ISIN>
+	<Scrip_Name>ALKEM LABORATORIES LTD.</Scrip_Name>
+	<NSE_Symbol>ALKEM</NSE_Symbol>
+	<MWPL_Limit>6130387</MWPL_Limit>
+	<Open_Interest>2002625</Open_Interest>
+	<Fut_Eq_Open_Interest>1568475.294255</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE073K01018</ISIN>
+	<Scrip_Name>SONA BLW PRECISION FRGS L</Scrip_Name>
+	<NSE_Symbol>SONACOMS</NSE_Symbol>
+	<MWPL_Limit>67126548</MWPL_Limit>
+	<Open_Interest>23402400</Open_Interest>
+	<Fut_Eq_Open_Interest>14241783.611944</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE059A01026</ISIN>
+	<Scrip_Name>CIPLA LTD</Scrip_Name>
+	<NSE_Symbol>CIPLA</NSE_Symbol>
+	<MWPL_Limit>57073940</MWPL_Limit>
+	<Open_Interest>23502375</Open_Interest>
+	<Fut_Eq_Open_Interest>13513037.59708125</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE081A01020</ISIN>
+	<Scrip_Name>TATA STEEL LIMITED</Scrip_Name>
+	<NSE_Symbol>TATASTEEL</NSE_Symbol>
+	<MWPL_Limit>833987639</MWPL_Limit>
+	<Open_Interest>500610000</Open_Interest>
+	<Fut_Eq_Open_Interest>261349283.0344</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE196A01026</ISIN>
+	<Scrip_Name>MARICO LIMITED</Scrip_Name>
+	<NSE_Symbol>MARICO</NSE_Symbol>
+	<MWPL_Limit>79408529</MWPL_Limit>
+	<Open_Interest>43808400</Open_Interest>
+	<Fut_Eq_Open_Interest>34351050.647292</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE067A01029</ISIN>
+	<Scrip_Name>CG POWER AND IND SOL LTD</Scrip_Name>
+	<NSE_Symbol>CGPOWER</NSE_Symbol>
+	<MWPL_Limit>100245792</MWPL_Limit>
+	<Open_Interest>28025350</Open_Interest>
+	<Fut_Eq_Open_Interest>14418090.055905</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+<MWPL>
+	<Date>17-DEC-2025</Date>
+	<ISIN>INE472A01039</ISIN>
+	<Scrip_Name>BLUE STAR LIMITED</Scrip_Name>
+	<NSE_Symbol>BLUESTARCO</NSE_Symbol>
+	<MWPL_Limit>19584741</MWPL_Limit>
+	<Open_Interest>3606525</Open_Interest>
+	<Fut_Eq_Open_Interest>2025901.69522975</Fut_Eq_Open_Interest>
+	<Limit_for_Next_Day></Limit_for_Next_Day>
+</MWPL>
+</MWPL_Viols>

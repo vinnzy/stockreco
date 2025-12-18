@@ -107,6 +107,39 @@ def create_app(repo_root: Optional[Path] = None) -> FastAPI:
             raise HTTPException(status_code=404, detail=f"Missing {path}")
         return _read_json(path)
 
+    @app.get("/api/options/performance/dates")
+    def option_performance_dates():
+        folder = repo / "reports" / "options"
+        dates = _list_dates_from_reports(folder, r"^option_performance_(\d{4}-\d{2}-\d{2})\.json$")
+        latest = dates[-1] if dates else None
+        return {"latest_as_of": latest, "dates": dates, "reports_dir": str(folder)}
+
+    @app.get("/api/options/performance/{as_of}")
+    def option_performance(as_of: str):
+        folder = repo / "reports" / "options"
+        path = folder / f"option_performance_{as_of}.json"
+        if not path.exists():
+            raise HTTPException(status_code=404, detail=f"Missing {path}")
+        return _read_json(path)
+        
+    # --- Analyst Options Reco ---
+    @app.get("/api/options/analyst/dates")
+    def analyst_option_dates():
+        folder = repo / "reports" / "options"
+        dates = _list_dates_from_reports(folder, r"^option_analyst_(\d{4}-\d{2}-\d{2})\.json$")
+        latest = dates[-1] if dates else None
+        return {"latest_as_of": latest, "dates": dates, "reports_dir": str(folder)}
+
+    @app.get("/api/options/analyst/{as_of}")
+    def analyst_option_reco(as_of: str):
+        folder = repo / "reports" / "options"
+        path = folder / f"option_analyst_{as_of}.json"
+        
+        if not path.exists():
+            # Graceful fall back? No, if it doesn't exist, it doesn't exist.
+            raise HTTPException(status_code=404, detail=f"Missing Analyst report {path}")
+        return _read_json(path)
+
     # --- Intraday Option Reco ---
     @app.get("/api/options/intraday/dates")
     def intraday_option_dates():
@@ -131,7 +164,7 @@ def create_app(repo_root: Optional[Path] = None) -> FastAPI:
         bhav = (
             repo
             / "data"
-            / "derivatives"
+            / "mcx"
             / as_of
             / f"BhavCopyDateWise_{as_of.replace('-', '')}.csv"
         )

@@ -182,6 +182,55 @@ def main():
         print("\n⚠️  MCX generation failed. Continuing with other steps...\n")
     
     # =========================================================================
+    # STEP 3.5: Evaluate Options Performance (Lifecycle Tracking)
+    # =========================================================================
+    # Loop through recos from the last 15 days and update their status with today's data.
+    print(f"\n{'-'*60}")
+    print("📈 Updating Option Performance Lifecycle...")
+    print(f"{'-'*60}\n")
+    
+    try:
+        current_dt = datetime.strptime(as_of, "%Y-%m-%d")
+        options_dir = repo / "reports" / "options"
+        
+        # Look back 15 days
+        for i in range(15):
+            past_dt = current_dt - timedelta(days=i) # today, yesterday, ...
+            # Skip if checking future vs past (though logic handles it)
+            # Actually we want: for RECO_DATE in [last 15 days], check against OUTCOME_DATE (as_of)
+            # If reco_date == as_of, we haven't generated outcomes yet (rec usually for next day).
+            # But technically we can check same-day if intraday.
+            # Usually we assume Reco is generated EOD for Next Day, but sometimes EOD for Today.
+            # Let's just process all found files.
+            
+            reco_date_str = past_dt.strftime("%Y-%m-%d")
+            reco_file = options_dir / f"option_reco_{reco_date_str}.json"
+            
+            # If checking today's reco against today's data? 
+            # If reco is generated AT 3:30 PM, it has no performance yet (performance starts tomorrow).
+            # So maybe skip i=0 (today)? 
+            # But the user might run this for a past date "as_of".
+            # Safe logic: Run for all exists. If reco_date == outcome_date, nothing happens (day 0).
+            
+            if reco_file.exists():
+                print(f"   > Updating performance for Reco {reco_date_str}...")
+                cmd = [
+                    sys.executable,
+                    "scripts/generate_option_performance.py",
+                    "--reco-file", str(reco_file),
+                    "--outcome-date", as_of
+                ]
+                # We don't fail the pipeline if one update fails
+                subprocess.call(cmd, cwd=repo)
+                
+        results["option_performance"] = True
+            
+    except Exception as e:
+        print(f"\n⚠️  Option Performance cycle failed: {e}\n")
+        results["option_performance"] = False
+
+    
+    # =========================================================================
     # STEP 4: Start Servers (if not skipped)
     # =========================================================================
     if not args.skip_servers:

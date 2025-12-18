@@ -1,0 +1,22 @@
+File path with name and their actual names
+combineoi_<date> - F&O Combined Open Interest across exchanges
+fao_participant_oi_<date>.csv - Participant wise Open Interest (no. of contracts) in Equity Derivatives as on <Date>
+fao_participant_vol_<date>.csv - Participant wise Trading Volume (no. of contracts) in Equity Derivatives as on <date>
+fao_top10cm_to_<date>csv - Volume and Turnover data of top 10 Clearing Members (no. of contracts) in Equity Derivatives as on <date> (Amounts in Rs. Crore)
+fii_stats_<date>.xls - FII DERIVATIVES STATISTICS FOR <date>
+fo_<date>.csv - Total volume summary of Futures and Options by product type
+fo<date>.csv - official NSE F&O (Futures & Options) bhavcopy
+fo<date>.csv - F&O Market activity report
+fo<date> - official NSE F&O (Futures & Options) bhavcopy for a single trading day
+FOVOLT_<date>.csv - F&O Daily Volatility
+futidx<date>.csv - NSE Futures Bhavcopy for INDEX FUTURES only
+futivx<date>.csv - NSE Futures Implied Volatility Index (IVX) file — a derived analytics file
+futstk<date>.csv - NSE Futures Bhavcopy for STOCK FUTURES only.
+ncloi_<date> - F&O NCL Open Interest
+op<date>.csv - NSE options market data
+op<date>.csv - NSE Options Bhavcopy for <date>
+optidx<date>.csv - NSE ONLY INDEX OPTIONS traded on <date>
+optstk<date>.csv - NSE ONLY equity (stock) option contracts traded on <date>
+ttfut<date>.csv - NSE ONLY FUTURES contracts traded on <date>
+ttopt<date>.csv - trade-to-trade (TT) extracted Options bhavcopy file — essentially a clean, options-only view derived from NSE derivatives data
+

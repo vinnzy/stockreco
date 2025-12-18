@@ -13,6 +13,14 @@ Mode = Literal["strict", "opportunistic", "speculative"]
 
 _EXP_FMT = "%d-%b-%Y"
 
+# Known cash-settled indices (no physical delivery risk)
+_INDICES = {"NIFTY", "BANKNIFTY", "FINNIFTY", "MIDCPNIFTY", "SENSEX", "BANKEX"}
+
+
+def _is_index(symbol: str) -> bool:
+    return symbol.upper() in _INDICES
+
+
 
 def _ensure_sell_by(row: dict) -> dict:
     # already present
@@ -48,15 +56,25 @@ def _parse_expiry(exp: str) -> Optional[datetime]:
     if not exp:
         return None
     exp = str(exp).strip()
-    # allow "06-JAN-2026" etc
+    # Format: DD-MMM-YYYY (e.g. 16-DEC-2025)
     try:
         return datetime.strptime(exp, _EXP_FMT)
     except Exception:
-        # already ISO?
-        try:
-            return datetime.strptime(exp, "%Y-%m-%d")
-        except Exception:
-            return None
+        pass
+        
+    # Format: ISO YYYY-MM-DD
+    try:
+        return datetime.strptime(exp, "%Y-%m-%d")
+    except Exception:
+        pass
+
+    # Format: DD/MM/YYYY (e.g. 16/12/2025)
+    try:
+        return datetime.strptime(exp, "%d/%m/%Y")
+    except Exception:
+        pass
+        
+    return None
 
 
 def _days_to_expiry(as_of: str, expiry: str) -> Optional[int]:
@@ -111,6 +129,9 @@ class OptionReco:
     rationale: Optional[List[str]] = None
     diagnostics: Optional[Dict[str, Any]] = None
 
+    pcr: Optional[float] = None
+    smart_money_score: Optional[float] = None
+    
     # extra analytics (for UI)
     spot: Optional[float] = None
     ltp: Optional[float] = None
@@ -139,6 +160,8 @@ class OptionReco:
             "confidence": self.confidence,
             "rationale": self.rationale,
             "diagnostics": self.diagnostics,
+            "pcr": self.pcr,
+            "smart_money_score": self.smart_money_score,
             "spot": self.spot,
             "ltp": self.ltp,
             "iv": self.iv,
@@ -157,13 +180,16 @@ class OptionRecoConfig:
     mode: Mode = "strict"
 
     # expiry selection
-    min_dte: int = 5  # avoid 0-4 DTE theta cliff (strict)
+    min_dte: int = 2  # Reduced from 5 to allow weekly expiries (e.g. 3 days away)
     max_dte: int = 45  # avoid far months by default
 
+    margin_period_days: int = 5  # For stocks: if DTE < 5, consider next expiry or intraday
+
     # selection
-    max_moneyness_atr: float = 1.2  # allow strikes within +/- 1.2 ATR
-    min_oi: float = 0.0
-    min_volume: float = 0.0
+    max_moneyness_atr: float = 2.5  # Widen search window (was 1.2)
+    min_oi: float = 1000.0   # Enforce basic liquidity
+    min_volume: float = 500.0
+
 
     # pricing/targets
     entry_slippage_frac: float = 0.03  # ask a slightly better entry than LTP
@@ -325,6 +351,8 @@ class OptionRecoAgent:
         spot = float(getattr(underlying, "spot", None) or 0.0)
         if spot <= 0:
             raise RuntimeError("Underlying spot missing/invalid")
+            
+        rationale: List[str] = []
 
         # Direction decision from signals.csv (buy_win/sell_win + soft scores)
         buy_win = int(signal_row.get("buy_win", 0) or 0)
@@ -335,6 +363,11 @@ class OptionRecoAgent:
 
         atr_points = float(signal_row.get("atr_points", 0.0) or 0.0)
         atr_pct = float(signal_row.get("atr_pct", 0.0) or 0.0)
+        
+        # New Context Fields
+        vol_annual = float(signal_row.get("volatility_annualized", 0.0) or 0.0)
+        fii_sent = float(signal_row.get("fii_sentiment", 0.0) or 0.0)
+        has_bulk = int(signal_row.get("has_bulk_deal", 0) or 0)
 
         if atr_points <= 0:
             # rough fallback if missing
@@ -445,6 +478,9 @@ class OptionRecoAgent:
         # filter chain by side + DTE window + moneyness band
         candidates: List[Tuple[OptionChainRow, int]] = []
         min_dte = self._min_dte()
+        
+        is_index = _is_index(s)
+
         for r in chain:
             if (r.option_type or "").upper() != side:
                 continue
@@ -461,6 +497,14 @@ class OptionRecoAgent:
                 continue
             candidates.append((r, dte))
 
+        # Expiry Week Logic: For Stocks, prefer 'safe' expiries (>= margin_period_days)
+        if candidates and not is_index:
+            safe = [c for c in candidates if c[1] >= self.cfg.margin_period_days]
+            if safe:
+                # We have options outside the danger zone, use them exclusively
+                candidates = safe
+            # Else: we only have danger zone options. Use them, but we'll cap sell_by later.
+
         if not candidates:
             # relax DTE as fallback: pick nearest expiry (but still avoid 0DTE)
             for r in chain:
@@ -469,12 +513,17 @@ class OptionRecoAgent:
                 dte = _days_to_expiry(as_of, r.expiry)
                 if dte is None or dte < 1:
                     continue
+                if self.cfg.min_oi and (r.oi or 0) < (self.cfg.min_oi * 0.5):
+                    continue
+                if self.cfg.min_volume and (r.volume or 0) < (self.cfg.min_volume * 0.5):
+                    continue
                 candidates.append((r, dte))
 
         if not candidates:
             conf = max(self.cfg.conf_floor_hold, 0.12)
-            explain = f"No suitable {side} options found after expiry/liquidity filters."
+            explain = f"No suitable {side} options found after expiry/liquidity filters (min_oi={self.cfg.min_oi})."
             diagnostics = dict(diag_base)
+
             diagnostics["confidence_explain"] = explain
             return OptionReco(
                 as_of=as_of,
@@ -568,6 +617,14 @@ class OptionRecoAgent:
         if not sell_by:
             sell_by = self._sell_by_fallback(as_of, best.expiry)
 
+        # --- MARGIN / EXPIRY WEEK CHECK ---
+        # If Stock (not Index) AND DTE < margin_period_days
+        # Force Intraday (sell_by = as_of)
+        if not is_index and dte < self.cfg.margin_period_days:
+             rationale.append(f"Expiry Warning: Stock is in expiry week (DTE={dte} < {self.cfg.margin_period_days}).")
+             rationale.append("High physical settlement margin risk. Capping to INTRADAY only.")
+             sell_by = as_of  # Force sell today
+
         # Confidence blend (mode-aware floors)
         conf = min(
             0.95,
@@ -581,6 +638,65 @@ class OptionRecoAgent:
         if iv and iv > 0.40:
             conf *= 0.90  # high IV risk
 
+        # Context-based Adjustments
+        # 1. Volatility Context Adjustments
+        if vol_annual > 0:
+            if vol_annual < 0.15:
+                 conf *= 0.85
+                 rationale.append(f"Low annualized volatility ({vol_annual:.1%}) -> reduced confidence for option buying.")
+            elif vol_annual >= 0.20 and vol_annual <= 0.40:
+                 # Sweet spot for option buying (enough movement, not expensive)
+                 conf = min(0.95, conf * 1.05)
+                 rationale.append(f"Volatility sweet spot ({vol_annual:.1%}) -> confidence boost.")
+
+        # 2. FII Sentiment Check
+        # If FIIs are net short (-0.2) and we want CE, or net long (+0.2) and we want PE
+        if abs(fii_sent) > 0.2:
+            if side == "CE" and fii_sent < -0.2:
+                conf *= 0.80
+                rationale.append(f"Contra-FII: FIIs are net short ({fii_sent:.2f}), but signal is BULLISH.")
+            elif side == "PE" and fii_sent > 0.2:
+                conf *= 0.80
+                rationale.append(f"Contra-FII: FIIs are net long ({fii_sent:.2f}), but signal is BEARISH.")
+
+        # 3. Bulk Deal Booster
+        if has_bulk:
+            conf = min(0.95, conf * 1.1)
+            rationale.append("Booster: Recent bulk/block deal activity detected.")
+
+        # 4. Smart Money Flow (Participant OI)
+        # Check 'smart_money_score' (-1.0 to 1.0) passed in signal_row
+        sm_score = float(signal_row.get("smart_money_score", 0.0) or 0.0)
+        
+        # If score is significant (>0.3 or <-0.3)
+        if abs(sm_score) > 0.3:
+            if side == "CE":
+                if sm_score > 0.3:
+                    conf = min(0.95, conf * 1.15) # Boost
+                    rationale.append(f"Smart Money Bullish (Score {sm_score:.2f}): FII/Pros buying Index Futures/Calls.")
+                elif sm_score < -0.3:
+                    conf *= 0.70 # Heavy Penalty
+                    rationale.append(f"Smart Money Bearish (Score {sm_score:.2f}): FII/Pros selling. Risky Long.")
+            elif side == "PE":
+                if sm_score < -0.3:
+                    conf = min(0.95, conf * 1.15)
+                    rationale.append(f"Smart Money Bearish (Score {sm_score:.2f}): FII/Pros selling Index/Stock Futures.")
+                elif sm_score > 0.3:
+                    conf *= 0.70
+                    rationale.append(f"Smart Money Bullish (Score {sm_score:.2f}): FII/Pros buying. Risky Short.")
+
+        # 5. PCR Sentiment Filter
+        pcr = float(signal_row.get("pcr", 0.0) or 0.0)
+        # Only check if valid PCR exists
+        if pcr > 0:
+            if side == "CE" and pcr > 1.6: # Very Overbought
+                conf *= 0.85
+                rationale.append(f"High PCR ({pcr:.2f}): Market potentially overbought. Limit upside.")
+            elif side == "PE" and pcr < 0.5: # Very Oversold
+                conf *= 0.85
+                rationale.append(f"Low PCR ({pcr:.2f}): Market potentially oversold. Limit downside.")
+
+
         # floors
         if self.cfg.mode == "strict":
             conf = max(conf, self.cfg.conf_floor_trade_strict)
@@ -592,10 +708,11 @@ class OptionRecoAgent:
         # Breakeven in underlying at expiry
         breakeven = (strike + entry) if side == "CE" else (strike - entry)
 
-        rationale = [
+        core_rationale = [
             f"{bias} bias from EOD signal (direction_score={direction_score:.2f}, buy_win={buy_win}, sell_win={sell_win}).",
             f"Picked near-ATM {side} with DTE={dte} to reduce theta cliff; liquidity via OI/volume where available.",
         ]
+        rationale = core_rationale + rationale
         if iv:
             rationale.append(
                 f"Implied vol ~ {iv*100:.1f}%; theta/day ~ {abs(theta_pd):.2f} premium units."
@@ -603,14 +720,100 @@ class OptionRecoAgent:
                 else f"Implied vol ~ {iv*100:.1f}%."
             )
         
-        # Check if we are buying into the "Wall" (Max OI)
+        # 4. OI-Based Support & Resistance (Call/Put Writing)
+        # Scan for massive OI Change peaks which act as fresh walls
+        # "Resistance" = Call Writing (Positive OI Change on CE side > PE side)
+        # "Support" = Put Writing (Positive OI Change on PE side > CE side)
+        
+        resistance_strike = None
+        support_strike = None
+        max_ce_change = 0.0
+        max_pe_change = 0.0
+        
+        # Build map of strikes to OI Change
+        ce_changes = {}
+        pe_changes = {}
+        
+        for r in chain:
+            strike_val = float(r.strike)
+            # consider only near-term expiries (e.g. current selected best expiry or nearby)
+            # strict matching might be too narrow if liquidity is split, but let's stick to best.expiry for relevance
+            if r.expiry != best.expiry:
+                continue
+                
+            chg = float(r.oi_change or 0.0)
+            if chg > 0:
+                if r.option_type == "CE":
+                    ce_changes[strike_val] = chg
+                    if chg > max_ce_change:
+                        max_ce_change = chg
+                        resistance_strike = strike_val
+                elif r.option_type == "PE":
+                    pe_changes[strike_val] = chg
+                    if chg > max_pe_change:
+                        max_pe_change = chg
+                        support_strike = strike_val
+
+        # Logic: If we are buying CE, check for Resistance (Call Writing) ahead
+        # If Resistance strike is strictly above Spot (OTM) and below/at Target 2, it's a blocker.
+        if side == "CE":
+            if resistance_strike and resistance_strike > spot and resistance_strike <= t2_u:
+                # Is this a "significant" wall? compare to max_pe_change or absolute threshold?
+                # For now, just existence of local max Call Writing overhead is bad.
+                # Heuristic: If Call Writing > 1.5x Put Writing at this strike (net bearish flow)
+                pe_chg_at_res = pe_changes.get(resistance_strike, 0.0)
+                if max_ce_change > 0 and (max_ce_change > 1.5 * pe_chg_at_res):
+                    conf *= 0.75
+                    rationale.append(f"Resistance Warning: Heavy Call Writing at {resistance_strike} (OI Chg +{int(max_ce_change)}).")
+
+        # Logic: If we are buying PE, check for Support (Put Writing) below
+        if side == "PE":
+            if support_strike and support_strike < spot and support_strike >= t2_u:
+                ce_chg_at_sup = ce_changes.get(support_strike, 0.0)
+                if max_pe_change > 0 and (max_pe_change > 1.5 * ce_chg_at_sup):
+                    conf *= 0.75
+                    rationale.append(f"Support Warning: Heavy Put Writing at {support_strike} (OI Chg +{int(max_pe_change)}).")
+
+        # 4. OI-Based Support & Resistance (Total OI Walls)
+        # Fallback since CHG_IN_OI might be missing: use Total OI Profile
+        # If the selected strike (or immediate target) is a glowing hot OI peak, it's resistance/support.
+        
+        # Check if we are buying into the "Wall" (Total Open Interest)
         max_oi = max([float(c[0].oi or 0) for c in candidates]) if candidates else 0
         current_oi = float(best.oi or 0)
-        if max_oi > 0 and current_oi >= max_oi * 0.95:
-             rationale.append(f"Warning: Selected strike {strike} has highest OI in eligible chain (potential Resistance/Support wall).")
-             # Penalize confidence significantly for buying into resistance
-             conf *= 0.60
-             rationale.append("Confidence penalized due to proximity to OI resistance wall.")
+        
+        # Threshold: 80% of Max OI is significant enough (was 95%)
+        # Also check local peak: is it > 2x the neighbor?
+        # (Neighbors logic requires sorted access, simplified here to just global stats)
+        
+        is_oi_wall = False
+        wall_reason = ""
+        
+        if max_oi > 0:
+            if current_oi >= max_oi * 0.80:
+                is_oi_wall = True
+                wall_reason = f"High Total OI ({int(current_oi)}) relative to chain max ({int(max_oi)})."
+        
+        # Check OI Change if available (defensive)
+        change_wall = False
+        if side == "CE":
+             # Check for massive Call Writing
+             # We use the map built above: ce_changes
+             # Resistance is dangerous if it's AT the strike or slightly OTM
+             res_level = resistance_strike if (resistance_strike and max_ce_change > 50000) else None 
+             if res_level:
+                 # resistance at 2100, spot 2102. Strike 2100.
+                 # If we buy 2100, and resistance is 2100 => BAD.
+                 # If we buy 2100, and resistance is 2120 => WARNING.
+                 # Logic: if resistance_strike <= t1_u and resistance_strike >= strike - 5:
+                 if res_level <= t1_u and res_level >= (strike - spot*0.01):
+                      change_wall = True
+                      wall_reason = f"Fresh Call Writing (+{int(max_ce_change)}) detected at {res_level}."
+
+        if is_oi_wall or change_wall:
+             rationale.append(f"Warning: Buying into Resistance/Support Wall (OI). {wall_reason}")
+             conf *= 0.65
+             rationale.append("Confidence penalized significantly due to OI structure.")
 
         if sell_by:
             rationale.append(f"Sell-by {sell_by} (time-boxed to manage theta/IV risk).")
@@ -631,9 +834,39 @@ class OptionRecoAgent:
                 "delta": (g.delta if g else None),
                 "confidence_explain": explain,
                 "sell_by": sell_by,
+                "pcr": pcr if pcr > 0 else None,
+                "smart_money_score": sm_score
             }
         )
-        rationale.append(explain)
+        return OptionReco(
+            as_of=as_of,
+            symbol=s,
+            bias=bias,
+            instrument="OPTION", # was hardcoded "NONE" in diagnostics update, checking context
+            action="BUY", # We are in the buy path here
+            side=side,
+            expiry=best.expiry,
+            strike=strike,
+            entry_price=_round2(entry),
+            sl_premium=_round2(sl),
+            sl_invalidation=_round2(sl) if sl else None, # Simplified reuse
+            targets=[{"price": _round2(t1), "desc": "Target 1"}, {"price": _round2(t2), "desc": "Target 2"}],
+            confidence=float(f"{conf:.2f}"),
+            rationale=rationale,
+            diagnostics=diagnostics,
+            spot=_round2(spot),
+            ltp=_round2(ltp),
+            iv=iv, # raw value
+            dte=dte,
+            theta_per_day=theta_pd,
+            delta=(g.delta if g else None),
+            extrinsic=_round2(extrinsic),
+            sell_by=sell_by,
+            breakeven=_round2(breakeven),
+            pcr=_round2(pcr) if pcr > 0 else None,
+            smart_money_score=_round2(sm_score)
+        )
+
 
         return OptionReco(
             as_of=as_of,

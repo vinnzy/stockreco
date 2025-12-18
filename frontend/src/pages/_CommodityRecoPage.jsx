@@ -77,7 +77,7 @@ function Table({ rows }) {
                                 title={isExpired ? "Auto-invalidated (past sell-by)" : ""}
                             >
                                 <td className="px-4 py-3 font-medium text-slate-900">
-                                    {r.symbol}
+                                    {r.display_name || r.symbol}
                                     {isExpired ? (
                                         <span className="ml-2 text-xs font-semibold px-2 py-0.5 rounded bg-slate-200 text-slate-700">
                                             EXPIRED

@@ -1,0 +1,1846 @@
+{
+  "reco_date": "2025-12-12",
+  "last_updated": "2025-12-18",
+  "results": [
+    {
+      "symbol": "NIFTY",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "ADANIENT",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "strike": 1520.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 27.84,
+      "target1": 42.69,
+      "target2": 54.57,
+      "sl": 15.96,
+      "day_high": 16.5,
+      "day_low": 7.5,
+      "day_close": 12.3,
+      "outcome": "FAILURE",
+      "details": "SL Hit (9.5 <= 15.96)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 18.2%; theta/day ~ 0.83 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=18.2%; sell_by=2025-12-26."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 16.5,
+          "l": 9.5,
+          "c": 11.1
+        },
+        {
+          "date": "2025-12-18",
+          "h": 12.95,
+          "l": 7.5,
+          "c": 12.3
+        }
+      ]
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "strike": 7100.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 98.79,
+      "target1": 151.49,
+      "target2": 193.65,
+      "sl": 56.64,
+      "day_high": 89.85,
+      "day_low": 21.15,
+      "day_close": 25.8,
+      "outcome": "FAILURE",
+      "details": "SL Hit (30.15 <= 56.64)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.47,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.1%; theta/day ~ 3.17 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.1%; sell_by=2025-12-26."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 89.85,
+          "l": 30.15,
+          "c": 31.8
+        },
+        {
+          "date": "2025-12-18",
+          "h": 31.0,
+          "l": 21.15,
+          "c": 25.8
+        }
+      ]
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "strike": 2760.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 35.45,
+      "target1": 54.36,
+      "target2": 69.49,
+      "sl": 20.32,
+      "day_high": 35.7,
+      "day_low": 18.35,
+      "day_close": 31.15,
+      "outcome": "FAILURE",
+      "details": "SL Hit (18.35 <= 20.32)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 17.7%; theta/day ~ 0.95 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=17.7%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 30.0,
+          "l": 18.35,
+          "c": 24.65
+        },
+        {
+          "date": "2025-12-18",
+          "h": 35.7,
+          "l": 24.0,
+          "c": 31.15
+        }
+      ]
+    },
+    {
+      "symbol": "AXISBANK",
+      "strike": 1300.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 10.77,
+      "target1": 16.51,
+      "target2": 21.1,
+      "sl": 6.17,
+      "day_high": 1.6,
+      "day_low": 1.0,
+      "day_close": 1.2,
+      "outcome": "FAILURE",
+      "details": "SL Hit (1.15 <= 6.17)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.39,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.4%; theta/day ~ 0.51 premium units.",
+        "Sell-by 2025-12-21 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.4%; sell_by=2025-12-21."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-21",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 1.6,
+          "l": 1.15,
+          "c": 1.3
+        },
+        {
+          "date": "2025-12-18",
+          "h": 1.5,
+          "l": 1.0,
+          "c": 1.2
+        }
+      ]
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "strike": 9000.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 109.61,
+      "target1": 168.08,
+      "target2": 214.85,
+      "sl": 62.84,
+      "day_high": 276.0,
+      "day_low": 108.0,
+      "day_close": 196.35,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": "2025-12-18",
+      "failure_date": null,
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 16.9%; theta/day ~ 2.93 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=16.9%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 185.15,
+          "l": 108.0,
+          "c": 164.0
+        },
+        {
+          "date": "2025-12-18",
+          "h": 276.0,
+          "l": 185.15,
+          "c": 196.35
+        }
+      ]
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "strike": 1020.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 17.85,
+      "target1": 27.37,
+      "target2": 34.98,
+      "sl": 10.23,
+      "day_high": 12.8,
+      "day_low": 6.4,
+      "day_close": 7.35,
+      "outcome": "FAILURE",
+      "details": "SL Hit (7.45 <= 10.23)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 20.0%; theta/day ~ 0.60 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=20.0%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 12.8,
+          "l": 7.45,
+          "c": 9.0
+        },
+        {
+          "date": "2025-12-18",
+          "h": 11.0,
+          "l": 6.4,
+          "c": 7.35
+        }
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "strike": 2100.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 19.79,
+      "target1": 30.34,
+      "target2": 38.79,
+      "sl": 11.34,
+      "day_high": 38.95,
+      "day_low": 19.6,
+      "day_close": 20.7,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": "2025-12-17",
+      "failure_date": null,
+      "reco_confidence": 0.42,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.4%; theta/day ~ 0.86 premium units.",
+        "Sell-by 2025-12-22 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.4%; sell_by=2025-12-22."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-22",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 38.95,
+          "l": 24.0,
+          "c": 28.8
+        },
+        {
+          "date": "2025-12-18",
+          "h": 32.4,
+          "l": 19.6,
+          "c": 20.7
+        }
+      ]
+    },
+    {
+      "symbol": "BPCL",
+      "strike": 360.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 9.99,
+      "target1": 15.32,
+      "target2": 19.58,
+      "sl": 5.73,
+      "day_high": 15.5,
+      "day_low": 7.45,
+      "day_close": 8.55,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.41,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 20.9%; theta/day ~ 0.22 premium units.",
+        "Sell-by 2025-12-22 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=20.9%; sell_by=2025-12-22."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-22",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 15.5,
+          "l": 10.65,
+          "c": 11.75
+        },
+        {
+          "date": "2025-12-18",
+          "h": 11.45,
+          "l": 7.45,
+          "c": 8.55
+        }
+      ]
+    },
+    {
+      "symbol": "BRITANNIA",
+      "strike": 5900.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 97.34,
+      "target1": 149.26,
+      "target2": 190.8,
+      "sl": 55.8,
+      "day_high": 236.45,
+      "day_low": 150.55,
+      "day_close": 171.6,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": "2025-12-17",
+      "failure_date": null,
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 15.5%; theta/day ~ 2.86 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=15.5%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 231.0,
+          "l": 208.0,
+          "c": 217.75
+        },
+        {
+          "date": "2025-12-18",
+          "h": 236.45,
+          "l": 150.55,
+          "c": 171.6
+        }
+      ]
+    },
+    {
+      "symbol": "CIPLA",
+      "strike": 1520.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 18.14,
+      "target1": 27.81,
+      "target2": 35.55,
+      "sl": 10.4,
+      "day_high": 33.45,
+      "day_low": 19.15,
+      "day_close": 25.75,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.9%; theta/day ~ 0.41 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.9%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 33.45,
+          "l": 25.65,
+          "c": 28.75
+        },
+        {
+          "date": "2025-12-18",
+          "h": 30.0,
+          "l": 19.15,
+          "c": 25.75
+        }
+      ]
+    },
+    {
+      "symbol": "COALINDIA",
+      "strike": 380.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 2.42,
+      "target1": 3.72,
+      "target2": 4.75,
+      "sl": 1.39,
+      "day_high": 2.85,
+      "day_low": 1.3,
+      "day_close": 1.35,
+      "outcome": "FAILURE",
+      "details": "SL Hit (1.3 <= 1.39)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.4,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.2%; theta/day ~ 0.09 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.2%; sell_by=2025-12-24."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 2.85,
+          "l": 1.55,
+          "c": 1.65
+        },
+        {
+          "date": "2025-12-18",
+          "h": 2.05,
+          "l": 1.3,
+          "c": 1.35
+        }
+      ]
+    },
+    {
+      "symbol": "DIVISLAB",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "DRREDDY",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "EICHERMOT",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "GRASIM",
+      "strike": 2840.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 38.61,
+      "target1": 59.2,
+      "target2": 75.67,
+      "sl": 22.13,
+      "day_high": 25.7,
+      "day_low": 13.7,
+      "day_close": 19.4,
+      "outcome": "FAILURE",
+      "details": "SL Hit (13.8 <= 22.13)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.5%; theta/day ~ 1.29 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.5%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 22.45,
+          "l": 13.8,
+          "c": 21.0
+        },
+        {
+          "date": "2025-12-18",
+          "h": 25.7,
+          "l": 13.7,
+          "c": 19.4
+        }
+      ]
+    },
+    {
+      "symbol": "HCLTECH",
+      "strike": 1660.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 18.24,
+      "target1": 27.96,
+      "target2": 35.75,
+      "sl": 10.45,
+      "day_high": 28.05,
+      "day_low": 14.75,
+      "day_close": 19.15,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.42,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 18.5%; theta/day ~ 0.60 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=18.5%; sell_by=2025-12-26."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 28.05,
+          "l": 18.5,
+          "c": 22.4
+        },
+        {
+          "date": "2025-12-18",
+          "h": 23.8,
+          "l": 14.75,
+          "c": 19.15
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCBANK",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "strike": 780.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 12.03,
+      "target1": 18.44,
+      "target2": 23.58,
+      "sl": 6.9,
+      "day_high": 30.8,
+      "day_low": 20.1,
+      "day_close": 24.05,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": "2025-12-17",
+      "failure_date": null,
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 18.1%; theta/day ~ 0.27 premium units.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=18.1%; sell_by=2025-12-28."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 30.8,
+          "l": 20.1,
+          "c": 27.65
+        },
+        {
+          "date": "2025-12-18",
+          "h": 30.0,
+          "l": 23.6,
+          "c": 24.05
+        }
+      ]
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "HINDALCO",
+      "strike": 850.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 18.38,
+      "target1": 28.19,
+      "target2": 36.03,
+      "sl": 10.54,
+      "day_high": 20.55,
+      "day_low": 11.05,
+      "day_close": 17.1,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 21.7%; theta/day ~ 0.54 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=21.7%; sell_by=2025-12-26."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 16.35,
+          "l": 11.05,
+          "c": 13.65
+        },
+        {
+          "date": "2025-12-18",
+          "h": 20.55,
+          "l": 12.35,
+          "c": 17.1
+        }
+      ]
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "strike": 2260.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 27.5,
+      "target1": 42.17,
+      "target2": 53.9,
+      "sl": 15.76,
+      "day_high": 25.75,
+      "day_low": 14.85,
+      "day_close": 20.55,
+      "outcome": "FAILURE",
+      "details": "SL Hit (14.85 <= 15.76)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.47,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 16.2%; theta/day ~ 0.69 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=16.2%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 21.1,
+          "l": 14.85,
+          "c": 18.55
+        },
+        {
+          "date": "2025-12-18",
+          "h": 25.75,
+          "l": 15.3,
+          "c": 20.55
+        }
+      ]
+    },
+    {
+      "symbol": "ICICIBANK",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "strike": 850.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 17.31,
+      "target1": 26.55,
+      "target2": 33.94,
+      "sl": 9.93,
+      "day_high": 15.9,
+      "day_low": 7.3,
+      "day_close": 8.7,
+      "outcome": "FAILURE",
+      "details": "SL Hit (8.25 <= 9.93)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 24.4%; theta/day ~ 0.59 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=24.4%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 15.9,
+          "l": 8.25,
+          "c": 9.85
+        },
+        {
+          "date": "2025-12-18",
+          "h": 12.3,
+          "l": 7.3,
+          "c": 8.7
+        }
+      ]
+    },
+    {
+      "symbol": "INFY",
+      "strike": 1600.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 21.29,
+      "target1": 32.65,
+      "target2": 41.73,
+      "sl": 12.21,
+      "day_high": 26.15,
+      "day_low": 8.9,
+      "day_close": 9.35,
+      "outcome": "FAILURE",
+      "details": "SL Hit (8.9 <= 12.21)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 16.8%; theta/day ~ 0.51 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=16.8%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 26.15,
+          "l": 15.55,
+          "c": 17.15
+        },
+        {
+          "date": "2025-12-18",
+          "h": 14.75,
+          "l": 8.9,
+          "c": 9.35
+        }
+      ]
+    },
+    {
+      "symbol": "ITC",
+      "strike": 400.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 3.2,
+      "target1": 4.91,
+      "target2": 6.27,
+      "sl": 1.84,
+      "day_high": 3.3,
+      "day_low": 1.85,
+      "day_close": 2.6,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.47,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 11.3%; theta/day ~ 0.08 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=11.3%; sell_by=2025-12-29."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 3.3,
+          "l": 1.85,
+          "c": 3.1
+        },
+        {
+          "date": "2025-12-18",
+          "h": 3.1,
+          "l": 2.1,
+          "c": 2.6
+        }
+      ]
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "strike": 1120.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 25.37,
+      "target1": 38.9,
+      "target2": 49.72,
+      "sl": 14.54,
+      "day_high": 8.4,
+      "day_low": 3.15,
+      "day_close": 4.15,
+      "outcome": "FAILURE",
+      "details": "SL Hit (4.25 <= 14.54)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 21.3%; theta/day ~ 0.70 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=21.3%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 8.4,
+          "l": 4.25,
+          "c": 5.05
+        },
+        {
+          "date": "2025-12-18",
+          "h": 5.7,
+          "l": 3.15,
+          "c": 4.15
+        }
+      ]
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "LT",
+      "strike": 4100.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 40.93,
+      "target1": 62.77,
+      "target2": 80.24,
+      "sl": 23.47,
+      "day_high": 34.5,
+      "day_low": 15.95,
+      "day_close": 18.2,
+      "outcome": "FAILURE",
+      "details": "SL Hit (21.75 <= 23.47)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.43,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.2%; theta/day ~ 1.68 premium units.",
+        "Sell-by 2025-12-23 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.2%; sell_by=2025-12-23."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-23",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 34.5,
+          "l": 21.75,
+          "c": 29.85
+        },
+        {
+          "date": "2025-12-18",
+          "h": 30.45,
+          "l": 15.95,
+          "c": 18.2
+        }
+      ]
+    },
+    {
+      "symbol": "M&M",
+      "strike": 3700.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 57.13,
+      "target1": 87.61,
+      "target2": 111.99,
+      "sl": 32.75,
+      "day_high": 35.05,
+      "day_low": 11.55,
+      "day_close": 16.45,
+      "outcome": "FAILURE",
+      "details": "SL Hit (21.55 <= 32.75)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.44,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 19.2%; theta/day ~ 2.07 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=19.2%; sell_by=2025-12-24."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 35.05,
+          "l": 21.55,
+          "c": 25.7
+        },
+        {
+          "date": "2025-12-18",
+          "h": 24.65,
+          "l": 11.55,
+          "c": 16.45
+        }
+      ]
+    },
+    {
+      "symbol": "MARUTI",
+      "strike": 16500.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 232.85,
+      "target1": 357.05,
+      "target2": 456.41,
+      "sl": 133.49,
+      "day_high": 187.8,
+      "day_low": 81.0,
+      "day_close": 112.3,
+      "outcome": "FAILURE",
+      "details": "SL Hit (129.25 <= 133.49)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.6%; theta/day ~ 7.19 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.6%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 187.8,
+          "l": 129.25,
+          "c": 140.5
+        },
+        {
+          "date": "2025-12-18",
+          "h": 159.9,
+          "l": 81.0,
+          "c": 112.3
+        }
+      ]
+    },
+    {
+      "symbol": "NESTLEIND",
+      "strike": 1240.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 15.62,
+      "target1": 23.95,
+      "target2": 30.61,
+      "sl": 8.95,
+      "day_high": 17.7,
+      "day_low": 10.35,
+      "day_close": 12.6,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 13.5%; theta/day ~ 0.53 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=13.5%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 17.7,
+          "l": 10.4,
+          "c": 13.4
+        },
+        {
+          "date": "2025-12-18",
+          "h": 16.45,
+          "l": 10.35,
+          "c": 12.6
+        }
+      ]
+    },
+    {
+      "symbol": "NTPC",
+      "strike": 325.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 3.73,
+      "target1": 5.73,
+      "target2": 7.32,
+      "sl": 2.14,
+      "day_high": 3.1,
+      "day_low": 0.9,
+      "day_close": 1.15,
+      "outcome": "FAILURE",
+      "details": "SL Hit (1.55 <= 2.14)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.47,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 11.2%; theta/day ~ 0.12 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=11.2%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 2.4,
+          "l": 1.55,
+          "c": 1.85
+        },
+        {
+          "date": "2025-12-18",
+          "h": 3.1,
+          "l": 0.9,
+          "c": 1.15
+        }
+      ]
+    },
+    {
+      "symbol": "ONGC",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "POWERGRID",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "RELIANCE",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "SBILIFE",
+      "strike": 2020.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 31.04,
+      "target1": 47.6,
+      "target2": 60.84,
+      "sl": 17.79,
+      "day_high": 37.25,
+      "day_low": 15.3,
+      "day_close": 19.4,
+      "outcome": "FAILURE",
+      "details": "SL Hit (15.3 <= 17.79)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.0%; theta/day ~ 0.90 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.0%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 37.25,
+          "l": 15.3,
+          "c": 20.7
+        },
+        {
+          "date": "2025-12-18",
+          "h": 23.0,
+          "l": 16.0,
+          "c": 19.4
+        }
+      ]
+    },
+    {
+      "symbol": "SBIN",
+      "strike": 960.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 9.21,
+      "target1": 14.13,
+      "target2": 18.06,
+      "sl": 5.28,
+      "day_high": 9.9,
+      "day_low": 3.2,
+      "day_close": 3.7,
+      "outcome": "FAILURE",
+      "details": "SL Hit (4.25 <= 5.28)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.7%; theta/day ~ 0.26 premium units.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.7%; sell_by=2025-12-28."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 9.9,
+          "l": 4.25,
+          "c": 4.5
+        },
+        {
+          "date": "2025-12-18",
+          "h": 4.8,
+          "l": 3.2,
+          "c": 3.7
+        }
+      ]
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "strike": 1800.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 19.4,
+      "target1": 29.75,
+      "target2": 38.03,
+      "sl": 11.12,
+      "day_high": 63.0,
+      "day_low": 18.5,
+      "day_close": 55.05,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": "2025-12-18",
+      "failure_date": null,
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 12.5%; theta/day ~ 0.38 premium units.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=PE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=12.5%; sell_by=2025-12-28."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 32.7,
+          "l": 18.5,
+          "c": 20.1
+        },
+        {
+          "date": "2025-12-18",
+          "h": 63.0,
+          "l": 25.0,
+          "c": 55.05
+        }
+      ]
+    },
+    {
+      "symbol": "TATACONSUM",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "TATASTEEL",
+      "strike": 175.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 1.98,
+      "target1": 3.03,
+      "target2": 3.88,
+      "sl": 1.13,
+      "day_high": 1.4,
+      "day_low": 0.55,
+      "day_close": 0.63,
+      "outcome": "FAILURE",
+      "details": "SL Hit (1.02 <= 1.13)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.37,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 20.4%; theta/day ~ 0.09 premium units.",
+        "Sell-by 2025-12-21 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=20.4%; sell_by=2025-12-21."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-21",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 1.4,
+          "l": 1.02,
+          "c": 1.11
+        },
+        {
+          "date": "2025-12-18",
+          "h": 1.11,
+          "l": 0.55,
+          "c": 0.63
+        }
+      ]
+    },
+    {
+      "symbol": "TECHM",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    },
+    {
+      "symbol": "TITAN",
+      "strike": 3900.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 44.23,
+      "target1": 67.83,
+      "target2": 86.7,
+      "sl": 25.36,
+      "day_high": 70.9,
+      "day_low": 41.35,
+      "day_close": 52.95,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-17",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.44,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.2%; theta/day ~ 1.70 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.2%; sell_by=2025-12-24."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 70.9,
+          "l": 44.35,
+          "c": 51.85
+        },
+        {
+          "date": "2025-12-18",
+          "h": 60.7,
+          "l": 41.35,
+          "c": 52.95
+        }
+      ]
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "strike": 11700.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 173.53,
+      "target1": 266.1,
+      "target2": 340.15,
+      "sl": 99.48,
+      "day_high": 105.1,
+      "day_low": 40.6,
+      "day_close": 47.5,
+      "outcome": "FAILURE",
+      "details": "SL Hit (73.9 <= 99.48)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-17",
+      "reco_confidence": 0.46,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=18 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Implied vol ~ 14.0%; theta/day ~ 5.23 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk).",
+        "mode=strict; side=CE; direction_score=0.00; buy_soft=0.00; sell_soft=0.00; DTE=18; IV=14.0%; sell_by=2025-12-25."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-17",
+          "h": 105.1,
+          "l": 73.9,
+          "c": 79.4
+        },
+        {
+          "date": "2025-12-18",
+          "h": 79.0,
+          "l": 40.6,
+          "c": 47.5
+        }
+      ]
+    },
+    {
+      "symbol": "WIPRO",
+      "strike": null,
+      "side": null,
+      "expiry": "",
+      "entry": 0.0,
+      "target1": null,
+      "target2": null,
+      "sl": 0.0,
+      "day_high": 0,
+      "day_low": 999999,
+      "day_close": 0,
+      "outcome": "HOLD",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.12,
+      "reco_rationale": [
+        "No directional edge for next session.",
+        "No directional edge for mode=strict: |direction_score|=0.00 < 0.15, buy/sell wins=0."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-12",
+      "sell_by": null,
+      "history": []
+    }
+  ]
+}

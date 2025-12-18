@@ -1,0 +1,1943 @@
+{
+  "reco_date": "2025-12-17",
+  "last_updated": "2025-12-18",
+  "results": [
+    {
+      "symbol": "BAJAJ-AUTO",
+      "strike": 8900.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 107.43,
+      "target1": 164.73,
+      "target2": 210.57,
+      "sl": 61.59,
+      "day_high": 200.0,
+      "day_low": 122.3,
+      "day_close": 128.9,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.95,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.99, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (28.3%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.8%; theta/day ~ 3.75 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 200.0,
+          "l": 122.3,
+          "c": 128.9
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCBANK",
+      "strike": 985.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 9.41,
+      "target1": 14.43,
+      "target2": 18.44,
+      "sl": 5.39,
+      "day_high": 12.55,
+      "day_low": 7.55,
+      "day_close": 11.3,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.95,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-1.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (20.0%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 14.1%; theta/day ~ 0.31 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 12.55,
+          "l": 7.55,
+          "c": 11.3
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "strike": 750.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 7.27,
+      "target1": 11.16,
+      "target2": 14.26,
+      "sl": 4.17,
+      "day_high": 9.05,
+      "day_low": 4.75,
+      "day_close": 5.25,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.95,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-1.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.3%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.6%; theta/day ~ 0.31 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 9.05,
+          "l": 4.75,
+          "c": 5.25
+        }
+      ]
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "strike": 2180.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 25.9,
+      "target1": 39.71,
+      "target2": 50.77,
+      "sl": 14.85,
+      "day_high": 30.6,
+      "day_low": 22.2,
+      "day_close": 27.6,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.92,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.56, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.8%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 15.9%; theta/day ~ 0.79 premium units.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 30.6,
+          "l": 22.2,
+          "c": 27.6
+        }
+      ]
+    },
+    {
+      "symbol": "LT",
+      "strike": 4060.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 38.31,
+      "target1": 58.75,
+      "target2": 75.1,
+      "sl": 21.96,
+      "day_high": 60.2,
+      "day_low": 35.9,
+      "day_close": 50.15,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.89,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.65, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (26.1%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 14.9%; theta/day ~ 1.38 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 60.2,
+          "l": 35.9,
+          "c": 50.15
+        }
+      ]
+    },
+    {
+      "symbol": "RELIANCE",
+      "strike": 1540.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 12.85,
+      "target1": 19.71,
+      "target2": 25.19,
+      "sl": 7.37,
+      "day_high": 16.2,
+      "day_low": 9.45,
+      "day_close": 11.85,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.77,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.52, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (23.3%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 14.7%; theta/day ~ 0.52 premium units.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 16.2,
+          "l": 9.45,
+          "c": 11.85
+        }
+      ]
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "strike": 58900.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 327.91,
+      "target1": 502.82,
+      "target2": 642.74,
+      "sl": 187.98,
+      "day_high": 424.3,
+      "day_low": 236.95,
+      "day_close": 328.4,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.76,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.42, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 9.5%; theta/day ~ 10.96 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 424.3,
+          "l": 236.95,
+          "c": 328.4
+        }
+      ]
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "strike": 1080.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 14.89,
+      "target1": 22.83,
+      "target2": 29.19,
+      "sl": 8.54,
+      "day_high": 18.7,
+      "day_low": 9.35,
+      "day_close": 13.55,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.75,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.27, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (29.4%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 20.1%; theta/day ~ 0.53 premium units.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 18.7,
+          "l": 9.35,
+          "c": 13.55
+        }
+      ]
+    },
+    {
+      "symbol": "NIFTY",
+      "strike": 25800.0,
+      "side": "PE",
+      "expiry": "23-DEC-2025",
+      "entry": 86.09,
+      "target1": 132.01,
+      "target2": 168.74,
+      "sl": 49.35,
+      "day_high": 128.5,
+      "day_low": 50.65,
+      "day_close": 79.45,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.73,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.55, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=6 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Low annualized volatility (14.1%) -> reduced confidence for option buying.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 8.4%; theta/day ~ 6.99 premium units.",
+        "Sell-by 2025-12-22 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Theta decay 8.1% of entry per day exceeds 8.0% threshold",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-22",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 128.5,
+          "l": 50.65,
+          "c": 79.45
+        }
+      ]
+    },
+    {
+      "symbol": "ADANIENT",
+      "strike": 2200.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 25.32,
+      "target1": 38.82,
+      "target2": 49.62,
+      "sl": 14.51,
+      "day_high": 33.4,
+      "day_low": 20.2,
+      "day_close": 24.6,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.66,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.33, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 25.5%; theta/day ~ 1.37 premium units.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 33.4,
+          "l": 20.2,
+          "c": 24.6
+        }
+      ]
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "strike": 7000.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 119.46,
+      "target1": 183.17,
+      "target2": 234.15,
+      "sl": 68.48,
+      "day_high": 148.45,
+      "day_low": 96.65,
+      "day_close": 115.55,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.62,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-1.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.0%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.1%; theta/day ~ 2.49 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1457) relative to chain max (1457).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 148.45,
+          "l": 96.65,
+          "c": 115.55
+        }
+      ]
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "strike": 5900.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 128.19,
+      "target1": 196.56,
+      "target2": 251.26,
+      "sl": 73.49,
+      "day_high": 356.25,
+      "day_low": 137.0,
+      "day_close": 178.15,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": "2025-12-18",
+      "failure_date": null,
+      "reco_confidence": 0.62,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.99, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (30.4%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 21.3%; theta/day ~ 2.77 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1027) relative to chain max (1057).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 356.25,
+          "l": 137.0,
+          "c": 178.15
+        }
+      ]
+    },
+    {
+      "symbol": "ICICIBANK",
+      "strike": 1350.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 11.25,
+      "target1": 17.25,
+      "target2": 22.06,
+      "sl": 6.45,
+      "day_high": 14.45,
+      "day_low": 5.5,
+      "day_close": 8.55,
+      "outcome": "FAILURE",
+      "details": "SL Hit (5.5 <= 6.45)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.62,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-1.00, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (20.5%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 14.1%; theta/day ~ 0.43 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (2667) relative to chain max (3227).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-29 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-29",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 14.45,
+          "l": 5.5,
+          "c": 8.55
+        }
+      ]
+    },
+    {
+      "symbol": "M&M",
+      "strike": 3600.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 43.94,
+      "target1": 67.38,
+      "target2": 86.13,
+      "sl": 25.19,
+      "day_high": 88.25,
+      "day_low": 46.0,
+      "day_close": 52.2,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": "2025-12-18",
+      "failure_date": null,
+      "reco_confidence": 0.62,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.82, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (32.2%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 20.5%; theta/day ~ 1.80 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (2401) relative to chain max (2401).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 88.25,
+          "l": 46.0,
+          "c": 52.2
+        }
+      ]
+    },
+    {
+      "symbol": "SBILIFE",
+      "strike": 2000.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 15.28,
+      "target1": 23.43,
+      "target2": 29.95,
+      "sl": 8.76,
+      "day_high": 18.75,
+      "day_low": 11.9,
+      "day_close": 12.85,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.62,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.75, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.4%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 14.9%; theta/day ~ 0.68 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (671) relative to chain max (736).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 18.75,
+          "l": 11.9,
+          "c": 12.85
+        }
+      ]
+    },
+    {
+      "symbol": "ONGC",
+      "strike": 230.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 1.6,
+      "target1": 2.45,
+      "target2": 3.14,
+      "sl": 0.92,
+      "day_high": 2.13,
+      "day_low": 1.28,
+      "day_close": 1.78,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.6,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.38, buy_win=0, sell_win=0).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (30.0%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.7%; theta/day ~ 0.09 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1233) relative to chain max (1233).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 2.13,
+          "l": 1.28,
+          "c": 1.78
+        }
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "strike": 2100.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 19.16,
+      "target1": 29.38,
+      "target2": 37.55,
+      "sl": 10.98,
+      "day_high": 25.95,
+      "day_low": 15.25,
+      "day_close": 24.8,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.58,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.35, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.6%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 16.3%; theta/day ~ 0.80 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (2028) relative to chain max (2028).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-28 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-28",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 25.95,
+          "l": 15.25,
+          "c": 24.8
+        }
+      ]
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "strike": 2040.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 33.37,
+      "target1": 51.17,
+      "target2": 65.41,
+      "sl": 19.13,
+      "day_high": 40.0,
+      "day_low": 24.55,
+      "day_close": 30.65,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.53,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.40, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (28.7%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.7%; theta/day ~ 0.79 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1426) relative to chain max (1680).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 40.0,
+          "l": 24.55,
+          "c": 30.65
+        }
+      ]
+    },
+    {
+      "symbol": "NESTLEIND",
+      "strike": 1200.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 3.83,
+      "target1": 5.88,
+      "target2": 7.51,
+      "sl": 2.2,
+      "day_high": 4.45,
+      "day_low": 2.1,
+      "day_close": 2.9,
+      "outcome": "FAILURE",
+      "details": "SL Hit (2.1 <= 2.2)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.52,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.44, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (23.0%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.8%; theta/day ~ 0.37 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (536) relative to chain max (587).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-21 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Theta decay 9.6% of entry per day exceeds 8.0% threshold",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-21",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 4.45,
+          "l": 2.1,
+          "c": 2.9
+        }
+      ]
+    },
+    {
+      "symbol": "SBIN",
+      "strike": 975.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 11.93,
+      "target1": 18.3,
+      "target2": 23.39,
+      "sl": 6.84,
+      "day_high": 14.35,
+      "day_low": 10.15,
+      "day_close": 11.4,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.51,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.78, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.8%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 14.4%; theta/day ~ 0.51 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 14.35,
+          "l": 10.15,
+          "c": 11.4
+        }
+      ]
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "strike": 1500.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 25.12,
+      "target1": 38.52,
+      "target2": 49.24,
+      "sl": 14.4,
+      "day_high": 31.95,
+      "day_low": 19.45,
+      "day_close": 20.45,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.5,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.34, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (36.1%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 18.3%; theta/day ~ 0.61 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1678) relative to chain max (1678).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 31.95,
+          "l": 19.45,
+          "c": 20.45
+        }
+      ]
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "strike": 2800.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 42.1,
+      "target1": 64.55,
+      "target2": 82.52,
+      "sl": 24.13,
+      "day_high": 58.75,
+      "day_low": 41.4,
+      "day_close": 54.05,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.5,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.41, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.2%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 18.9%; theta/day ~ 1.23 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1306) relative to chain max (1306).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 58.75,
+          "l": 41.4,
+          "c": 54.05
+        }
+      ]
+    },
+    {
+      "symbol": "COALINDIA",
+      "strike": 387.5,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 2.72,
+      "target1": 4.16,
+      "target2": 5.32,
+      "sl": 1.56,
+      "day_high": 3.55,
+      "day_low": 2.25,
+      "day_close": 2.95,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.49,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.90, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (26.9%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 12.5%; theta/day ~ 0.17 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 3.55,
+          "l": 2.25,
+          "c": 2.95
+        }
+      ]
+    },
+    {
+      "symbol": "TITAN",
+      "strike": 3800.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 10.91,
+      "target1": 16.73,
+      "target2": 21.39,
+      "sl": 6.26,
+      "day_high": 13.0,
+      "day_low": 7.05,
+      "day_close": 7.85,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.49,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.54, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.8%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 17.0%; theta/day ~ 1.08 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (2339) relative to chain max (2339).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-21 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Theta decay 9.9% of entry per day exceeds 8.0% threshold",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-21",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 13.0,
+          "l": 7.05,
+          "c": 7.85
+        }
+      ]
+    },
+    {
+      "symbol": "AXISBANK",
+      "strike": 1230.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 14.45,
+      "target1": 22.16,
+      "target2": 28.33,
+      "sl": 8.29,
+      "day_high": 19.7,
+      "day_low": 12.35,
+      "day_close": 15.65,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.72, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (26.2%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 17.3%; theta/day ~ 0.73 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 19.7,
+          "l": 12.35,
+          "c": 15.65
+        }
+      ]
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "strike": 820.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 9.65,
+      "target1": 14.8,
+      "target2": 18.92,
+      "sl": 5.53,
+      "day_high": 13.0,
+      "day_low": 6.65,
+      "day_close": 8.25,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.45,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.13, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 26.9%; theta/day ~ 0.54 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1419) relative to chain max (1419).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 13.0,
+          "l": 6.65,
+          "c": 8.25
+        }
+      ]
+    },
+    {
+      "symbol": "BPCL",
+      "strike": 320.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 0.19,
+      "target1": 0.3,
+      "target2": 0.38,
+      "sl": 0.11,
+      "day_high": 0.2,
+      "day_low": 0.15,
+      "day_close": 0.2,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.43,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.14, buy_win=0, sell_win=1).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (32.5%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 37.7%; theta/day ~ 0.05 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (631) relative to chain max (631).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-18 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Theta decay 25.2% of entry per day exceeds 8.0% threshold",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-18",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 0.2,
+          "l": 0.15,
+          "c": 0.2
+        }
+      ]
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "strike": 1000.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 16.3,
+      "target1": 24.99,
+      "target2": 31.94,
+      "sl": 9.34,
+      "day_high": 21.15,
+      "day_low": 13.2,
+      "day_close": 14.95,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.42,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.35, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (31.6%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 20.9%; theta/day ~ 0.70 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 21.15,
+          "l": 13.2,
+          "c": 14.95
+        }
+      ]
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "strike": 1800.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 18.38,
+      "target1": 28.19,
+      "target2": 36.03,
+      "sl": 10.54,
+      "day_high": 19.5,
+      "day_low": 4.45,
+      "day_close": 5.45,
+      "outcome": "FAILURE",
+      "details": "SL Hit (4.45 <= 10.54)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.4,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.26, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (22.5%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 14.9%; theta/day ~ 0.94 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 19.5,
+          "l": 4.45,
+          "c": 5.45
+        }
+      ]
+    },
+    {
+      "symbol": "DRREDDY",
+      "strike": 1280.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 10.23,
+      "target1": 15.69,
+      "target2": 20.06,
+      "sl": 5.87,
+      "day_high": 13.25,
+      "day_low": 7.05,
+      "day_close": 12.45,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.39,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.46, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.0%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 13.4%; theta/day ~ 0.59 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 13.25,
+          "l": 7.05,
+          "c": 12.45
+        }
+      ]
+    },
+    {
+      "symbol": "EICHERMOT",
+      "strike": 7200.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 77.75,
+      "target1": 119.22,
+      "target2": 152.39,
+      "sl": 44.57,
+      "day_high": 86.7,
+      "day_low": 40.0,
+      "day_close": 61.1,
+      "outcome": "FAILURE",
+      "details": "SL Hit (40.0 <= 44.57)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.38,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.39, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (27.1%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 19.8%; theta/day ~ 4.56 premium units.",
+        "Sell-by 2025-12-24 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-24",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 86.7,
+          "l": 40.0,
+          "c": 61.1
+        }
+      ]
+    },
+    {
+      "symbol": "HCLTECH",
+      "strike": 1660.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 22.75,
+      "target1": 34.88,
+      "target2": 44.59,
+      "sl": 13.04,
+      "day_high": 33.95,
+      "day_low": 21.2,
+      "day_close": 25.75,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.38,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.34, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (28.0%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 19.2%; theta/day ~ 1.07 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 33.95,
+          "l": 21.2,
+          "c": 25.75
+        }
+      ]
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "strike": 2300.0,
+      "side": "PE",
+      "expiry": "30-DEC-2025",
+      "entry": 37.98,
+      "target1": 58.23,
+      "target2": 74.44,
+      "sl": 21.77,
+      "day_high": 51.4,
+      "day_low": 34.95,
+      "day_close": 44.45,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.36,
+      "reco_rationale": [
+        "BEARISH bias from EOD signal (direction_score=-0.16, buy_win=0, sell_win=0).",
+        "Picked near-ATM PE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (22.2%) -> confidence boost.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling Index/Stock Futures.",
+        "Implied vol ~ 16.8%; theta/day ~ 0.81 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1721) relative to chain max (1721).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-25 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-25",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 51.4,
+          "l": 34.95,
+          "c": 44.45
+        }
+      ]
+    },
+    {
+      "symbol": "ITC",
+      "strike": 400.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 4.12,
+      "target1": 6.32,
+      "target2": 8.08,
+      "sl": 2.36,
+      "day_high": 4.9,
+      "day_low": 3.8,
+      "day_close": 4.0,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.36,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.05, buy_win=0, sell_win=1).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 12.8%; theta/day ~ 0.19 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 4.9,
+          "l": 3.8,
+          "c": 4.0
+        }
+      ]
+    },
+    {
+      "symbol": "MARUTI",
+      "strike": 16400.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 180.23,
+      "target1": 276.36,
+      "target2": 353.27,
+      "sl": 103.32,
+      "day_high": 207.8,
+      "day_low": 111.55,
+      "day_close": 154.05,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.36,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.30, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.6%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 13.4%; theta/day ~ 8.01 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 207.8,
+          "l": 111.55,
+          "c": 154.05
+        }
+      ]
+    },
+    {
+      "symbol": "POWERGRID",
+      "strike": 265.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 1.89,
+      "target1": 2.9,
+      "target2": 3.71,
+      "sl": 1.08,
+      "day_high": 2.0,
+      "day_low": 0.8,
+      "day_close": 1.0,
+      "outcome": "FAILURE",
+      "details": "SL Hit (0.8 <= 1.08)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.36,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.35, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (27.8%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 16.8%; theta/day ~ 0.14 premium units.",
+        "Sell-by 2025-12-23 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-23",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 2.0,
+          "l": 0.8,
+          "c": 1.0
+        }
+      ]
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "strike": 11500.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 166.21,
+      "target1": 254.87,
+      "target2": 325.79,
+      "sl": 95.28,
+      "day_high": 171.35,
+      "day_low": 96.75,
+      "day_close": 113.35,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.36,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.42, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.1%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 15.5%; theta/day ~ 6.32 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 171.35,
+          "l": 96.75,
+          "c": 113.35
+        }
+      ]
+    },
+    {
+      "symbol": "CIPLA",
+      "strike": 1500.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 15.67,
+      "target1": 24.02,
+      "target2": 30.71,
+      "sl": 8.98,
+      "day_high": 23.5,
+      "day_low": 14.55,
+      "day_close": 16.7,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.35,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.06, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.7%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 14.0%; theta/day ~ 0.75 premium units.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 23.5,
+          "l": 14.55,
+          "c": 16.7
+        }
+      ]
+    },
+    {
+      "symbol": "TATASTEEL",
+      "strike": 170.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 2.88,
+      "target1": 4.42,
+      "target2": 5.65,
+      "sl": 1.65,
+      "day_high": 2.95,
+      "day_low": 1.61,
+      "day_close": 1.77,
+      "outcome": "FAILURE",
+      "details": "SL Hit (1.61 <= 1.65)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.35,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.25, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (32.8%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 20.0%; theta/day ~ 0.12 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 2.95,
+          "l": 1.61,
+          "c": 1.77
+        }
+      ]
+    },
+    {
+      "symbol": "TECHM",
+      "strike": 1580.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 22.75,
+      "target1": 34.88,
+      "target2": 44.59,
+      "sl": 13.04,
+      "day_high": 39.9,
+      "day_low": 21.95,
+      "day_close": 38.2,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.35,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.00, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (28.5%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 18.3%; theta/day ~ 0.99 premium units.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "APPROVED",
+      "reviewer_reason": "Passed checks",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 39.9,
+          "l": 21.95,
+          "c": 38.2
+        }
+      ]
+    },
+    {
+      "symbol": "WIPRO",
+      "strike": 260.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 4.24,
+      "target1": 6.5,
+      "target2": 8.31,
+      "sl": 2.43,
+      "day_high": 6.85,
+      "day_low": 4.6,
+      "day_close": 6.01,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.32,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.66, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (29.6%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 17.3%; theta/day ~ 0.16 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1782) relative to chain max (1782).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.32 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 6.85,
+          "l": 4.6,
+          "c": 6.01
+        }
+      ]
+    },
+    {
+      "symbol": "INFY",
+      "strike": 1600.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 21.29,
+      "target1": 32.65,
+      "target2": 41.73,
+      "sl": 12.21,
+      "day_high": 37.2,
+      "day_low": 24.95,
+      "day_close": 36.25,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.31,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.74, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (28.4%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 15.6%; theta/day ~ 0.88 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (20588) relative to chain max (20588).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.31 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 37.2,
+          "l": 24.95,
+          "c": 36.25
+        }
+      ]
+    },
+    {
+      "symbol": "GRASIM",
+      "strike": 2800.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 38.27,
+      "target1": 58.68,
+      "target2": 75.01,
+      "sl": 21.94,
+      "day_high": 47.0,
+      "day_low": 28.65,
+      "day_close": 36.95,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.3,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.61, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (25.6%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 15.3%; theta/day ~ 1.52 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1629) relative to chain max (1629).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-26 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.30 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-26",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 47.0,
+          "l": 28.65,
+          "c": 36.95
+        }
+      ]
+    },
+    {
+      "symbol": "TATACONSUM",
+      "strike": 1200.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 9.75,
+      "target1": 14.95,
+      "target2": 19.11,
+      "sl": 5.59,
+      "day_high": 13.5,
+      "day_low": 6.1,
+      "day_close": 6.95,
+      "outcome": "PENDING",
+      "details": "",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.29,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.85, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (26.0%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 19.3%; theta/day ~ 0.69 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (3177) relative to chain max (3177).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-23 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.29 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-23",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 13.5,
+          "l": 6.1,
+          "c": 6.95
+        }
+      ]
+    },
+    {
+      "symbol": "HINDALCO",
+      "strike": 850.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 13.24,
+      "target1": 20.3,
+      "target2": 25.95,
+      "sl": 7.59,
+      "day_high": 20.55,
+      "day_low": 12.35,
+      "day_close": 17.1,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.24,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.24, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (32.6%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 20.6%; theta/day ~ 0.59 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1921) relative to chain max (2106).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-27 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.24 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-27",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 20.55,
+          "l": 12.35,
+          "c": 17.1
+        }
+      ]
+    },
+    {
+      "symbol": "BRITANNIA",
+      "strike": 6200.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 44.47,
+      "target1": 68.2,
+      "target2": 87.18,
+      "sl": 25.5,
+      "day_high": 56.95,
+      "day_low": 18.15,
+      "day_close": 25.95,
+      "outcome": "FAILURE",
+      "details": "SL Hit (18.15 <= 25.5)",
+      "t1_hit_date": null,
+      "t2_hit_date": null,
+      "failure_date": "2025-12-18",
+      "reco_confidence": 0.23,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.44, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (24.2%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 17.9%; theta/day ~ 3.29 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1764) relative to chain max (1764).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-23 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.23 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-23",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 56.95,
+          "l": 18.15,
+          "c": 25.95
+        }
+      ]
+    },
+    {
+      "symbol": "DIVISLAB",
+      "strike": 6500.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 29.05,
+      "target1": 44.55,
+      "target2": 56.94,
+      "sl": 16.65,
+      "day_high": 74.5,
+      "day_low": 24.95,
+      "day_close": 46.0,
+      "outcome": "SUCCESS_T2",
+      "details": "T1 Hit, T2 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": "2025-12-18",
+      "failure_date": null,
+      "reco_confidence": 0.23,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.26, buy_win=0, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (30.4%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 20.2%; theta/day ~ 3.00 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (1620) relative to chain max (1620).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-21 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.23 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-21",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 74.5,
+          "l": 24.95,
+          "c": 46.0
+        }
+      ]
+    },
+    {
+      "symbol": "NTPC",
+      "strike": 325.0,
+      "side": "CE",
+      "expiry": "30-DEC-2025",
+      "entry": 1.79,
+      "target1": 2.75,
+      "target2": 3.52,
+      "sl": 1.03,
+      "day_high": 3.1,
+      "day_low": 0.9,
+      "day_close": 1.15,
+      "outcome": "SUCCESS_T1",
+      "details": "T1 Hit",
+      "t1_hit_date": "2025-12-18",
+      "t2_hit_date": null,
+      "failure_date": null,
+      "reco_confidence": 0.23,
+      "reco_rationale": [
+        "BULLISH bias from EOD signal (direction_score=0.46, buy_win=1, sell_win=0).",
+        "Picked near-ATM CE with DTE=13 to reduce theta cliff; liquidity via OI/volume where available.",
+        "Volatility sweet spot (26.7%) -> confidence boost.",
+        "Contra-FII: FIIs are net short (-0.84), but signal is BULLISH.",
+        "Smart Money Bearish (Score -0.80): FII/Pros selling. Risky Long.",
+        "Implied vol ~ 12.8%; theta/day ~ 0.13 premium units.",
+        "Warning: Buying into Resistance/Support Wall (OI). High Total OI (5004) relative to chain max (5004).",
+        "Confidence penalized significantly due to OI structure.",
+        "Sell-by 2025-12-23 (time-boxed to manage theta/IV risk)."
+      ],
+      "reviewer_decision": "REJECTED",
+      "reviewer_reason": "Confidence 0.23 below 0.35 threshold for strict mode",
+      "as_of_reco": "2025-12-17",
+      "sell_by": "2025-12-23",
+      "history": [
+        {
+          "date": "2025-12-18",
+          "h": 3.1,
+          "l": 0.9,
+          "c": 1.15
+        }
+      ]
+    }
+  ]
+}

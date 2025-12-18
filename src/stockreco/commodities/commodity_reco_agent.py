@@ -67,6 +67,7 @@ def _add_trading_days(d: datetime, n: int) -> datetime:
     return cur
 
 
+
 @dataclass
 class CommodityRecoConfig:
     stop_loss_frac: float = 0.35
@@ -80,11 +81,21 @@ class CommodityRecoConfig:
 class CommodityRecoAgent:
     """
     Rule-based starter from MCX FUTCOM bhavcopy:
-    - Picks nearest expiry per symbol
-    - BUY if Close > PrevClose, SELL if Close < PrevClose, else HOLD
-    - SL/Targets from risk multiples
-    - sell_by uses trading days (no Sat/Sun), capped at expiry-1 trading day
-    - confidence varies with (move vs range) and volume/oi
+    - Picks nearest expiry per symbol for Trend (FUTCOM).
+    - If mapped to a liquid Option (OPTFUT/OPTCOM), recommends BUY CE (if Bullish) or BUY PE (if Bearish).
+    - If no liquid option found, recommends Future.
+    
+    Logic:
+    1. Determine Trend from Liquid Future (BUY/SELL).
+    2. If Bullish -> Look for CE, if Bearish -> Look for PE.
+    3. Option Criteria:
+       - Expiry: Nearest monthly expiry (up to max_days).
+       - Strike: ATM (closest to Future Price).
+       - Liquidity: Must have some volume/OI.
+    4. Levels:
+       - Entry: Option LTP
+       - SL: 30% below Entry (approx risk management for options)
+       - Target: 50% above Entry
     """
 
     def __init__(self, cfg: Optional[CommodityRecoConfig] = None):
@@ -93,14 +104,16 @@ class CommodityRecoAgent:
     def recommend_from_bhavcopy_rows(self, as_of: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         a = datetime.strptime(as_of, "%Y-%m-%d")
 
-        fut = []
+        # 1. Parse Futures and Options
+        fut_candidates = []
+        # options_map: symbol -> expiry(date) -> strike(float) -> type(CE/PE) -> row
+        options_map: Dict[str, Dict[datetime, Dict[float, Dict[str, Any]]]] = {}
+
         for r in rows:
             inst = _sym(r.get("Instrument Name"))
-            if inst != "FUTCOM":
-                continue
-
             sym = _sym(r.get("Symbol"))
             exp = _parse_expiry(r.get("Expiry Date"))
+            
             if not sym or not exp:
                 continue
 
@@ -108,111 +121,217 @@ class CommodityRecoAgent:
             if dte < 0 or dte > self.cfg.max_days_to_expiry:
                 continue
 
-            vol = _fnum(r.get("Volume(Lots)")) or 0.0
-            if vol < self.cfg.min_volume_lots:
-                continue
+            if inst == "FUTCOM":
+                vol = _fnum(r.get("Volume(Lots)")) or 0.0
+                if vol >= self.cfg.min_volume_lots:
+                    fut_candidates.append((sym, exp, dte, r))
+            
+            elif inst in ("OPTFUT", "OPTCOM"):
+                # "16 Dec 2025","OPTFUT","GOLDM        ","29DEC2025","CE","133100.00",...
+                opt_type = _clean(r.get("Option Type")).upper() # CE/PE
+                strike = _fnum(r.get("Strike Price"))
+                
+                if not opt_type or strike is None:
+                    continue
+                
+                if sym not in options_map:
+                    options_map[sym] = {}
+                if exp not in options_map[sym]:
+                    options_map[sym][exp] = {}
+                if strike not in options_map[sym][exp]:
+                    options_map[sym][exp][strike] = {}
+                
+                options_map[sym][exp][strike][opt_type] = r
 
-            fut.append((sym, exp, dte, r))
-
-        # nearest expiry per symbol
-        best: Dict[str, tuple] = {}
-        for sym, exp, dte, r in fut:
-            cur = best.get(sym)
+        # 2. Determine Trend from Nearest Liquid Future
+        best_fut: Dict[str, tuple] = {}
+        for sym, exp, dte, r in fut_candidates:
+            cur = best_fut.get(sym)
             if cur is None or dte < cur[2]:
-                best[sym] = (sym, exp, dte, r)
+                best_fut[sym] = (sym, exp, dte, r)
 
         out: List[Dict[str, Any]] = []
-        for sym, exp, dte, r in sorted(best.values(), key=lambda x: x[0]):
-            close = _fnum(r.get("Close")) or 0.0
-            prev = _fnum(r.get("Previous Close")) or 0.0
-            hi = _fnum(r.get("High")) or close
-            lo = _fnum(r.get("Low")) or close
 
+        for sym, fut_exp, fut_dte, fut_row in sorted(best_fut.values(), key=lambda x: x[0]):
+            # -- Analyze Future Trend --
+            close = _fnum(fut_row.get("Close")) or 0.0
+            prev = _fnum(fut_row.get("Previous Close")) or 0.0
+            
             if close <= 0 or prev <= 0:
-                action = "HOLD"
-            elif close > prev:
-                action = "BUY"
+                continue
+
+            trend = "HOLD"
+            if close > prev:
+                trend = "BUY"
             elif close < prev:
-                action = "SELL"
-            else:
-                action = "HOLD"
+                trend = "SELL"
+            
+            if trend == "HOLD":
+                continue
 
-            day_range = max(1e-6, hi - lo)
-            move = abs(close - prev)
+            # -- Attempt to find Option Trade --
+            # We want to BUY Options.
+            # Bullish -> Buy CE
+            # Bearish -> Buy PE
+            
+            target_opt_type = "CE" if trend == "BUY" else "PE"
+            
+            # Find best option expiry (nearest valid)
+            # We prefer the same expiry as future, or nearest available in options map
+            opt_chain = options_map.get(sym, {})
+            if not opt_chain:
+                # No options found, skip options logic, maybe fallback?
+                # For now let's just skip reporting if user specifically asked for options
+                # But to maintain utility, we can report Future if no option.
+                # However, user explicitly asked for Options. Let's try to report Future as fallback.
+                self._add_entry(out, as_of, sym, fut_row, trend, "FUTCOM", fut_exp, 0.0, "")
+                continue
 
-            entry = close
-            sl = t1 = t2 = None
+            # Find valid option expiry with data
+            valid_expiries = sorted(opt_chain.keys())
+            
+            # Pick nearest expiry that has data
+            picked_exp = None
+            if valid_expiries:
+                picked_exp = valid_expiries[0] # Nearest
+            
+            if not picked_exp:
+                 self._add_entry(out, as_of, sym, fut_row, trend, "FUTCOM", fut_exp, 0.0, "")
+                 continue
 
-            if action == "BUY":
-                sl = entry - max(entry * self.cfg.stop_loss_frac, 0.5 * day_range)
-                risk = max(0.01, entry - sl)
-                t1 = entry + self.cfg.t1_rr * risk
-                t2 = entry + self.cfg.t2_rr * risk
-            elif action == "SELL":
-                # NOTE: for SELL, SL is ABOVE entry (that is correct for a short)
-                sl = entry + max(entry * self.cfg.stop_loss_frac, 0.5 * day_range)
-                risk = max(0.01, sl - entry)
-                t1 = entry - self.cfg.t1_rr * risk
-                t2 = entry - self.cfg.t2_rr * risk
+            straddle_map = opt_chain[picked_exp]
+            
+            # Pick ATM Strike
+            # Future Price is reference
+            fut_price = close
+            
+            best_k = None
+            min_dist = float("inf")
+            
+            available_strikes = sorted(straddle_map.keys())
+            
+            for k in available_strikes:
+                dist = abs(k - fut_price)
+                if dist < min_dist:
+                    min_dist = dist
+                    best_k = k
+            
+            if best_k is None:
+                 self._add_entry(out, as_of, sym, fut_row, trend, "FUTCOM", fut_exp, 0.0, "")
+                 continue
 
-            # sell_by = as_of + N trading days (skip weekends), cap at expiry-1 day (also trading-day-ish)
-            sell_by = None
-            try:
-                sb = _add_trading_days(a, self.cfg.sell_by_trading_days)
+            # Check if specific option exists
+            opt_row = straddle_map[best_k].get(target_opt_type)
+            if not opt_row:
+                 self._add_entry(out, as_of, sym, fut_row, trend, "FUTCOM", fut_exp, 0.0, "")
+                 continue
 
-                # cap to expiry - 1 calendar day, then if weekend, roll back to Friday
-                cap = datetime.combine(exp.date() - timedelta(days=1), datetime.min.time())
-                if cap.weekday() >= 5:
-                    cap = cap - timedelta(days=(cap.weekday() - 4))  # Sat->Fri(1), Sun->Fri(2)
-
-                if sb > cap:
-                    sb = cap
-                if sb < a:
-                    sb = a
-                sell_by = sb.strftime("%Y-%m-%d")
-            except Exception:
-                pass
-
-            # confidence (varies):
-            # - base: HOLD 0.15, trade 0.30
-            # - boost by "move vs range"
-            # - tiny boost by volume/oi (log scaled)
-            vol_lots = _fnum(r.get("Volume(Lots)")) or 0.0
-            oi_lots = _fnum(r.get("Open Interest(Lots)")) or 0.0
-
-            if action == "HOLD":
-                conf = 0.15
-            else:
-                strength = min(1.0, move / day_range)  # 0..1
-                liq = min(1.0, (0.15 * (0.0 if vol_lots <= 0 else (1.0 + (vol_lots ** 0.25))) +
-                                0.10 * (0.0 if oi_lots <= 0 else (1.0 + (oi_lots ** 0.25)))) / 10.0)
-                conf = 0.30 + 0.45 * strength + 0.10 * liq
-                conf = max(0.25, min(0.85, conf))
-
-            out.append({
-                "as_of": as_of,
-                "exchange": "MCX",
-                "instrument": "FUTCOM",
-                "symbol": sym,
-                "expiry": exp.strftime("%d-%b-%Y").upper(),
-                "dte": int(dte),
-                "action": action,
-                "ltp": _f2(close),
-                "entry_price": _f2(entry),
-                "sl": _f2(sl),
-                "t1": _f2(t1),
-                "t2": _f2(t2),
-                "sell_by": sell_by,
-                "confidence": float(f"{conf:.2f}"),
-                "diagnostics": {
-                    "high": _f2(hi),
-                    "low": _f2(lo),
-                    "prev_close": _f2(prev),
-                    "move": _f2(move),
-                    "day_range": _f2(day_range),
-                    "volume_lots": float(vol_lots),
-                    "oi_lots": float(oi_lots),
-                }
-            })
+            # Use Option Row to generate signal
+            # Always BUY the option (Long CE or Long PE)
+            self._add_entry(out, as_of, sym, opt_row, "BUY", "OPTFUT", picked_exp, best_k, target_opt_type)
 
         return out
+
+    def _add_entry(self, out: List, as_of: str, sym: str, r: Dict, action: str, 
+                   inst_repl: str, exp: datetime, strike: float, opt_type: str):
+        
+        close = _fnum(r.get("Close")) or 0.0
+        prev = _fnum(r.get("Previous Close")) or 0.0
+        hi = _fnum(r.get("High")) or close
+        lo = _fnum(r.get("Low")) or close
+        vol_lots = _fnum(r.get("Volume(Lots)")) or 0.0
+        oi_lots = _fnum(r.get("Open Interest(Lots)")) or 0.0
+        
+        if close <= 0:
+            return
+
+        day_range = max(1e-6, hi - lo)
+        move = abs(close - prev)
+        
+        # Risk Management defaults for Options vs Futures
+        if inst_repl in ("OPTFUT", "OPTCOM"):
+            # Option Logic: Long only
+            entry = close
+            # Stop Loss: 30% of Premium or Low of day?
+            # Using 30% of premium is standard for buying options
+            sl = entry * 0.70
+            risk = entry - sl
+            t1 = entry + (risk * 1.5) # 1.5R
+            t2 = entry + (risk * 3.0) # 3R
+        else:
+            # Futures Logic
+            entry = close
+            if action == "BUY":
+                sl = entry - max(entry * self.cfg.stop_loss_frac * 0.01, 0.5 * day_range) # 1% SL or half range
+                risk = max(0.01, entry - sl)
+                t1 = entry + risk * 1.5
+                t2 = entry + risk * 3.0
+            else: # SELL
+                sl = entry + max(entry * 0.01, 0.5 * day_range)
+                risk = max(0.01, sl - entry)
+                t1 = entry - risk * 1.5
+                t2 = entry - risk * 3.0
+
+        # Sell By
+        sell_by = None
+        try:
+             sb = _add_trading_days(datetime.strptime(as_of, "%Y-%m-%d"), self.cfg.sell_by_trading_days)
+             sell_by = sb.strftime("%Y-%m-%d")
+        except:
+            pass
+        
+        # Confidence Tuning
+        conf = 0.50
+        
+        if vol_lots > 1000: conf += 0.15
+        elif vol_lots > 100: conf += 0.10
+        elif vol_lots > 10: conf += 0.05
+        
+        if oi_lots > 500: conf += 0.10
+        elif oi_lots > 50: conf += 0.05
+        
+        if day_range > 0 and move/day_range > 0.6:
+             conf += 0.05
+             
+        conf = min(0.90, conf)
+        
+        exp_str = exp.strftime("%d-%b-%Y").upper()
+        # Compact expiry for display: 29-DEC
+        exp_short = exp.strftime("%d-%b").upper()
+        dte = (exp.date() - datetime.strptime(as_of, "%Y-%m-%d").date()).days
+        
+        display_name = ""
+        if inst_repl in ("OPTFUT", "OPTCOM"):
+            # Format: GOLDM 132600 CE (29-DEC)
+            display_name = f"{sym} {int(strike) if strike.is_integer() else strike} {opt_type} ({exp_short})"
+        else:
+            display_name = f"{sym} FUT ({exp_short})"
+
+        out.append({
+            "as_of": as_of,
+            "exchange": "MCX",
+            "instrument": inst_repl,
+            "symbol": sym,
+            "display_name": display_name,
+            "expiry": exp_str,
+            "dte": int(dte),
+            "action": action, # Always BUY for options
+            "option_type": opt_type,
+            "strike_price": strike,
+            "ltp": _f2(close),
+            "entry_price": _f2(entry),
+            "sl": _f2(sl),
+            "t1": _f2(t1),
+            "t2": _f2(t2),
+            "sell_by": sell_by,
+            "confidence": float(f"{conf:.2f}"),
+            "diagnostics": {
+                "high": _f2(hi),
+                "low": _f2(lo),
+                "prev_close": _f2(prev),
+                "move": _f2(move),
+                "volume_lots": float(vol_lots),
+                "oi_lots": float(oi_lots),
+            }
+        })
+

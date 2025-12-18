@@ -14,7 +14,7 @@ def repo_root() -> Path:
 
 
 def find_bhavcopy_file(as_of: str) -> Path:
-    ddir = repo_root() / "data" / "derivatives" / as_of
+    ddir = repo_root() / "data" / "mcx" / as_of
     if not ddir.exists():
         raise FileNotFoundError(f"Missing data dir: {ddir}")
 
@@ -40,7 +40,7 @@ def write_reports(as_of: str, recos: List[Dict[str, Any]]) -> Dict[str, str]:
 
     jp.write_text(json.dumps(recos, indent=2, default=str))
 
-    cols = ["as_of","exchange","instrument","symbol","expiry","dte","action","ltp","entry_price","sl","t1","t2","sell_by","confidence"]
+    cols = ["as_of","exchange","instrument","symbol","display_name","expiry","dte","action","option_type","strike_price","ltp","entry_price","sl","t1","t2","sell_by","confidence"]
     with cp.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader()
@@ -63,9 +63,17 @@ def main():
 
     agent = CommodityRecoAgent()
     recos = agent.recommend_from_bhavcopy_rows(args.as_of, rows)
-    print("Recos:", len(recos))
+    print("Agent Recos:", len(recos))
+    
+    from stockreco.commodities.commodity_reviewer import CommodityReviewer
+    reviewer = CommodityReviewer(min_confidence=0.60)
+    approved = reviewer.review(recos)
+    print("Reviewed Recos:", len(approved))
 
-    paths = write_reports(args.as_of, recos)
+    # sort by confidence desc
+    approved.sort(key=lambda x: x["confidence"], reverse=True)
+
+    paths = write_reports(args.as_of, approved)
     print("Wrote:", paths)
 
 

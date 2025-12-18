@@ -4,8 +4,8 @@ import CommodityRecoPage from "./_CommodityRecoPage.jsx";
 export default function CommoditiesRecommendations() {
     return (
         <CommodityRecoPage
-            title="MCX Futures"
-            subtitle="Daily commodity futures recommendations (GOLD, GOLDM, etc.)"
+            title="MCX Commodities"
+            subtitle="Daily commodity futures and options recommendations"
             apiBase="/api/mcx"
             pickRows={(d) => (Array.isArray(d) ? d : [])}
         />

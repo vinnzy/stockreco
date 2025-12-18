@@ -37,13 +37,21 @@ function pickOptionsRows(payload) {
         const allRecos = payload.recommender || [];
         allRecos.forEach(r => {
             const key = `${r.symbol}-${r.strike}-${r.side}-${r.expiry}`;
-            if (!approvedSymbols.has(key) && rejectedMap.has(key)) {
-                // This is a rejected recommendation, add it with rejection info
-                rows.push({
-                    ...r,
-                    __reviewerRejected: true,
-                    __rejectionReason: rejectedMap.get(key)
-                });
+
+            // Check if already in approved list (rows initialized with approved)
+            if (!approvedSymbols.has(key)) {
+                if (rejectedMap.has(key)) {
+                    // This is a rejected recommendation, add it with rejection info
+                    rows.push({
+                        ...r,
+                        __reviewerRejected: true,
+                        __rejectionReason: rejectedMap.get(key)
+                    });
+                } else {
+                    // This is a neutral/hold/skipped recommendation (neither approved nor rejected)
+                    // We want to show it in the table as a regular row (usually HOLD)
+                    rows.push(r);
+                }
             }
         });
 

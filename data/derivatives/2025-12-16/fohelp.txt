@@ -1,0 +1,18 @@
+National Stock Exchange of India Limited
+Futures and Options Segment 
+
+This help file contains the description of Market Activity Report files of F&O segment
+
+Currently, we provide the following files as part of Market Activity Report.  
+File Name			Short Description
+fo_ddmmyyyy.csv		Total volume summary of Futures and Options by product type
+futidxddmmyyyy.csv	Symbol wise index futures volume summary 
+optidxddmmyyyy.csv	Symbol wise index options volume summary
+optstkddmmyyyy.csv	Symbol wise  stock options volume summary
+ttoptddmmyyyy.csv	Top 20 contracts in stock options
+futstkddmmyyyy.csv	Symbol wise  stock futures volume summary
+ttfutddmmyyyy.csv	Top 20 contracts in stock futures
+foddmmyyyy.csv		Contract wise futures volume summary
+opddmmyyyy.csv		Contract wise options volume summary
+futivxddmmyyyy.csv	VOL Futures volume summary
+

@@ -67,7 +67,7 @@ function getTargetPremium(r, idx /*0|1*/) {
 
     if (Array.isArray(t)) {
         const row = t[idx] || null;
-        return row?.premium ?? row?.t1_premium ?? row?.t2_premium ?? null;
+        return row?.premium ?? row?.price ?? row?.t1_premium ?? row?.t2_premium ?? null;
     }
     if (t && typeof t === "object") {
         if (idx === 0) return t.t1_premium ?? t[0]?.premium ?? null;

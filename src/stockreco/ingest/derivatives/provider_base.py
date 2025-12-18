@@ -16,6 +16,8 @@ class OptionChainRow:
     oi: Optional[float] = None
     oi_change: Optional[float] = None
     iv: Optional[float] = None  # decimal (0.15 = 15%)
+    high: Optional[float] = None
+    low: Optional[float] = None
 
 @dataclass
 class UnderlyingSnapshot:

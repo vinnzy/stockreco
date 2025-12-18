@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 import subprocess
 
@@ -79,7 +80,7 @@ def main():
     universe_str = _as_csv_universe(universe_list)
 
     cmd = [
-        "python",
+        sys.executable,
         "scripts/run_eod_option_reco.py",
         "--as-of", as_of,
         "--universe", universe_str,

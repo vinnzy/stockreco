@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 import pandas as pd
 import yfinance as yf
+from stockreco.ingest.market_context import MarketContextLoader
 
 @dataclass
 class SignalConfig:
@@ -68,7 +69,24 @@ def generate_signals_csv(
     out_dir = repo_root / "data" / "models" / as_of
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "signals.csv"
-
+    
+    # Load market context
+    ctx_loader = MarketContextLoader(repo_root / "data")
+    ctx = ctx_loader.load_context(as_of)
+    print(f"[INFO] Loaded context for {as_of}: {len(ctx.volatility)} vols, {len(ctx.delivery_stats)} delivs, {len(ctx.bulk_deals)} bulk deals")
+    
+    # Analyze participant OI (FII) for crude market sentiment
+    fii_stats = ctx.participant_oi.get("FII")
+    fii_sentiment = 0.0 # -1 to 1
+    if fii_stats:
+        try:
+            longs = float(fii_stats.get("Total Long Contracts", 0))
+            shorts = float(fii_stats.get("Total Short Contracts", 0))
+            if (longs + shorts) > 0:
+                fii_sentiment = (longs - shorts) / (longs + shorts)
+        except:
+            pass
+            
     rows: List[Dict] = []
 
     for sym in universe:
@@ -132,6 +150,12 @@ def generate_signals_csv(
                 sell_soft=sell_soft,
                 direction_score=direction_score,
                 strength=strength,
+                # New Context Fields (Lookup using symbol without .NS suffix for Indian stocks)
+                volatility_annualized=ctx.volatility.get(sym.replace(".NS", ""), 0.0),
+                delivery_per=ctx.delivery_stats.get(sym.replace(".NS", ""), 0.0),
+                delivery_spike=1 if ctx.delivery_stats.get(sym.replace(".NS", ""), 0.0) > 50.0 else 0, # Simple threshold for now
+                has_bulk_deal=1 if sym.replace(".NS", "") in ctx.bulk_deals else 0,
+                fii_sentiment=fii_sentiment,
             )
         )
 
